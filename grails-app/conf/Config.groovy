@@ -1,3 +1,5 @@
+import sk.upjs.winston.Role
+
 // locations to search for config files that get merged into the main config;
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
@@ -128,6 +130,7 @@ log4j.main = {
 }
 
 // Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.ui.register.defaultRoleNames = [Role.ROLE_USER]
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'sk.upjs.winston.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'sk.upjs.winston.UserRole'
 grails.plugin.springsecurity.authority.className = 'sk.upjs.winston.Role'
