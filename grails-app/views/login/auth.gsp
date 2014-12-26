@@ -1,49 +1,62 @@
 <html>
 
 <head>
-<title><g:message code='spring.security.ui.login.title'/></title>
-<meta name='layout' content='register'/>
+	<title><g:message code='spring.security.ui.login.title'/></title>
+	%{--<meta name='layout' content='register'/>--}%
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"
+		  href="${request.contextPath}/amelia/theme/bootstrap.css" media="screen">
+	<link rel="stylesheet"
+		  href="${request.contextPath}/amelia/theme/usebootstrap.css">
 </head>
 
 <body>
 
-<p/>
-
-<div class="login s2ui_center ui-corner-all" style='text-align:center;'>
-	<div class="login-inner">
-	<form action='${postUrl}' method='POST' id="loginForm" name="loginForm" autocomplete='off'>
-	<div class="sign-in">
-
-	<h1><g:message code='spring.security.ui.login.signin'/></h1>
-
-	<table>
-		<tr>
-			<td><label for="username"><g:message code='spring.security.ui.login.username'/></label></td>
-			<td><input name="j_username" id="username" size="20" /></td>
-		</tr>
-		<tr>
-			<td><label for="password"><g:message code='spring.security.ui.login.password'/></label></td>
-			<td><input type="password" name="j_password" id="password" size="20" /></td>
-		</tr>
-		<tr>
-			<td colspan='2'>
-				<input type="checkbox" class="checkbox" name="${rememberMeParameter}" id="remember_me" checked="checked" />
-				<label for='remember_me'><g:message code='spring.security.ui.login.rememberme'/></label> |
-				<span class="forgot-link">
-					<g:link controller='register' action='forgotPassword'><g:message code='spring.security.ui.login.forgotPassword'/></g:link>
-				</span>
-			</td>
-		</tr>
-		<tr>
-			<td colspan='2'>
-				<s2ui:linkButton elementId='register' controller='register' messageCode='spring.security.ui.login.register'/>
-				<s2ui:submitButton elementId='loginButton' form='loginForm' messageCode='spring.security.ui.login.login'/>
-			</td>
-		</tr>
-	</table>
-
+	<!-- Navigation bar -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<g:link uri="/" class="navbar-brand">Winston</g:link>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://data-mining.sk/web/" target="_blank">About</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
-	</form>
+
+<div id='login' class="container bs-docs-section">
+	<div class="well col-lg-6 centered">
+
+		<g:if test='${flash.message}'>
+			<div class="alert alert-dismissable alert-warning">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+				<h4>Oh no!</h4>
+				<p>${flash.message}</p>
+			</div>
+		</g:if>
+		<h1 class="text-center">Please sign in</h1>
+		<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
+			<p>
+				<input type='text' class='form-control' name='j_username' id='username' placeholder="<g:message code='springSecurity.login.username.label'/>"/>
+			</p>
+
+			<p>
+				<input type='password' class='form-control' name='j_password' id='password' placeholder="<g:message code="springSecurity.login.password.label"/>"/>
+			</p>
+
+			<div class="btn-toolbar centered">
+				<input class="" type='checkbox' name='${rememberMeParameter}' id='remember_me' <g:if test='${hasCookie}'>checked='checked'</g:if>/>
+				<label for='remember_me'><g:message code="springSecurity.login.remember.me.label"/> |</label>
+				<g:link controller='register' action='forgotPassword'><g:message code='spring.security.ui.login.forgotPassword'/></g:link>
+
+				<input type='submit' class="btn btn-primary to-right" id="submit" value='${message(code: "spring.security.ui.login.login")}'/>
+				<g:link controller='register' class="btn btn-default to-right">Register as new User</g:link>
+			</div>
+
+		</form>
 	</div>
 </div>
 
@@ -55,6 +68,10 @@ $(document).ready(function() {
 <s2ui:initCheckboxes/>
 
 </script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="${request.contextPath}/amelia/bootstrap/bootstrap.min.js"></script>
+<script src="${request.contextPath}/amelia/bootstrap/usebootstrap.js"></script>
 
 </body>
 </html>
