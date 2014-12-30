@@ -31,26 +31,36 @@
 <div class="container bs-docs-section">
     <div class="well col-lg-6 centered">
 
-        <g:if test='${flash.error}'>
+        <g:if test='${command && command.getErrors()}'>
             <div class="alert alert-dismissable alert-warning">
                 <button type="button" class="close" data-dismiss="alert">×</button>
                 <h4>Oh no!</h4>
-                <p>${flash.error}</p>
+
+                <g:each in="${(0..command.getErrors().fieldErrorCount-1).toList()}" var="index" >
+                    <g:if test='${command.getErrors().getFieldErrors().get(index).getCode().equals("nullable")}'>
+                        <g:if test='${command.getErrors().getFieldErrors().get(index).getField().equals("password2")}'>
+                            <p>Please repeat the password in the field below.</p>
+                        </g:if>
+                        <g:else>
+                            <p>Field ${command.getErrors().getFieldErrors().get(index).getField()} can't be empty</p>
+                        </g:else>
+                    </g:if>
+                    <g:else>
+                        <p><g:message code="${command.errors.getFieldErrors().get(index).getCode().toString()}" /></p>
+                    </g:else>
+                </g:each>
             </div>
         </g:if>
+
         <h1 class="text-center"><g:message class='text-center' code='spring.security.ui.resetPassword.description'/></h1>
         <g:form action='resetPassword' name='resetPasswordForm' autocomplete='off'>
             <g:hiddenField name='t' value='${token}'/>
             <div class="sign-in">
 
 
-                %{--<p><input type='text' class='form-control' name='password' placeholder="Password"/></p>--}%
-                <p><s2ui:passwordFieldRow name='password' labelCode='resetPasswordCommand.password.label' bean="${command}"
-                                       labelCodeDefault='Password' value="${command?.password}"/></p>
+                <p><input type='password' class='form-control' name='password' placeholder="Password" bean="${command}" value="${command?.password}"/></p>
 
-                <p><s2ui:passwordFieldRow name='password2' labelCode='resetPasswordCommand.password2.label'
-                                       bean="${command}"
-                                       labelCodeDefault='Password (again)' value="${command?.password2}"/></p>
+                <p><input type='password' class='form-control' name='password2' placeholder="Password (again)" bean="${command}" value="${command?.password2}"/></p>
 
 
                 <s2ui:submitButton class="btn btn-primary" elementId='reset' form='resetPasswordForm'
