@@ -1,5 +1,7 @@
 package winston
 
+import sk.upjs.winston.User
+
 /**
  *
  * @author Stefan Bocko
@@ -23,6 +25,7 @@ class Dataset {
     int numberOfInstances
     List attributes
     static hasMany = [attributes: Attribute]
+    static belongsTo = [user: User]
 
     static constraints = {
         title()

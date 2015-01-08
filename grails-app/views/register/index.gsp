@@ -30,7 +30,7 @@
 <div class="container bs-docs-section">
 	<div class="well col-lg-6 centered">
 
-		<g:if test='${command && command.getErrors()}'>
+		<g:if test='${command && command.getErrors().errorCount > 0}'>
 			<div class="alert alert-dismissable alert-warning">
 				<button type="button" class="close" data-dismiss="alert">×</button>
 				<h4>Oh no!</h4>
