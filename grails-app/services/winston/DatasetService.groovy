@@ -3,6 +3,7 @@ package winston
 import grails.transaction.Transactional
 import org.codehaus.groovy.grails.web.context.ServletContextHolder
 import org.springframework.util.StringUtils
+import sk.upjs.winston.User
 import sk.upjs.winston.groovy.DatasetAttributeParser
 
 @Transactional
@@ -13,7 +14,7 @@ class DatasetService {
     public static final String DEFAULT_DELIMITER = ","
     private String delimiter = DEFAULT_DELIMITER
 
-    public def saveDataset(def title, def description, def file, def missingValuePattern) {
+    public def saveDataset(User user, def title, def description, def file, def missingValuePattern) {
         println "Dataset file: ${file}"
         def filename = null
         if (file != null && file.size() != 0) {
@@ -31,6 +32,7 @@ class DatasetService {
 
         //initialize dataset instance
         Dataset datasetInstance = new Dataset()
+        datasetInstance.setUser(user)
         datasetInstance.setTitle(title)
         datasetInstance.setDataFile(filename)
         datasetInstance.setDescription(description)

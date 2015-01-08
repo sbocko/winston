@@ -2,7 +2,9 @@ package winston
 
 import grails.plugin.springsecurity.annotation.Secured
 import org.springframework.dao.DataIntegrityViolationException
+import org.springframework.security.core.context.SecurityContextHolder
 import sk.upjs.winston.Role
+import sk.upjs.winston.User
 
 @Secured([Role.ROLE_USER])
 class DatasetController {
@@ -13,6 +15,7 @@ class DatasetController {
     static allowedMethods = [save: "POST", delete: "POST"]
 
     def servletContext
+    def springSecurityService
 
     def index() {
         redirect(action: "list", params: params)
@@ -20,7 +23,10 @@ class DatasetController {
 
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        [datasetInstanceList: Dataset.list(params), datasetInstanceTotal: Dataset.count()]
+        User user = springSecurityService.getCurrentUser()
+        List<User> datasetList = Dataset.findAllByUser(user)
+        [datasetInstanceList: datasetList, datasetInstanceTotal: datasetList.size()]
+//        [datasetInstanceList: Dataset.list(params), datasetInstanceTotal: Dataset.count()]
     }
 
     def create() {
@@ -40,8 +46,9 @@ class DatasetController {
         def missingValuePattern = params.get(Dataset.MISSING_VALUE_PATTERN_VAR)
         def title = params.get(Dataset.TITLE_VAR)
         def description = params.get(Dataset.DESCRIPTION_VAR)
+        User user = springSecurityService.getCurrentUser()
 
-        def datasetInstance = datasetService.saveDataset(title, description, myFile, missingValuePattern)
+        def datasetInstance = datasetService.saveDataset(user, title, description, myFile, missingValuePattern)
 
         //println "dataset ${datasetInstance}"
 

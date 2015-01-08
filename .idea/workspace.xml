@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2872d06-f73a-46b0-8b56-b73ba08989bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/main-backup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main-backup.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/main-new-backup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main-new-backup.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource.class" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Dataset$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/Dataset$__clinit__closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Dataset.class" afterPath="$PROJECT_DIR$/target/classes/winston/Dataset.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/register/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/register/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/dataset/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/dataset/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/main.css" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AttributeController.class" afterPath="$PROJECT_DIR$/target/classes/winston/AttributeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/BooleanAttributeController.class" afterPath="$PROJECT_DIR$/target/classes/winston/BooleanAttributeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_analyze_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_analyze_closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_attributeAnalysis_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_attributeAnalysis_closure2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_prepareData_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_prepareData_closure4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_saveTargetAttribute_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_saveTargetAttribute_closure3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetService$_saveDataset_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetService$_saveDataset_closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetService.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/NumericAttributeController.class" afterPath="$PROJECT_DIR$/target/classes/winston/NumericAttributeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/StringAttributeController.class" afterPath="$PROJECT_DIR$/target/classes/winston/StringAttributeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/AttributeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/AttributeController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/BooleanAttributeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/BooleanAttributeController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/NumericAttributeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/NumericAttributeController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/StringAttributeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/StringAttributeController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,31 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main-new-backup.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main-new-backup.gsp">
+      <file leaf-file-name="DatasetController.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1005">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.gsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/register/index.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22277227" vertical-offset="345" max-vertical-offset="1425">
-              <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.54761904" vertical-offset="0" max-vertical-offset="3960">
+              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -92,18 +78,12 @@
         <option value="$PROJECT_DIR$/src/java/winston/AttributeByPositionComparator.java" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/FileUploadService.groovy" />
         <option value="$PROJECT_DIR$/web-app/datasets/test.csv" />
-        <option value="$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/winston/AttributeController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/winston/BooleanAttributeController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/winston/NumericAttributeController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/winston/StringAttributeController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/LogoutController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/sk/upjs/winston/User.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/RoleController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/sk/upjs/winston/Role.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/login/auth.gsp" />
@@ -117,6 +97,12 @@
         <option value="$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/register/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/winston/AttributeController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/winston/BooleanAttributeController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/winston/NumericAttributeController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/winston/StringAttributeController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" />
       </list>
     </option>
   </component>
@@ -385,6 +371,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winston" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -806,7 +796,7 @@
       <workItem from="1419861314914" duration="1730000" />
       <workItem from="1419931885737" duration="6393000" />
       <workItem from="1420574836657" duration="1849000" />
-      <workItem from="1420731179200" duration="1724000" />
+      <workItem from="1420731179200" duration="3373000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug with Role auto-assignment for newly registered users.">
       <created>1419501828105</created>
@@ -844,15 +834,21 @@
       <option name="project" value="LOCAL" />
       <updated>1419946128529</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed bug in register controller when no errors ocured in form.">
+      <created>1420733782996</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1420733782996</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36279000" />
+    <option name="totallyTimeSpent" value="37928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="992" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -878,6 +874,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -887,7 +884,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -911,7 +907,8 @@
     <MESSAGE value="UI for forgot password screen implemented." />
     <MESSAGE value="Register UI redesigned." />
     <MESSAGE value="Reset password UI redesigned." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reset password UI redesigned." />
+    <MESSAGE value="Fixed bug in register controller when no errors ocured in form." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in register controller when no errors ocured in form." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -928,13 +925,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/_edit-form.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/validator/AttributeDataValidator.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="872">
@@ -1024,38 +1014,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/BooleanAttributeController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8021201" vertical-offset="0" max-vertical-offset="1620">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AttributeController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5477032" vertical-offset="0" max-vertical-offset="2250">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/booleanAttribute/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="872">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/NumericAttributeController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8021201" vertical-offset="0" max-vertical-offset="1620">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/StringAttributeController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96466434" vertical-offset="711" max-vertical-offset="1620">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1070,13 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="872">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41284403" vertical-offset="75" max-vertical-offset="1260">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1095,34 +1050,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/LogoutController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="315">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sk/upjs/winston/User.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="750">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/springSecurityUI.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3180">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/RoleController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6086957" vertical-offset="0" max-vertical-offset="195">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1133,13 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="315">
           <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="3915">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1154,13 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9574468" vertical-offset="225" max-vertical-offset="1245">
           <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/RegisterController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.050167225" vertical-offset="0" max-vertical-offset="598">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1307,10 +1224,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main-new-backup.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/register/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.22277227" vertical-offset="345" max-vertical-offset="1425">
+          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -1323,10 +1240,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/register/index.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main-new-backup.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22277227" vertical-offset="345" max-vertical-offset="1425">
-          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/RoleController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0952381" vertical-offset="0" max-vertical-offset="630">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/UserController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04761905" vertical-offset="0" max-vertical-offset="630">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/RegisterController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04761905" vertical-offset="0" max-vertical-offset="630">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/LogoutController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="630">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1230">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sk/upjs/winston/User.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3773584" vertical-offset="0" max-vertical-offset="750">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AttributeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9565217" vertical-offset="45" max-vertical-offset="2295">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="e#17#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/BooleanAttributeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9565217" vertical-offset="45" max-vertical-offset="1665">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="e#17#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/NumericAttributeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9565217" vertical-offset="45" max-vertical-offset="1665">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="e#17#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/StringAttributeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9565217" vertical-offset="45" max-vertical-offset="1665">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="e#17#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54761904" vertical-offset="0" max-vertical-offset="3960">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding />
         </state>
       </provider>

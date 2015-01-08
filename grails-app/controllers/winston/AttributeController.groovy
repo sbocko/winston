@@ -1,7 +1,10 @@
 package winston
 
+import grails.plugin.springsecurity.annotation.Secured
 import org.springframework.dao.DataIntegrityViolationException
+import sk.upjs.winston.Role
 
+@Secured([Role.ROLE_USER])
 class AttributeController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
