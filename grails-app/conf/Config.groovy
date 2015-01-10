@@ -134,6 +134,7 @@ grails.plugin.springsecurity.ui.register.defaultRoleNames = [Role.ROLE_USER]
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'sk.upjs.winston.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'sk.upjs.winston.UserRole'
 grails.plugin.springsecurity.authority.className = 'sk.upjs.winston.Role'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/dataset'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
 	'/index':                         ['permitAll'],
