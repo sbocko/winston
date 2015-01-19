@@ -23,20 +23,21 @@ class Dataset {
     String missingValuePattern
     int numberOfMissingValues
     int numberOfInstances
+    List analyzes
     List attributes
-    static hasMany = [attributes: Attribute]
+    static hasMany = [attributes: Attribute, analyzes: Analysis]
     static belongsTo = [user: User]
 
     static constraints = {
         title()
-        dataFile(nullable:false)
-        description(maxSize:5000, nullable:true)
-        missingValuePattern(nullable:true)
+        dataFile(nullable: false)
+        description(maxSize: 5000, nullable: true)
+        missingValuePattern(nullable: true)
         numberOfMissingValues()
         numberOfInstances()
     }
 
-    String toString(){
-        return "${title}: ${dataFile}"
+    String toString() {
+        return "${title}"
     }
 }

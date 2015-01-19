@@ -1,4 +1,6 @@
 import sk.upjs.winston.Role
+import sk.upjs.winston.User
+import sk.upjs.winston.UserRole
 import winston.DatasetService
 
 class BootStrap {
@@ -19,23 +21,37 @@ class BootStrap {
         def role = Role.findByAuthority(Role.ROLE_USER)
         if (role == null) {
             role = new Role(authority: Role.ROLE_USER).save(flush: true)
+            role.refresh()
+        }
+
+        def testUser = User.findByUsername('user')
+        if (testUser == null) {
+            testUser = new User(username: 'user', password: 'pass123!', email: "st.bocko+winston@gmail.com" , enabled: true)
+            testUser.save(flush: true, failOnError: true)
+            testUser = User.findByUsername('user')
+            UserRole userRole = new UserRole(user: testUser, role: role)
+            userRole.save(flush: true, failOnError: true)
         }
 
         //		def resourceDir = grailsApplication.mainContext.getResource('/datasets').file
-        def resourceDir = new File('/Volumes/Seagate HDD/datasets/')
-
-        if (!resourceDir.exists()) {
-            println "resource dir does not exist"
-            return
-        }
-
-        resourceDir.eachFile { file ->
-            processDataset(file, datasetNameList);
-        }
+//        def resourceDir = new File('/Volumes/Seagate HDD/datasets/')
+//
+//        if (resourceDir.exists()) {
+//            println "processing datasets from resource dir"
+//            resourceDir.eachFile { file ->
+//                processDataset(file, datasetNameList);
+//            }
+//        }
 
         //		File file = new File("/Volumes/Seagate HDD/datasets/poker-hand-testing.data")
         //		datasetService.saveDataset("Iris", "Iris dataset from UCI", resourceFile, null)
     }
+
+
+    def destroy = {
+    }
+
+    /** HELPER METHODS */
 
     private void processDataset(def file, def datasetNameList) {
         def datasetName = file.name.substring(0, file.name.indexOf('.'))
@@ -606,8 +622,5 @@ class BootStrap {
         //end of the swith
 
         datasetService.saveDataset(datasetName, datasetName + " dataset from UCI", file, missingValuePattern)
-    }
-
-    def destroy = {
     }
 }

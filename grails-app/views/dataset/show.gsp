@@ -35,9 +35,9 @@
 				<g:if test="${datasetInstance?.dataFile}">
 				<li class="fieldcontain">
 					<span id="dataFile-label" class="property-label"><g:message code="dataset.dataFile.label" default="Data File" /></span>
-					
+
 						<span class="property-value" aria-labelledby="dataFile-label"><g:fieldValue bean="${datasetInstance}" field="dataFile"/></span>
-					
+
 				</li>
 				</g:if>
 			

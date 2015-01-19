@@ -20,7 +20,12 @@ class SplitAttributeService {
         String[][] datasetAttributesData = getDatasetAttributesData(dataset)
         List<String[]> dataToSave = splitAttributes(datasetAttributesData, attributesToSplit)
 
-        return saveDataToFile(dataToSave, dataset.getTitle())
+        String filename = saveDataToFile(dataToSave, dataset.getTitle())
+
+        Analysis analysis = new Analysis(dataset: dataset, dataFile: filename)
+        analysis.save(flush: true)
+
+        return filename
     }
 
     private String saveDataToFile(List<String[]> data, String datasetTitle) {
@@ -38,11 +43,20 @@ class SplitAttributeService {
             }
         }
 
-        def file = new File("${storagePathDirectory}/${datasetTitle}.csv");
-        // delete old file
-        if (file.exists()) {
-            file.delete()
+        int analysisNumber = 1
+        boolean stop = false
+        def file
+        while (!stop) {
+            file = new File("${storagePathDirectory}/${datasetTitle}-analysis_${analysisNumber}.csv");
+            if (!file.exists()) {
+                stop = true
+            }
+            analysisNumber++
         }
+        // delete old file
+//        if (file.exists()) {
+//            file.delete()
+//        }
         file.createNewFile();
 
         for (int i = 0; i < data.get(0).length; i++) {
@@ -95,7 +109,7 @@ class SplitAttributeService {
             String dataValue = attributeData[i]
             if (attributeValuePositionMap.containsKey(dataValue)) {
                 int dataValueIndex = attributeValuePositionMap.get(dataValue)
-                println "attrDataLength: ${attributeData.length}"
+//                println "attrDataLength: ${attributeData.length}"
                 result.get(dataValueIndex)[i + 1] = CONTAINS_ATTRIBUTE_VALUE
             } else {
                 String[] newColumn = initializeArrayWithValue(attributeData.length + 1, DOES_NOT_CONTAIN_ATTRIBUTE_VALUE)

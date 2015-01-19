@@ -8,7 +8,6 @@ import sk.upjs.winston.groovy.DatasetAttributeParser
 
 @Transactional
 class DatasetService {
-
     def fileUploadService
 
     public static final String DEFAULT_DELIMITER = ","
@@ -16,7 +15,7 @@ class DatasetService {
 
     public def saveDataset(User user, def title, def description, def file, def missingValuePattern) {
         println "Dataset file: ${file}"
-        def filename = null
+        String filename = null
         if (file != null && file.size() != 0) {
             filename = file.getName()
             println "Dataset filename: ${filename}"
