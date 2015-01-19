@@ -254,9 +254,9 @@ class DatasetController {
             }
         }
 
-        splitAttributeService.splitDatasetAttributesIntoFile(datasetInstance, attributesToSplit)
+        Analysis analysis = splitAttributeService.splitDatasetAttributesIntoFile(datasetInstance, attributesToSplit)
 
-        redirect(action: "attributeAnalysis", id: id)
+        redirect(controller:"Analysis", action: "show", id: analysis.getId())
     }
 
 }

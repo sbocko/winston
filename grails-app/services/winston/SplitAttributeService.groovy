@@ -12,7 +12,7 @@ class SplitAttributeService {
     private static final String CONTAINS_ATTRIBUTE_VALUE = "1"
     private static final String DOES_NOT_CONTAIN_ATTRIBUTE_VALUE = "0"
 
-    public String splitDatasetAttributesIntoFile(Dataset dataset, Map<Attribute, Boolean> attributesToSplit) {
+    public Analysis splitDatasetAttributesIntoFile(Dataset dataset, Map<Attribute, Boolean> attributesToSplit) {
         if (!attributesBelongsToDataset(dataset, attributesToSplit)) {
             return null
         }
@@ -25,7 +25,7 @@ class SplitAttributeService {
         Analysis analysis = new Analysis(dataset: dataset, dataFile: filename)
         analysis.save(flush: true)
 
-        return filename
+        return analysis
     }
 
     private String saveDataToFile(List<String[]> data, String datasetTitle) {
