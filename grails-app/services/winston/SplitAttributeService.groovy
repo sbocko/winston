@@ -22,7 +22,7 @@ class SplitAttributeService {
 
         String filename = saveDataToFile(dataToSave, dataset.getTitle())
 
-        Analysis analysis = new Analysis(dataset: dataset, dataFile: filename)
+        Analysis analysis = new Analysis(dataset: dataset, dataFile: filename, numberOfAttributes: dataToSave.size())
         analysis.save(flush: true)
 
         return analysis

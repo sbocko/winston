@@ -1,6 +1,7 @@
 package winston
 
 import grails.plugin.springsecurity.annotation.Secured
+import org.codehaus.groovy.grails.web.context.ServletContextHolder
 import sk.upjs.winston.Role
 
 import static org.springframework.http.HttpStatus.*
@@ -83,6 +84,8 @@ class AnalysisController {
             return
         }
 
+        deleteAnalysisDataFile(analysisInstance)
+
         analysisInstance.delete flush:true
 
         request.withFormat {
@@ -91,6 +94,16 @@ class AnalysisController {
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
+        }
+    }
+
+    private void deleteAnalysisDataFile(Analysis analysisInstance) {
+        def servletContext = ServletContextHolder.servletContext
+        def storagePath = servletContext.getRealPath(SplitAttributeService.PREPARED_DATAFILES_DIRECTORY)
+        def storagePathDirectory = new File(storagePath)
+        def file = new File("${storagePathDirectory}/${analysisInstance.getDataFile()}")
+        if (file.exists()) {
+            file.delete()
         }
     }
 
