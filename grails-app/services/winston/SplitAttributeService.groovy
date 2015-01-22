@@ -7,6 +7,7 @@ import sk.upjs.winston.groovy.DatasetAttributeParser
 
 @Transactional
 class SplitAttributeService {
+    def analyzeService
 
     public static final String PREPARED_DATAFILES_DIRECTORY = "/prepared-datasets"
     private static final String CONTAINS_ATTRIBUTE_VALUE = "1"
@@ -24,6 +25,9 @@ class SplitAttributeService {
 
         Analysis analysis = new Analysis(dataset: dataset, dataFile: filename, numberOfAttributes: dataToSave.size())
         analysis.save(flush: true)
+        analysis.refresh()
+
+        analyzeService.performGridsearchAnalysisForFile(analysis)
 
         return analysis
     }

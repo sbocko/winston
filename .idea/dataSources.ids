@@ -7,6 +7,39 @@
     </database-info>
     <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
     <schema name="" catalog="nh2096401db"/>
+    <table name="analysis" schema="" catalog="nh2096401db" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="data_file" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="dataset_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="analyzes_idx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="number_of_attributes" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_29xik3ctd30y4codaupu0odrb" columns="dataset_id" ref-table="dataset" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_8trxptlnhvm56iaduy49g73pv" table="analysis_result" schema="" catalog="nh2096401db" columns="analysis_id"/>
+      <index name="FK_29xik3ctd30y4codaupu0odrb" unique="false" columns="dataset_id"/>
+    </table>
+    <table name="analysis_result" schema="" catalog="nh2096401db" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="analysis_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="rmse" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="results_idx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="class" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="maximum_number_of_iterations" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="ridge" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="k" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="complexity_constant" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="epsilon_round_off_error" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="kernel" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="confidence_factor" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="minimum_number_of_instances_per_leaf" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="unpruned" sqlType="BIT" precision="1" scale="0" nullable="true" jdbcType="-7"/>
+      <column name="gamma" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_8trxptlnhvm56iaduy49g73pv" columns="analysis_id" ref-table="analysis" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_8trxptlnhvm56iaduy49g73pv" unique="false" columns="analysis_id"/>
+    </table>
     <table name="attribute" schema="" catalog="nh2096401db" type="TABLE">
       <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
@@ -16,12 +49,12 @@
       <column name="position_in_data_file" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="class" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="number_of_false_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="number_of_true_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="number_of_distinct_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="average" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="maximum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="minimum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
-      <column name="number_of_distinct_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="number_of_false_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="number_of_true_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="attributes_idx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="FK_sglujhfqtyua2v14davaxd3bw" columns="dataset_id" ref-table="dataset" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
@@ -41,30 +74,33 @@
     <table name="dataset" schema="" catalog="nh2096401db" type="TABLE">
       <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="data_file" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="description" sqlType="VARCHAR" precision="5000" scale="0" nullable="true" jdbcType="12"/>
       <column name="missing_value_pattern" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="number_of_instances" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="number_of_missing_values" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="data_file" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FK_pr13brky1iuocfkacedxqayat" columns="user_id" ref-table="user" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_29xik3ctd30y4codaupu0odrb" table="analysis" schema="" catalog="nh2096401db" columns="dataset_id"/>
       <exported-key name="FK_sglujhfqtyua2v14davaxd3bw" table="attribute" schema="" catalog="nh2096401db" columns="dataset_id"/>
       <exported-key name="FK_ppfbffkcit1dckthdqthhhyf4" table="data_file" schema="" catalog="nh2096401db" columns="dataset_id"/>
-      <exported-key name="FKD9C292AA588B1088" table="dmmethod" schema="" catalog="nh2096401db" columns="dataset_id"/>
       <index name="FK_pr13brky1iuocfkacedxqayat" unique="false" columns="user_id"/>
     </table>
-    <table name="dmmethod" schema="" catalog="nh2096401db" type="TABLE">
+    <table name="decision_tree_result" schema="" catalog="nh2096401db" type="TABLE">
       <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="dataset_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
-      <column name="class" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
-      <column name="k" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FKD9C292AA588B1088" columns="dataset_id" ref-table="dataset" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="FKD9C292AA588B1088" unique="false" columns="dataset_id"/>
+    </table>
+    <table name="knn_result" schema="" catalog="nh2096401db" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="logistic_regression_result" schema="" catalog="nh2096401db" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="registration_code" schema="" catalog="nh2096401db" type="TABLE">
       <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
@@ -81,6 +117,11 @@
       <exported-key name="FK_it77eq964jhfqtu54081ebtio" table="user_role" schema="" catalog="nh2096401db" columns="role_id"/>
       <index name="UK_irsamgnera6angm0prq1kemt2" unique="true" columns="authority"/>
     </table>
+    <table name="svm_result" schema="" catalog="nh2096401db" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
     <table name="user" schema="" catalog="nh2096401db" type="TABLE">
       <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
@@ -92,7 +133,6 @@
       <column name="password_expired" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
       <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FK_pr13brky1iuocfkacedxqayat" table="dataset" schema="" catalog="nh2096401db" columns="user_id"/>
       <exported-key name="FK_apcc8lxk2xnug8377fatvbn04" table="user_role" schema="" catalog="nh2096401db" columns="user_id"/>
       <index name="UK_sb8bbouer5wak8vyiiy4pf2bx" unique="true" columns="username"/>
     </table>

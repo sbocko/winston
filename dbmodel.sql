@@ -15,4 +15,6 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 select * from dataset;
 select * from analysis;
+select count(*) from analysis_result;
 select * from analysis_result;
+select distinct(class) from analysis_result;
