@@ -23,13 +23,31 @@
 			</g:if>
 			<ol class="property-list analysis">
 			
-				<g:if test="${analysisInstance?.dataFile}">
+				<g:if test="${analysisInstance?.csvDataFile}">
 				<li class="fieldcontain">
-					<span id="dataFile-label" class="property-label"><g:message code="analysis.dataFile.label" default="Data File" /></span>
+					<span id="csvDataFile-label" class="property-label"><g:message code="analysis.csvDataFile.label" default="Csv Data File" /></span>
 					
-						<span class="property-value" aria-labelledby="dataFile-label"><g:fieldValue bean="${analysisInstance}" field="dataFile"/></span>
+						<span class="property-value" aria-labelledby="csvDataFile-label"><g:fieldValue bean="${analysisInstance}" field="csvDataFile"/></span>
 					
 				</li>
+				</g:if>
+			
+				<g:if test="${analysisInstance?.arffDataFile}">
+				<li class="fieldcontain">
+					<span id="arffDataFile-label" class="property-label"><g:message code="analysis.arffDataFile.label" default="Arff Data File" /></span>
+					
+						<span class="property-value" aria-labelledby="arffDataFile-label"><g:fieldValue bean="${analysisInstance}" field="arffDataFile"/></span>
+					
+				</li>
+				</g:if>
+
+				<g:if test="${analysisInstance?.dataType}">
+					<li class="fieldcontain">
+						<span id="dataType-label" class="property-label"><g:message code="analysis.dataType.label" default="Data type" /></span>
+
+						<span class="property-value" aria-labelledby="dataType-label"><g:fieldValue bean="${analysisInstance}" field="dataType"/></span>
+
+					</li>
 				</g:if>
 			
 				<g:if test="${analysisInstance?.dataset}">
@@ -37,6 +55,26 @@
 					<span id="dataset-label" class="property-label"><g:message code="analysis.dataset.label" default="Dataset" /></span>
 					
 						<span class="property-value" aria-labelledby="dataset-label"><g:link controller="dataset" action="show" id="${analysisInstance?.dataset?.id}">${analysisInstance?.dataset?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${analysisInstance?.numberOfAttributes}">
+				<li class="fieldcontain">
+					<span id="numberOfAttributes-label" class="property-label"><g:message code="analysis.numberOfAttributes.label" default="Number Of Attributes" /></span>
+					
+						<span class="property-value" aria-labelledby="numberOfAttributes-label"><g:fieldValue bean="${analysisInstance}" field="numberOfAttributes"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${analysisInstance?.results}">
+				<li class="fieldcontain">
+					<span id="results-label" class="property-label"><g:message code="analysis.results.label" default="Results" /></span>
+					
+						<g:each in="${analysisInstance.results}" var="r">
+						<span class="property-value" aria-labelledby="results-label"><g:link controller="analysisResult" action="show" id="${r.id}">${r?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

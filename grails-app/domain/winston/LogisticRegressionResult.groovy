@@ -13,4 +13,16 @@ class LogisticRegressionResult extends AnalysisResult{
     }
     static constraints = {
     }
+
+
+    @Override
+    public String toString() {
+        return "LogisticRegressionResult{" +
+                "id=" + id +
+                ", ridge=" + ridge +
+                ", maximumNumberOfIterations=" + maximumNumberOfIterations +
+                ", analysis=" + analysis +
+                ", rmse=" + rmse +
+                '}';
+    }
 }

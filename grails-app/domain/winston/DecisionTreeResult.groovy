@@ -14,4 +14,16 @@ class DecisionTreeResult extends AnalysisResult{
     }
     static constraints = {
     }
+
+    @Override
+    public String toString() {
+        return "DecisionTreeResult{" +
+                "id=" + id +
+                ", analysis=" + analysis +
+                ", rmse=" + rmse +
+                ", confidenceFactor=" + confidenceFactor +
+                ", minimumNumberOfInstancesPerLeaf=" + minimumNumberOfInstancesPerLeaf +
+                ", unpruned=" + unpruned +
+                '}';
+    }
 }

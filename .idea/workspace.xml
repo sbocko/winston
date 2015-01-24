@@ -2,288 +2,245 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2872d06-f73a-46b0-8b56-b73ba08989bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisResult$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisResult.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performGridsearchAnalysisForFile_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/converter/CSV2ArffConverter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/DecisionTreeResult$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/DecisionTreeResult.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ExecutorGrailsPlugin$_addAsyncMethods_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ExecutorGrailsPlugin$_addAsyncMethods_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ExecutorGrailsPlugin$_addAsyncMethods_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ExecutorGrailsPlugin$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ExecutorGrailsPlugin$_closure1_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ExecutorGrailsPlugin$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ExecutorGrailsPlugin$_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ExecutorGrailsPlugin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/KnnModel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/KnnResult$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/KnnResult.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/LogisticRegressionResult$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/LogisticRegressionResult.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/Model.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/executor/PersistenceContextCallableWrapper$_call_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/executor/PersistenceContextCallableWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/executor/PersistenceContextExecutorWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/executor/PersistenceContextRunnableWrapper$_run_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/executor/PersistenceContextRunnableWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/executor/PersistenceContextWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/SvmModel$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/SvmModel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/SvmResult$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/SvmResult.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/libsvm-3.17.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/weka.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/winston/AnalysisResult.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/winston/AnalysisResultSpec.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/winston/AnalyzeServiceSpec.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/converter/CSV2ArffConverter.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/winston/DecisionTreeResult.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/winston/DecisionTreeResultSpec.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/ExecutorGrailsPlugin.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/winston/KnnResult.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/winston/KnnResultSpec.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/winston/LogisticRegressionResultSpec.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/Model.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/src/groovy/grails/plugin/executor/PersistenceContextCallableWrapper.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/src/groovy/grails/plugin/executor/PersistenceContextExecutorWrapper.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/src/groovy/grails/plugin/executor/PersistenceContextRunnableWrapper.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/src/groovy/grails/plugin/executor/PersistenceContextWrapper.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/winston/SvmResult.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/winston/SvmResultSpec.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/src/docs/ref/Domain/callAsync.gdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/dependencies.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_1.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_2.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/iris-analysis_2.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_3.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_4.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_5.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_6.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_7.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_8.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_9.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iris.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/datasets/iris.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/plugin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugins/executor-0.3/src/docs/ref/Domain/runAsync.gdoc" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4_closure5_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFile$__clinit__closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_$tt__delete_closure11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_$tt__save_closure9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_$tt__update_closure10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_create_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_delete_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_edit_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_index_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_notFound_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_notFound_closure8_closure12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_notFound_closure8_closure13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_save_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_show_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_tt__delete_closure11_closure18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_tt__delete_closure11_closure19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_tt__save_closure9_closure14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_tt__save_closure9_closure15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_tt__update_closure10_closure16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_tt__update_closure10_closure17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController$_update_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DataFileController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetFile$__clinit__closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/user's dataset-analysis_1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/user's dataset.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AbstractAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AbstractAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AbstractProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AbstractProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AbstractS2UiController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AbstractS2UiController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AclClassController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AclClassController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AclEntryController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AclEntryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AclObjectIdentityController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AclObjectIdentityController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AclSidController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/AclSidController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__attributeAnalysis_closure13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__attributeAnalysis_closure14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__create_closure10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__create_closure11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__create_closure12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__create_closure9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure16.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure18.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__prepareData_closure15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__saveTargetAttribute_closure11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__saveTargetAttribute_closure12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__saveTargetAttribute_closure13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure16.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure17.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_analyze_closure7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_attributeAnalysis_closure10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_attributeAnalysis_closure6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_attributeAnalysis_closure7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_create_closure1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_delete_closure3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_delete_closure4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_getTargetAttribute_closure5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure17.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure18.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure19.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure20.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_prepareData_closure11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_prepareData_closure7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_prepareData_closure8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessing_closure6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_saveTargetAttribute_closure5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_saveTargetAttribute_closure6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_saveTargetAttribute_closure9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_save_closure1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_save_closure2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure17.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure18.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure12_closure19.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure12_closure20.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure14_closure21.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure14_closure22.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure16_closure23.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure16_closure24.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure18_closure25.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure18_closure26.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure7_closure14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure7_closure15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure10_closure15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure10_closure16.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure12_closure17.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure12_closure18.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure14_closure19.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure14_closure20.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure16_closure21.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure16_closure22.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure5_closure10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure5_closure11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure8_closure13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure8_closure14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure11_closure17.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure11_closure18.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure13_closure19.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure13_closure20.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure15_closure21.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure15_closure22.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure17_closure23.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure17_closure24.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure6_closure12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure6_closure13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure16.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_update_closure2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_update_closure3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__getMostSimilarAnalysis_closure10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__getMostSimilarAnalysis_closure11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__getMostSimilarAnalysis_closure9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performAnalysisWithDefaultHyperparameters_closure8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_defaultKnnResultForAnalysis_closure4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_defaultKnnResultForAnalysis_closure7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_defaultKnnResultForAnalysis_closure8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getBestMethodForAnalysis_closure4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getBestMethodForAnalysis_closure4_closure14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getBestMethodForAnalysis_closure4_closure15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getBestMethodForAnalysis_closure5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performAnalysisWithDefaultHyperparameters_closure1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performAnalysisWithDefaultHyperparameters_closure2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performAnalysisWithDefaultHyperparameters_closure3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performGridsearchAnalysisForFile_closure2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performGridsearchAnalysisForFile_closure3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performGridsearchAnalysisForFile_closure4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performRecommendedDataMiningMethodForAnalysis_closure1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_createAnalysis_closure1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_1.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_2.arff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_2.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_3.arff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_3.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_4.arff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_4.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_5.arff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_5.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_6.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_7.arff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_7.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_8.arff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_8.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_9.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Iris-analysis_4.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bezdekIris.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/datasets/bezdekIris.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/iris-analysis_1.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/iris-analysis_3.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_8.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_9.arff" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/analysis/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/create_backup.gsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/dataset/analyze.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/create.gsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/dataset/attribute_analysis.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure13.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure16.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_4.arff" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_9.arff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_5.arff" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Iris-analysis_4.arff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_6.arff" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_1.arff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_7.arff" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_6.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$__clinit__closure1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure11.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure9.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure10.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_create_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_create_closure3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure12.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure13.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure18.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure19.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure14.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure15.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure16.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure17.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure17.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetCompiler.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetCompiler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetHelper.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetMethodTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetMethodTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/AssetPipelineBootStrap.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/AssetPipelineBootStrap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetPipelineFilter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetPipelineFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/AssetPipelineGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/AssetPipelineGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetProcessorService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetProcessorService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/AssetResourceLocator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/AssetResourceLocator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/AssetUrlMappings.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/AssetUrlMappings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetsController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetsTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetsTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure7.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure5.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure6.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Attribute$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/Attribute$__clinit__closure1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Attribute.class" afterPath="$PROJECT_DIR$/target/classes/winston/Attribute.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AttributeController.class" afterPath="$PROJECT_DIR$/target/classes/winston/AttributeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorListWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/BooleanAttribute.class" afterPath="$PROJECT_DIR$/target/classes/winston/BooleanAttribute.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/BooleanAttributeController.class" afterPath="$PROJECT_DIR$/target/classes/winston/BooleanAttributeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/validator/BooleanAttributeDataValidator.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/validator/BooleanAttributeDataValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure5.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/CacheGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/CacheGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/CacheManager.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/CacheManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/CachingLinkGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/CachingLinkGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ChangelogXml2Groovy.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ChangelogXml2Groovy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ColumnWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ColumnWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config.class" afterPath="$PROJECT_DIR$/target/classes/Config.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigBuilder.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigLoader.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/CssAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/CssAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/CssMinifyPostProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/CssMinifyPostProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/CssProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/CssProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource.class" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DatabaseMigrationGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DatabaseMigrationGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Dataset.class" afterPath="$PROJECT_DIR$/target/classes/winston/Dataset.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/DatasetAttributeParser.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/DatasetAttributeParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_analyze_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_analyze_closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_attributeAnalysis_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_attributeAnalysis_closure2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_prepareData_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_prepareData_closure4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_saveTargetAttribute_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_saveTargetAttribute_closure3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetService.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DbdocUrlMappings.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DbdocUrlMappings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DefaultCacheConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DefaultCacheConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DefaultSecurityConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DefaultSecurityConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DefaultUiSecurityConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DefaultUiSecurityConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DefaultWebXmlConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DefaultWebXmlConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/DirectiveProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/DirectiveProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DslBuilder.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DslBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/FamfamfamGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/FamfamfamGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/com/burtbeckwith/grails/plugin/famfamfam/FamfamfamTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/com/burtbeckwith/grails/plugin/famfamfam/FamfamfamTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/FileUploadService.class" afterPath="$PROJECT_DIR$/target/classes/winston/FileUploadService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/webxml/FilterManager.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/webxml/FilterManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormColumn.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormColumn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabase.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseTypeConverter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseTypeConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDiff.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDiff.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/web/authentication/rememberme/GormPersistentTokenRepository.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/web/authentication/rememberme/GormPersistentTokenRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/userdetails/GormUserDetailsService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/userdetails/GormUserDetailsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/GrailsCacheAdminService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/GrailsCacheAdminService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange$1.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChangeLogParser.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChangeLogParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsDiffStatusListener.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsDiffStatusListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/GrailsMailException.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/GrailsMailException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition$1.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLListWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/Hibernate4GrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/Hibernate4GrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/HibernateAwareTypeConverter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/HibernateAwareTypeConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/HtmlAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/HtmlAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/InterceptedUrl.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/InterceptedUrl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryPluginResources.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryPluginResources.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryResourceTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryResourceTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JqueryGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JqueryGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JqueryUiGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JqueryUiGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JqueryUiPluginResources.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JqueryUiPluginResources.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/com/grailsrocks/jqueryui/JqueryUiTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/com/grailsrocks/jqueryui/JqueryUiTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/JsAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/JsAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/LinkGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/LinkGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/LoginController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/LogoutController.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/LogoutController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/LogoutController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/LogoutController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/MailGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/MailGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailMessageBuilder.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailMessageBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailMessageBuilderFactory.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailMessageBuilderFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailMessageContentRender.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailMessageContentRender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailMessageContentRenderer.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailMessageContentRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/MailService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/ManifestAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/ManifestAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationRunner.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MySQLCompatibleChangeLogSerializer.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MySQLCompatibleChangeLogSerializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/NoopVisitor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/NoopVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/NumericAttribute.class" afterPath="$PROJECT_DIR$/target/classes/winston/NumericAttribute.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/NumericAttributeController.class" afterPath="$PROJECT_DIR$/target/classes/winston/NumericAttributeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/validator/NumericAttributeDataValidator.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/validator/NumericAttributeDataValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/PersistentLoginController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/PersistentLoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/PlainTextMailTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/mail/PlainTextMailTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ReflectionUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ReflectionUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RegisterCommand.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RegisterCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/RegisterController.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/RegisterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RegisterController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RegisterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RegistrationCode.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RegistrationCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RegistrationCodeController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RegistrationCodeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RequestmapController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RequestmapController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/ResetPasswordCommand.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/ResetPasswordCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/Role.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/Role.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/RoleController.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/RoleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RoleController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/RoleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/ScaffoldingGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ScaffoldingGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ScriptUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ScriptUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/SecurityInfoController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/SecurityInfoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/SecurityTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/SecurityTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/SecurityUiTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/SecurityUiTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/Slf4jLogger.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/Slf4jLogger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DecisionTreeResult.class" afterPath="$PROJECT_DIR$/target/classes/winston/DecisionTreeResult.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/KnnModel.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/KnnModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/KnnResult.class" afterPath="$PROJECT_DIR$/target/classes/winston/KnnResult.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/LogisticRegressionResult.class" afterPath="$PROJECT_DIR$/target/classes/winston/LogisticRegressionResult.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_attributesBelongsToDataset_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_attributesBelongsToDataset_closure3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_splitAttributes_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_splitAttributes_closure2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_splitDatasetAttributesIntoFile_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_splitDatasetAttributesIntoFile_closure1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService.class" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/SpringSecurityCoreGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/SpringSecurityCoreGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/SpringSecurityService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/SpringSecurityService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/SpringSecurityUIPluginResources.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/SpringSecurityUIPluginResources.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/SpringSecurityUiGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/SpringSecurityUiGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/SpringSecurityUiService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/SpringSecurityUiService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/StringAttribute.class" afterPath="$PROJECT_DIR$/target/classes/winston/StringAttribute.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/StringAttributeController.class" afterPath="$PROJECT_DIR$/target/classes/winston/StringAttributeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/validator/StringAttributeDataValidator.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/validator/StringAttributeDataValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableListWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/UglifyJsProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/UglifyJsProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UrlMappings.class" afterPath="$PROJECT_DIR$/target/classes/UrlMappings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/User.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/UserController.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/UserController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ui/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/UserRole.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/UserRole.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/WebxmlGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/WebxmlGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/SvmModel.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/SvmModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SvmResult.class" afterPath="$PROJECT_DIR$/target/classes/winston/SvmResult.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resources.class" afterPath="$PROJECT_DIR$/target/classes/resources.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/Attribute.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/Attribute.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.groovy" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/DecisionTreeResult.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/DecisionTreeResult.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.groovy" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/KnnResult.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/KnnResult.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.groovy" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/SvmResult.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/SvmResult.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/_form.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbmodel.sql" afterPath="$PROJECT_DIR$/dbmodel.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/attribute/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/attribute/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winston-grailsPlugins.iml" afterPath="$PROJECT_DIR$/winston-grailsPlugins.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="winston.iws" />
@@ -311,11 +268,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AnalyzeService.groovy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AnalyzeService.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5675676" vertical-offset="360" max-vertical-offset="1635">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3960">
+              <caret line="189" column="5" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
               <folding>
                 <element signature="e#17#56#0" expanded="true" />
               </folding>
@@ -323,14 +280,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SvmModel.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy">
+      <file leaf-file-name="DatasetService.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="415" max-vertical-offset="2490">
-              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1215">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalysisController.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-140.21739" vertical-offset="0" max-vertical-offset="3390">
+              <caret line="215" column="59" selection-start-line="215" selection-start-column="59" selection-end-line="215" selection-end-column="59" />
               <folding>
-                <element signature="e#43#77#0" expanded="true" />
+                <element signature="e#17#71#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplitAttributeService.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6766917" vertical-offset="0" max-vertical-offset="3600">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/show.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.3404255" vertical-offset="360" max-vertical-offset="1455">
+              <caret line="47" column="142" selection-start-line="47" selection-start-column="142" selection-end-line="47" selection-end-column="142" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/create.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0" vertical-offset="130" max-vertical-offset="795">
+              <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Attribute.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Attribute.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.1132076" vertical-offset="0" max-vertical-offset="435">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Analysis.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.018868" vertical-offset="168" max-vertical-offset="795">
+              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -343,11 +366,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/LogoutController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/sk/upjs/winston/User.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/RoleController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/sk/upjs/winston/Role.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/login/auth.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/register/forgotPassword.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/register.gsp" />
         <option value="$PROJECT_DIR$/grails-app/i18n/messages.properties" />
@@ -367,33 +385,38 @@
         <option value="$PROJECT_DIR$/grails-app/domain/winston/DataFile.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/AnalysisResult.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" />
         <option value="$PROJECT_DIR$/src/java/winston/algorithms/SvmModel.java" />
         <option value="$PROJECT_DIR$/src/java/winston/algorithms/Model.java" />
         <option value="$PROJECT_DIR$/src/java/winston/algorithms/KnnModel.java" />
         <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.java" />
         <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/Model.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.java" />
         <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.java" />
         <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/converter/CSV2ArffConverter.java" />
         <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/converter/CSV2ArffConverter.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.groovy" />
+        <option value="$PROJECT_DIR$/target/work/plugins/background-thread-1.6/BackgroundThreadGrailsPlugin.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/analysis/create.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/winston/Attribute.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/attribute/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
+        <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/KnnResult.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/DecisionTreeResult.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/SvmResult.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.groovy" />
-        <option value="$PROJECT_DIR$/target/work/plugins/background-thread-1.6/BackgroundThreadGrailsPlugin.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy" />
       </list>
     </option>
   </component>
@@ -402,9 +425,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1280" />
-    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="992" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -663,95 +685,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="register" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="numericAttribute" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="dataset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="booleanAttribute" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -896,6 +830,10 @@
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winston" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -939,7 +877,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -1030,6 +967,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1047,7 +985,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/test/unit" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1059,11 +997,11 @@
       <recent name="winston.algorithms" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/grails-app/views/analysis" />
+      <recent name="$PROJECT_DIR$/web-app" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src/java/winston/algorithms" />
       <recent name="$PROJECT_DIR$/grails-app/views/layouts" />
-      <recent name="$PROJECT_DIR$/grails-app/assets/stylesheets" />
-      <recent name="$PROJECT_DIR$/web-app" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -1380,6 +1318,7 @@
       <workItem from="1421669082397" duration="526000" />
       <workItem from="1421682333154" duration="17910000" />
       <workItem from="1421911650624" duration="12076000" />
+      <workItem from="1422004996846" duration="28522000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug with Role auto-assignment for newly registered users.">
       <created>1419501828105</created>
@@ -1457,11 +1396,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75953000" />
+    <option name="totallyTimeSpent" value="104475000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="23" width="1920" height="992" extended-state="6" />
-    <editor active="true" />
+    <frame x="1280" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1480,15 +1419,15 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1629393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35222223" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3138614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2888889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1496,7 +1435,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1544,48 +1483,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/register/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22277227" vertical-offset="345" max-vertical-offset="1425">
-          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="653">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main-new-backup.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/RoleController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0952381" vertical-offset="0" max-vertical-offset="630">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/UserController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04761905" vertical-offset="0" max-vertical-offset="630">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/RegisterController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04761905" vertical-offset="0" max-vertical-offset="630">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/sk/upjs/winston/LogoutController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="630">
@@ -1615,13 +1512,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/sk/upjs/winston/User.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.475" vertical-offset="0" max-vertical-offset="750">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gvm/grails/current/dist/grails-bootstrap-2.4.4-sources.jar!/grails/util/Environment.java">
@@ -1633,29 +1530,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/sk/upjs/winston/UserRole.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.125" vertical-offset="0" max-vertical-offset="1560">
           <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Attribute.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76744187" vertical-offset="1824" max-vertical-offset="2355">
-          <caret line="148" column="52" selection-start-line="148" selection-start-column="51" selection-end-line="148" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1663,22 +1543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54651165" vertical-offset="93" max-vertical-offset="9420">
           <caret line="28" column="106" selection-start-line="28" selection-start-column="106" selection-end-line="28" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/attribute/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="900">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/attribute/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1170">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1707,13 +1571,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/NumericAttribute.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5660377" vertical-offset="0" max-vertical-offset="315">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/list.gsp">
@@ -1732,56 +1596,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26574802" vertical-offset="375" max-vertical-offset="1755">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="41" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8067729" vertical-offset="0" max-vertical-offset="735">
-          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/BooleanAttribute.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.059760958" vertical-offset="0" max-vertical-offset="502">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6666667" vertical-offset="215" max-vertical-offset="1095">
           <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.742126" vertical-offset="377" max-vertical-offset="885">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1810,113 +1645,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1875">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#17#71#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="2520">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.086957" vertical-offset="435" max-vertical-offset="3960">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/KnnResult.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14097744" vertical-offset="0" max-vertical-offset="532">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/DecisionTreeResult.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.981132" vertical-offset="0" max-vertical-offset="345">
-          <caret line="7" column="143" selection-start-line="7" selection-start-column="143" selection-end-line="7" selection-end-column="143" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2689243" vertical-offset="0" max-vertical-offset="502">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="2340">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1380">
-          <caret line="51" column="14" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="1215">
-          <caret line="42" column="72" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="1515">
-          <caret line="58" column="74" selection-start-line="58" selection-start-column="74" selection-end-line="58" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/SvmResult.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8301888" vertical-offset="0" max-vertical-offset="405">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/amelia/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1924,30 +1656,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5405405" vertical-offset="480" max-vertical-offset="1035">
           <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/AnalysisResult.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5660377" vertical-offset="0" max-vertical-offset="240">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74701196" vertical-offset="0" max-vertical-offset="502">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
@@ -1958,23 +1678,224 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1690" max-vertical-offset="2355">
+          <caret line="148" column="52" selection-start-line="148" selection-start-column="51" selection-end-line="148" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3513513" vertical-offset="1164" max-vertical-offset="1755">
+          <caret line="104" column="84" selection-start-line="104" selection-start-column="84" selection-end-line="104" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.869565" vertical-offset="0" max-vertical-offset="2445">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="e#17#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4716983" vertical-offset="123" max-vertical-offset="735">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/attribute/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31553397" vertical-offset="0" max-vertical-offset="735">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/attribute/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1699029" vertical-offset="0" max-vertical-offset="900">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/attribute/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5177665" vertical-offset="444" max-vertical-offset="1035">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.808511" vertical-offset="327" max-vertical-offset="960">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="130" max-vertical-offset="795">
+          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Attribute.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1132076" vertical-offset="0" max-vertical-offset="435">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3404255" vertical-offset="360" max-vertical-offset="1455">
+          <caret line="47" column="142" selection-start-line="47" selection-start-column="142" selection-end-line="47" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33233082" vertical-offset="169" max-vertical-offset="1545">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53533834" vertical-offset="94" max-vertical-offset="2400">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="415" max-vertical-offset="2490">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33233082" vertical-offset="349" max-vertical-offset="2550">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
           <folding>
             <element signature="e#43#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-140.21739" vertical-offset="0" max-vertical-offset="3390">
+          <caret line="215" column="59" selection-start-line="215" selection-start-column="59" selection-end-line="215" selection-end-column="59" />
+          <folding>
+            <element signature="e#17#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1215">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.018868" vertical-offset="168" max-vertical-offset="795">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8947368" vertical-offset="730" max-vertical-offset="1395">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/KnnResult.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44117647" vertical-offset="0" max-vertical-offset="612">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/DecisionTreeResult.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5392157" vertical-offset="0" max-vertical-offset="612">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5882353" vertical-offset="0" max-vertical-offset="612">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/SvmResult.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7352941" vertical-offset="0" max-vertical-offset="612">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5675676" vertical-offset="360" max-vertical-offset="1635">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3960">
+          <caret line="189" column="5" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
           <folding>
             <element signature="e#17#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6766917" vertical-offset="0" max-vertical-offset="3600">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1986,7 +1907,7 @@
           <value>
             <GrailsSettings>
               <option name="buildConfigCrc" value="1659437609" />
-              <option name="pluginDependenciesCrc" value="-339805347" />
+              <option name="pluginDependenciesCrc" value="-122749945" />
               <option name="properties">
                 <map>
                   <entry key="grails.global.plugins.dir" value="$USER_HOME$/.grails/2.4.4/global-plugins" />

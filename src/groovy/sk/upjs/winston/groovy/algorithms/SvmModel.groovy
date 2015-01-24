@@ -13,6 +13,10 @@ import winston.SvmResult
  * Created by stefan on 7/5/14.
  */
 public class SvmModel extends Model {
+    public static final double DEFAULT_SVM_PARAMETER_GAMMA = 0.1
+    public static final double DEFAULT_SVM_PARAMETER_C_COMPLEXITY_CONSTANT = 0.9999999999999999
+    public static final String DEFAULT_SVM_PARAMETER_KERNEL = SvmResult.KERNEL_RBF_KERNEL
+
     public static final double MIN_C = 0.1;
     public static final double MAX_C = 10.0;
     public static final double STEP_C = 0.1;

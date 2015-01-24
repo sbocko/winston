@@ -1,15 +1,23 @@
 package winston
 
 class Analysis {
-    String dataFile
+    public static final String DATA_TYPE_INTEGER = "INT";
+    public static final String DATA_TYPE_REAL = "REAL";
+    public static final String DATA_TYPE_CATEGORICAL = "CAT";
+    public static final String DATA_TYPE_MULTIVARIATE = "MULT";
+
+    String csvDataFile
+    String arffDataFile
+    String dataType
     int numberOfAttributes
+    boolean analyzedByGridSearch = false
     List results
 
     static belongsTo = [dataset: Dataset]
     static hasMany = [results: AnalysisResult]
 
     static constraints = {
-        dataFile(nullable: false)
+        csvDataFile(nullable: false)
     }
 
     public int getNumberOfInstances() {
@@ -22,5 +30,18 @@ class Analysis {
 
     public String getMissingValuePattern() {
         return this.dataset.getMissingValuePattern()
+    }
+
+
+    @Override
+    public String toString() {
+        return "Analysis{" +
+                "id=" + id +
+                ", dataset=" + dataset +
+                ", csvDataFile='" + csvDataFile + '\'' +
+                ", dataType='" + dataType + '\'' +
+                ", numberOfAttributes=" + numberOfAttributes +
+                ", analyzedByGridSearch=" + analyzedByGridSearch +
+                '}';
     }
 }

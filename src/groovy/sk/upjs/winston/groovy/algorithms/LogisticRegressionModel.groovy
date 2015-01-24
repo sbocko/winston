@@ -12,6 +12,8 @@ import winston.LogisticRegressionResult
  * Created by stefan on 6/14/14.
  */
 public class LogisticRegressionModel extends Model {
+    public static final double DEFAULT_LOGISTIC_REGRESSION_PARAMETER_RIDGE = 0.05
+    public static final int DEFAULT_LOGISTIC_REGRESSION_PARAMETER_MAXIMUM_NUMBER_OF_ITERATIONS = -1
 
     public static final double RIDGE_STEP = 0.05d
     public static final double MIN_RIDGE = 0d

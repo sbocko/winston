@@ -4,32 +4,81 @@ import grails.transaction.Transactional
 import org.apache.commons.io.FileUtils
 import org.codehaus.groovy.grails.web.context.ServletContextHolder
 import sk.upjs.winston.groovy.DatasetAttributeParser
+import sk.upjs.winston.groovy.converter.CSV2ArffConverter
+import weka.core.AttributeStats
+import weka.core.Instances
 
 @Transactional
 class SplitAttributeService {
     def analyzeService
-
+    public static final String PREPARED_ARFF_DATAFILES_DIRECTORY = "/arff-datasets"
     public static final String PREPARED_DATAFILES_DIRECTORY = "/prepared-datasets"
     private static final String CONTAINS_ATTRIBUTE_VALUE = "1"
     private static final String DOES_NOT_CONTAIN_ATTRIBUTE_VALUE = "0"
 
-    public Analysis splitDatasetAttributesIntoFile(Dataset dataset, Map<Attribute, Boolean> attributesToSplit) {
-        if (!attributesBelongsToDataset(dataset, attributesToSplit)) {
-            return null
-        }
-
+    public Analysis createAnalysis(Dataset dataset, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
         String[][] datasetAttributesData = getDatasetAttributesData(dataset)
-        List<String[]> dataToSave = splitAttributes(datasetAttributesData, attributesToSplit)
+        List<String[]> dataToSave = splitAttributes(datasetAttributesData, attributesToSplit, target)
 
-        String filename = saveDataToFile(dataToSave, dataset.getTitle())
+        String csvFileName = saveDataToFile(dataToSave, dataset.getTitle())
+        File arffFile = createArffFileFromCsv(getCsvFileForFileName(csvFileName))
+        String arffFileName = arffFile.getName()
 
-        Analysis analysis = new Analysis(dataset: dataset, dataFile: filename, numberOfAttributes: dataToSave.size())
+        String dataType = getDataTypeForData(arffFile)
+
+        Analysis analysis = new Analysis(dataset: dataset, csvDataFile: csvFileName, arffDataFile: arffFileName, dataType: dataType, numberOfAttributes: dataToSave.size())
         analysis.save(flush: true)
         analysis.refresh()
+
+        analyzeService.performAnalysisWithDefaultHyperparameters(analysis)
+        analyzeService.performRecommendedDataMiningMethodForAnalysis(analysis)
 
         analyzeService.performGridsearchAnalysisForFile(analysis)
 
         return analysis
+    }
+
+    private String getDataTypeForData(File arffFile) {
+        BufferedReader r = new BufferedReader(
+                new FileReader(arffFile))
+        Instances instances = new Instances(r)
+        r.close()
+
+        boolean wasInt = false
+        boolean wasReal = false
+        boolean wasCategorical = false
+
+        int numberOfAttributes = instances.numAttributes()
+        def CLASSIFICATION_ATTRIBUTE_POSITION = numberOfAttributes - 1
+
+        for (int i = 0; i < numberOfAttributes; i++) {
+            AttributeStats attributeStats = instances.attributeStats(i)
+            if (i != CLASSIFICATION_ATTRIBUTE_POSITION) {
+                boolean isNominal = instances.attribute(i).isNominal()
+                if (attributeStats.intCount != 0 && attributeStats.realCount == 0 && !isNominal) {
+                    if (attributeStats.intCount == 2) {
+                        wasCategorical = true
+                    } else {
+                        wasInt = true
+                    }
+                } else if (attributeStats.realCount != 0 && !isNominal) {
+                    wasReal = true
+                } else {
+                    wasCategorical = true
+                }
+            }
+        }
+
+        if ((wasCategorical && wasInt) || (wasCategorical && wasReal) || (wasReal && wasInt)) {
+            return Analysis.DATA_TYPE_MULTIVARIATE
+        } else if (wasCategorical) {
+            return Analysis.DATA_TYPE_CATEGORICAL
+        } else if (wasReal) {
+            return Analysis.DATA_TYPE_REAL
+        } else if (wasInt) {
+            return Analysis.DATA_TYPE_INTEGER
+        }
+
     }
 
     private String saveDataToFile(List<String[]> data, String datasetTitle) {
@@ -80,18 +129,44 @@ class SplitAttributeService {
         return file.getName()
     }
 
-    private List<String[]> splitAttributes(String[][] datasetAttributesData, Map<Attribute, Boolean> attributesToSplit) {
+    private File createArffFileFromCsv(File csvFile) {
+        def servletContext = ServletContextHolder.servletContext
+        def storagePath = servletContext.getRealPath(PREPARED_ARFF_DATAFILES_DIRECTORY)
+        String filepath = storagePath + "/" + csvFile.getName()
+        filepath = filepath.replace(".csv", ".arff")
+        File arffFile = new File(filepath)
+        if (arffFile.exists()) {
+            arffFile.delete()
+        }
+        arffFile.createNewFile()
+
+        CSV2ArffConverter converter = new CSV2ArffConverter()
+        converter.convertCsvToArff(csvFile, arffFile)
+
+        return arffFile
+    }
+
+    private File getCsvFileForFileName(String filename) {
+        def servletContext = ServletContextHolder.servletContext
+        def storagePath = servletContext.getRealPath(PREPARED_DATAFILES_DIRECTORY)
+        String filepath = storagePath + "/" + filename
+        return new File(filepath)
+    }
+
+    private List<String[]> splitAttributes(String[][] datasetAttributesData, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
         List<String[]> result = new ArrayList<String[]>()
 
         for (int i = 0; i < datasetAttributesData.length; i++) {
             attributesToSplit.each { attr, split ->
                 if (attr.getPositionInDataFile() == i) {
-                    result.addAll(getNewAttributeData(datasetAttributesData[i], attr, split))
+                    if (attr.id != target.id) {
+                        result.addAll(getNewAttributeData(datasetAttributesData[i], attr, split))
+                    }
                 }
             }
         }
+        result.addAll(getNewAttributeData(datasetAttributesData[target.getPositionInDataFile()], target, false))
 
-        println "resultSize: ${result.size()}"
         return result
     }
 

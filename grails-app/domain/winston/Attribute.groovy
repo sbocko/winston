@@ -10,7 +10,6 @@ package winston
 class Attribute {
     String title
     int numberOfMissingValues
-    boolean isTarget
     //the position is zero based
     int positionInDataFile
 

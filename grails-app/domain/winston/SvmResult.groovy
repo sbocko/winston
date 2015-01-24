@@ -18,4 +18,17 @@ class SvmResult extends AnalysisResult{
 
     static constraints = {
     }
+
+
+    @Override
+    public String toString() {
+        return "SvmResult{" +
+                "id=" + id +
+                ", kernel='" + kernel + '\'' +
+                ", complexityConstant=" + complexityConstant +
+                ", gamma=" + gamma +
+                ", analysis=" + analysis +
+                ", rmse=" + rmse +
+                '}';
+    }
 }

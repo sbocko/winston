@@ -16,6 +16,7 @@ import java.util.Set
  * Created by stefan on 6/8/14.
  */
 public class KnnModel extends Model {
+    public static final int DEFAULT_KNN_PARAMETER_K = 3
     public static final int MIN_K = 1
     public static final int MAX_K = 100
 

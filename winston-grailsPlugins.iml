@@ -41,6 +41,9 @@
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/database-migration-1.4.0/src/groovy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/database-migration-1.4.0/grails-app/controllers" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/target/work/plugins/executor-0.3">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/executor-0.3/src/groovy" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/famfamfam-1.0.1">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/famfamfam-1.0.1/grails-app/taglib" isTestSource="false" />
     </content>
