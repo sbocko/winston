@@ -2,19 +2,16 @@ package winston
 
 import grails.plugin.springsecurity.annotation.Secured
 import org.springframework.dao.DataIntegrityViolationException
-import org.springframework.security.core.context.SecurityContextHolder
 import sk.upjs.winston.Role
 import sk.upjs.winston.User
 
 @Secured([Role.ROLE_USER])
 class DatasetController {
     def datasetService
-    def splitAttributeService
     private static final double MIN_PERCENT_OF_DISTINCT_VALUES = 0.05
 
     static allowedMethods = [save: "POST", delete: "POST"]
 
-    def servletContext
     def springSecurityService
 
     def index() {
@@ -128,55 +125,6 @@ class DatasetController {
         redirect(action: "show", id: datasetInstance.id)
     }
 
-    def analyze(Long id) {
-        def datasetInstance = Dataset.get(id)
-        if (!datasetInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [
-                    message(code: 'dataset.label', default: 'Dataset'),
-                    id
-            ])
-            redirect(action: "list")
-            return
-        }
-
-        datasetInstance.attributes.each { attr ->
-            if(attr.isTarget){
-                params.currentTargetAttribute = attr.id;
-            }
-        }
-        if(!params.currentTargetAttribute){
-            params.currentTargetAttribute = "noTargetAttribute"
-        }
-
-        render(view: "analyze", model: [datasetInstance: datasetInstance])
-    }
-
-    def attributeAnalysis(Long id) {
-        def datasetInstance = Dataset.get(id)
-        if (!datasetInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [
-                    message(code: 'dataset.label', default: 'Dataset'),
-                    id
-            ])
-            redirect(action: "list")
-            return
-        }
-
-
-        def attrIdList = new ArrayList<Attribute>()
-        /*
-         * get attributes, which has less than MIN_PERCENT_OF_DISTINCT_VALUES
-         */
-        def minCount = datasetInstance.getNumberOfInstances()*MIN_PERCENT_OF_DISTINCT_VALUES
-        datasetInstance.attributes.each { attr ->
-            if(attr instanceof NumericAttribute && attr.getNumberOfDistinctValues() < minCount && !attr.isTarget){
-                attrIdList.add(attr)
-            }
-        }
-
-        render(view: "attribute_analysis", model: [datasetInstance: datasetInstance, attrIdList: attrIdList])
-    }
-
     def delete(Long id) {
         def datasetInstance = Dataset.get(id)
         if (!datasetInstance) {
@@ -204,59 +152,6 @@ class DatasetController {
             ])
             redirect(action: "show", id: id)
         }
-    }
-
-    def saveTargetAttribute(Long id){
-        def datasetInstance = Dataset.get(id)
-        if (!datasetInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [
-                    message(code: 'dataset.label', default: 'Dataset'),
-                    id
-            ])
-            redirect(action: "list")
-            return
-        }
-
-        def answer = params.targetAttributeRadioGroup
-        datasetInstance.attributes.each { attr ->
-            if(attr.id == Long.parseLong(answer)){
-                attr.isTarget = true
-                attr.save()
-            }else if(attr.isTarget){
-                attr.isTarget = false
-                attr.save()
-            }
-        }
-
-        redirect(action: "attributeAnalysis", id: params.id);
-    }
-
-    def prepareData(Long id){
-        def datasetInstance = Dataset.get(id)
-        if (!datasetInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [
-                    message(code: 'dataset.label', default: 'Dataset'),
-                    id
-            ])
-            redirect(action: "list")
-            return
-        }
-
-        /*
-         * check which attributes will be splitted based on user input
-         */
-        Map<Attribute,Boolean> attributesToSplit = new HashMap<Attribute, Boolean>()
-        datasetInstance.attributes.each { attr ->
-            if(params.get('radioGroup'+attr.getId()) == "1"){
-                attributesToSplit.put(attr,true)
-            }else{
-                attributesToSplit.put(attr, false)
-            }
-        }
-
-        Analysis analysis = splitAttributeService.splitDatasetAttributesIntoFile(datasetInstance, attributesToSplit)
-
-        redirect(controller:"Analysis", action: "show", id: analysis.getId())
     }
 
 }

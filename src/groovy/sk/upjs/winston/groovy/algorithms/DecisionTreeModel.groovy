@@ -13,6 +13,10 @@ import winston.DecisionTreeResult
  * Created by stefan on 6/12/14.
  */
 public class DecisionTreeModel extends Model {
+    public static final float DEFAULT_DECISION_TREE_PARAMETER_PRUNING = 0.25
+    public static final int DEFAULT_DECISION_TREE_PARAMETER_MIN_NUMBER_OF_INSTANCES = 2
+    public static final boolean DEFAULT_DECISION_TREE_PARAMETER_UNPRUNED = false
+
     public static final float PRUNING_CONFIDENCE_STEP = 0.05f
     public static final float PRUNING_CONFIDENCE_MAX = 0.5f
     public static final float PRUNING_CONFIDENCE_MIN = 0

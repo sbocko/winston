@@ -10,4 +10,14 @@ class KnnResult extends AnalysisResult {
     }
     static constraints = {
     }
+
+    @Override
+    public String toString() {
+        return "KnnResult{" +
+                "id=" + id +
+                ", analysis=" + analysis +
+                ", rmse=" + rmse +
+                ", k=" + k +
+                '}';
+    }
 }

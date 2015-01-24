@@ -24,9 +24,13 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="dataFile" title="${message(code: 'analysis.dataFile.label', default: 'Data File')}" />
+						<g:sortableColumn property="csvDataFile" title="${message(code: 'analysis.csvDataFile.label', default: 'Csv Data File')}" />
+					
+						<g:sortableColumn property="arffDataFile" title="${message(code: 'analysis.arffDataFile.label', default: 'Arff Data File')}" />
 					
 						<th><g:message code="analysis.dataset.label" default="Dataset" /></th>
+					
+						<g:sortableColumn property="numberOfAttributes" title="${message(code: 'analysis.numberOfAttributes.label', default: 'Number Of Attributes')}" />
 					
 					</tr>
 				</thead>
@@ -34,9 +38,13 @@
 				<g:each in="${analysisInstanceList}" status="i" var="analysisInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${analysisInstance.id}">${fieldValue(bean: analysisInstance, field: "dataFile")}</g:link></td>
+						<td><g:link action="show" id="${analysisInstance.id}">${fieldValue(bean: analysisInstance, field: "csvDataFile")}</g:link></td>
+					
+						<td>${fieldValue(bean: analysisInstance, field: "arffDataFile")}</td>
 					
 						<td>${fieldValue(bean: analysisInstance, field: "dataset")}</td>
+					
+						<td>${fieldValue(bean: analysisInstance, field: "numberOfAttributes")}</td>
 					
 					</tr>
 				</g:each>

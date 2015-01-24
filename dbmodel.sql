@@ -13,7 +13,10 @@ drop table if exists dmmethod;
 drop table if exists dataset;
 SET FOREIGN_KEY_CHECKS = 1;
 
+show tables;
+
 select * from dataset;
+select * from attribute;
 select * from analysis;
 select count(*) from analysis_result;
 select * from analysis_result;

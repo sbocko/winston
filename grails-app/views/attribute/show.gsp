@@ -49,15 +49,6 @@
 					
 				</li>
 				</g:if>
-				
-				<g:if test="${attributeInstance?.isTarget}">
-				<li class="fieldcontain">
-					<span id="isTarget-label" class="property-label"><g:message code="attribute.isTarget.label" default="Is target" /></span>
-					
-						<span class="property-value" aria-labelledby="isTarget-label"><g:fieldValue bean="${attributeInstance}" field="isTarget"/></span>
-					
-				</li>
-				</g:if>
 			
 			</ol>
 			<g:form>

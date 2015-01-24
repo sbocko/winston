@@ -2,83 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2872d06-f73a-46b0-8b56-b73ba08989bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__attributeAnalysis_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__attributeAnalysis_closure14.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__create_closure10.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__create_closure11.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__create_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__create_closure9.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure12.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure14.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure16.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure18.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure7.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__prepareData_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__saveTargetAttribute_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__saveTargetAttribute_closure12.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__saveTargetAttribute_closure13.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure12.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure14.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure8.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure11.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure15.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure17.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure6.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure9.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_analyze_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_attributeAnalysis_closure10.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_attributeAnalysis_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_attributeAnalysis_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_create_closure1.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_delete_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_delete_closure4.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_getTargetAttribute_closure5.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure8.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure9.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure12.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure14.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure15.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure17.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure18.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure19.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure20.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_prepareData_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_prepareData_closure7.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_prepareData_closure8.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessing_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_saveTargetAttribute_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_saveTargetAttribute_closure6.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_saveTargetAttribute_closure9.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_save_closure1.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_save_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure17.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure18.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure12_closure19.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure12_closure20.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure14_closure21.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure14_closure22.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure16_closure23.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure16_closure24.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure18_closure25.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure18_closure26.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure7_closure14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure7_closure15.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure10_closure15.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure10_closure16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure12_closure17.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure12_closure18.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure14_closure19.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure14_closure20.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure16_closure21.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure16_closure22.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure5_closure10.class" />
@@ -87,160 +54,81 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure8_closure14.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure11_closure17.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure11_closure18.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure13_closure19.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure13_closure20.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure15_closure21.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure15_closure22.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure17_closure23.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure17_closure24.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure6_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure6_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_update_closure2.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_update_closure3.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__getMostSimilarAnalysis_closure10.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__getMostSimilarAnalysis_closure11.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__getMostSimilarAnalysis_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performAnalysisWithDefaultHyperparameters_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure11.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure12.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure13.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure14.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_defaultKnnResultForAnalysis_closure4.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_defaultKnnResultForAnalysis_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_defaultKnnResultForAnalysis_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getBestMethodForAnalysis_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getBestMethodForAnalysis_closure4_closure14.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getBestMethodForAnalysis_closure4_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getBestMethodForAnalysis_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure1.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure4.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_getMostSimilarAnalysis_closure7.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure11.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure7.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure8.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure9.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure4.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure6.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure8.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performAnalysisWithDefaultHyperparameters_closure1.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performAnalysisWithDefaultHyperparameters_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performAnalysisWithDefaultHyperparameters_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performGridsearchAnalysisForFile_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performGridsearchAnalysisForFile_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performGridsearchAnalysisForFile_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_performRecommendedDataMiningMethodForAnalysis_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_createAnalysis_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_1.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_2.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_2.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_3.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_3.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_4.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_4.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_5.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_5.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_6.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_7.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_7.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_8.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_8.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_9.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Iris-analysis_4.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bezdekIris.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/datasets/bezdekIris.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/iris-analysis_1.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/iris-analysis_3.csv" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_8.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_9.arff" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/analysis/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/create_backup.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/dataset/analyze.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/create.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/dataset/attribute_analysis.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure13.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure16.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_4.arff" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_9.arff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_5.arff" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Iris-analysis_4.arff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_6.arff" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_1.arff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_7.arff" afterPath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_6.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$__clinit__closure1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/analysis/create_backup.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/dataset/analyze.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_4.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_5.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/Bezdek Iris-analysis_9.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_1.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_2.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_3.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_6.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/Bezdek Iris-analysis_9.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/iris-analysis_1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/iris-analysis_2.csv" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/iris-analysis_4.arff" afterPath="$PROJECT_DIR$/web-app/arff-datasets/test.arff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/Iris-analysis_4.csv" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/test.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure11.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure9.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure10.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_create_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_create_closure3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure12.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure13.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure8_closure13.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure18.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure19.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure14.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure15.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure15.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure16.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure17.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure17.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure7.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_$tt__performGridsearchAnalysisForFile_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure5.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure6.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_gridSearch_closure6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Attribute$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/Attribute$__clinit__closure1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Attribute.class" afterPath="$PROJECT_DIR$/target/classes/winston/Attribute.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_analyze_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_analyze_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_attributeAnalysis_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_attributeAnalysis_closure2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_prepareData_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_prepareData_closure4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController$_saveTargetAttribute_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController$_saveTargetAttribute_closure3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DecisionTreeResult.class" afterPath="$PROJECT_DIR$/target/classes/winston/DecisionTreeResult.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/KnnModel.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/KnnModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/KnnResult.class" afterPath="$PROJECT_DIR$/target/classes/winston/KnnResult.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/LogisticRegressionResult.class" afterPath="$PROJECT_DIR$/target/classes/winston/LogisticRegressionResult.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_attributesBelongsToDataset_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_attributesBelongsToDataset_closure3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_splitAttributes_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_splitAttributes_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_splitDatasetAttributesIntoFile_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService$_splitDatasetAttributesIntoFile_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService.class" afterPath="$PROJECT_DIR$/target/classes/winston/SplitAttributeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/SvmModel.class" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/winston/groovy/algorithms/SvmModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/SvmResult.class" afterPath="$PROJECT_DIR$/target/classes/winston/SvmResult.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/Attribute.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/Attribute.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.groovy" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/DecisionTreeModel.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/DecisionTreeResult.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/DecisionTreeResult.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.groovy" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/KnnModel.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/KnnResult.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/KnnResult.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.groovy" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/LogisticRegressionModel.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy" afterPath="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/SvmResult.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/SvmResult.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/_form.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbmodel.sql" afterPath="$PROJECT_DIR$/dbmodel.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/attribute/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/attribute/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winston-grailsPlugins.iml" afterPath="$PROJECT_DIR$/winston-grailsPlugins.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="winston.iws" />
@@ -305,7 +193,7 @@
       <file leaf-file-name="SplitAttributeService.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6766917" vertical-offset="0" max-vertical-offset="3600">
+            <state vertical-scroll-proportion="0.6933744" vertical-offset="0" max-vertical-offset="3600">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -504,6 +392,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winston" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winston" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prepared-datasets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winston" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winston" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arff-datasets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1318,7 +1242,7 @@
       <workItem from="1421669082397" duration="526000" />
       <workItem from="1421682333154" duration="17910000" />
       <workItem from="1421911650624" duration="12076000" />
-      <workItem from="1422004996846" duration="28522000" />
+      <workItem from="1422004996846" duration="28648000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug with Role auto-assignment for newly registered users.">
       <created>1419501828105</created>
@@ -1396,7 +1320,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104475000" />
+    <option name="totallyTimeSpent" value="104601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="0" width="1920" height="1080" extended-state="6" />
@@ -1418,8 +1342,8 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1629393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3138614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1629393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3138614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1428,6 +1352,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32970297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1435,7 +1360,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1466,7 +1390,8 @@
     <MESSAGE value="Created AnalysisResults for Knn, DecTree, LogReg and SVM." />
     <MESSAGE value="Created field for number of attributes for Analysis." />
     <MESSAGE value="Background GS implemented. Mail is sent to user when the analysis finish." />
-    <option name="LAST_COMMIT_MESSAGE" value="Background GS implemented. Mail is sent to user when the analysis finish." />
+    <MESSAGE value="Similarity Search implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Similarity Search implemented." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1893,7 +1818,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/winston/SplitAttributeService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6766917" vertical-offset="0" max-vertical-offset="3600">
+        <state vertical-scroll-proportion="0.6933744" vertical-offset="0" max-vertical-offset="3600">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
