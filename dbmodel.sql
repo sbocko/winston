@@ -19,5 +19,5 @@ select * from dataset;
 select * from attribute;
 select * from analysis;
 select count(*) from analysis_result;
-select * from analysis_result;
+select * from analysis_result where rmse < 0.095;
 select distinct(class) from analysis_result;

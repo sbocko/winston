@@ -54,13 +54,10 @@ class AttributeController {
 
         if(attributeInstance.instanceOf(BooleanAttribute)){
             redirect(controller: BooleanAttribute.class.getSimpleName(), action: "show", id: attributeInstance.id)
-            println "bool redirect"
         }else if(attributeInstance.instanceOf(StringAttribute)){
             redirect(controller: StringAttribute.class.getSimpleName(), action: "show", id: attributeInstance.id)
-            println "string redirect"
         }else if(attributeInstance.instanceOf(NumericAttribute)){
             redirect(controller: NumericAttribute.class.getSimpleName(), action: "show", id: attributeInstance.id)
-            println "numeric redirect"
         }
 
 

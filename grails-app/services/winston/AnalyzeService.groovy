@@ -14,6 +14,10 @@ class AnalyzeService {
 
     def performRecommendedDataMiningMethodForAnalysis(Analysis analysis) {
         AnalysisResult recommendedMethod = getRecommendedMethod(analysis)
+        if(!recommendedMethod) {
+            println "no method to recommend"
+            return
+        }
 
         BufferedReader r = new BufferedReader(
                 new FileReader(getArffFileForAnalysis(analysis)))
@@ -100,6 +104,9 @@ class AnalyzeService {
 
     private AnalysisResult getRecommendedMethod(Analysis analysis) {
         Analysis mostSimilar = getMostSimilarAnalysis(analysis)
+        if(!mostSimilar){
+            return null
+        }
         return getBestMethodForAnalysis(mostSimilar)
     }
 
