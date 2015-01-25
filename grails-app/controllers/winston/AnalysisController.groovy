@@ -21,7 +21,7 @@ class AnalysisController {
     }
 
     def show(Analysis analysisInstance) {
-        respond analysisInstance
+        respond analysisInstance, model: [analysisResults: analysisInstance.getTopAnalysisResults(Analysis.NUMBER_OF_RESULTS_TO_SHOW)]
     }
 
     def create(Long id) {
@@ -217,4 +217,6 @@ class AnalysisController {
 
         redirect(controller: "Analysis", action: "show", id: analysis.getId())
     }
+
+    /** HELPER METHODS */
 }

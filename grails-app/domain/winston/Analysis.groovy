@@ -20,6 +20,31 @@ class Analysis {
         csvDataFile(nullable: false)
     }
 
+    public static final int NUMBER_OF_RESULTS_TO_SHOW = 5
+
+    public List getTopAnalysisResults(int maxNumberOfResults) {
+        def criteria = AnalysisResult.createCriteria()
+        def results = criteria.list() {
+            eq("analysis.id",getId())
+            order("rmse", "asc")
+            maxResults(maxNumberOfResults)
+        }
+        return results
+    }
+
+    public double getBestRmse() {
+        double minRmse = AnalysisResult.createCriteria().get {
+            eq("analysis.id", getId())
+            projections {
+                min "rmse"
+            }
+            maxResults(1)
+        } as double
+
+        return minRmse
+    }
+
+
     public int getNumberOfInstances() {
         return this.dataset.getNumberOfInstances()
     }
@@ -31,7 +56,6 @@ class Analysis {
     public String getMissingValuePattern() {
         return this.dataset.getMissingValuePattern()
     }
-
 
     @Override
     public String toString() {
