@@ -11,7 +11,7 @@ import static org.springframework.http.HttpStatus.*
 class AnalysisController {
     private static final double MIN_PERCENT_OF_DISTINCT_VALUES = 0.05
 
-    def splitAttributeService
+    def preprocessingService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -113,10 +113,10 @@ class AnalysisController {
 
     private void deleteAnalysisDataFiles(Analysis analysisInstance) {
         def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(SplitAttributeService.PREPARED_DATAFILES_DIRECTORY)
+        def storagePath = servletContext.getRealPath(PreprocessingService.PREPARED_DATAFILES_DIRECTORY)
         def storagePathDirectory = new File(storagePath)
         deleteFileForFilePath("${storagePathDirectory}/${analysisInstance.getCsvDataFile()}")
-        storagePath = servletContext.getRealPath(SplitAttributeService.PREPARED_ARFF_DATAFILES_DIRECTORY)
+        storagePath = servletContext.getRealPath(PreprocessingService.PREPARED_ARFF_DATAFILES_DIRECTORY)
         storagePathDirectory = new File(storagePath)
         deleteFileForFilePath("${storagePathDirectory}/${analysisInstance.getArffDataFile()}")
     }
@@ -213,7 +213,7 @@ class AnalysisController {
             }
         }
 
-        Analysis analysis = splitAttributeService.createAnalysis(datasetInstance, attributesToSplit, target)
+        Analysis analysis = preprocessingService.createAnalysis(datasetInstance, attributesToSplit, target)
 
         redirect(controller: "Analysis", action: "show", id: analysis.getId())
     }

@@ -9,7 +9,7 @@ import weka.core.AttributeStats
 import weka.core.Instances
 
 @Transactional
-class SplitAttributeService {
+class PreprocessingService {
     def analyzeService
     public static final String PREPARED_ARFF_DATAFILES_DIRECTORY = "/arff-datasets"
     public static final String PREPARED_DATAFILES_DIRECTORY = "/prepared-datasets"

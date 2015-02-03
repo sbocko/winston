@@ -6,8 +6,8 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
  */
-@TestFor(SplitAttributeService)
-class SplitAttributeServiceSpec extends Specification {
+@TestFor(PreprocessingService)
+class PreprocessingServiceSpec extends Specification {
 
     def setup() {
     }

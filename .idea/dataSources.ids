@@ -28,15 +28,15 @@
       <column name="analysis_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
       <column name="rmse" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
       <column name="class" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
-      <column name="maximum_number_of_iterations" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="ridge" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
-      <column name="k" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="complexity_constant" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
-      <column name="gamma" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
-      <column name="kernel" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="confidence_factor" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="minimum_number_of_instances_per_leaf" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="unpruned" sqlType="BIT" precision="1" scale="0" nullable="true" jdbcType="-7"/>
+      <column name="maximum_number_of_iterations" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="ridge" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="complexity_constant" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="gamma" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="kernel" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="k" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="results_idx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="FK_8trxptlnhvm56iaduy49g73pv" columns="analysis_id" ref-table="analysis" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>

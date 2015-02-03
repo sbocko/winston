@@ -258,7 +258,7 @@ class AnalyzeService {
 
     private File getArffFileForAnalysis(Analysis analysis) {
         def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(SplitAttributeService.PREPARED_ARFF_DATAFILES_DIRECTORY)
+        def storagePath = servletContext.getRealPath(PreprocessingService.PREPARED_ARFF_DATAFILES_DIRECTORY)
         String filepath = storagePath + "/" + analysis.getArffDataFile()
         return new File(filepath)
     }
