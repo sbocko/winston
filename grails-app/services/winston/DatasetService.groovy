@@ -5,6 +5,7 @@ import org.codehaus.groovy.grails.web.context.ServletContextHolder
 import org.springframework.util.StringUtils
 import sk.upjs.winston.User
 import sk.upjs.winston.groovy.DatasetAttributeParser
+import sk.upjs.winston.groovy.converter.CSV2ArffConverter
 
 @Transactional
 class DatasetService {
@@ -27,13 +28,16 @@ class DatasetService {
 
         //upload file
         def filePath = fileUploadService.uploadFile(file, filename, FileUploadService.DATASET_UPLOAD_DIRECTORY)
-        File f = new File("${filePath}")
+
+        File csv = new File("${filePath}")
+        File arff = createArffFileFromCsv(csv)
 
         //initialize dataset instance
         Dataset datasetInstance = new Dataset()
         datasetInstance.setUser(user)
         datasetInstance.setTitle(title)
         datasetInstance.setDataFile(filename)
+        datasetInstance.setArffDataFile(arff.getName())
         datasetInstance.setDescription(description)
         datasetInstance.setMissingValuePattern(missingValuePattern)
         datasetInstance.setNumberOfMissingValues(getNumberOfMissingValues(file, missingValuePattern))
@@ -51,9 +55,29 @@ class DatasetService {
         return datasetInstance.save(flush: true)
     }
 
-    public def deleteDatasetFile(Long id) {
+    public def deleteDatasetFiles(Long id) {
         def datasetInstance = Dataset.get(id)
         deleteDataFile(datasetInstance.getDataFile())
+        deleteDataFile(datasetInstance.getArffDataFile())
+    }
+
+    /** HELPER METHODS*/
+
+    private File createArffFileFromCsv(File csvFile) {
+        def servletContext = ServletContextHolder.servletContext
+        def storagePath = servletContext.getRealPath(FileUploadService.DATASET_UPLOAD_DIRECTORY)
+        String filepath = storagePath + "/" + csvFile.getName()
+        filepath = filepath.replace(".csv", ".arff")
+        File arffFile = new File(filepath)
+        if (arffFile.exists()) {
+            arffFile.delete()
+        }
+        arffFile.createNewFile()
+
+        CSV2ArffConverter converter = new CSV2ArffConverter()
+        converter.convertCsvToArff(csvFile, arffFile)
+
+        return arffFile
     }
 
     private def getNumberOfMissingValues(def file, String missingValuePattern) {

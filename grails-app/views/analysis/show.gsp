@@ -27,24 +27,13 @@
     </g:if>
     <ol class="property-list analysis">
 
-        <g:if test="${analysisInstance?.csvDataFile}">
+        <g:if test="${analysisInstance?.dataFile}">
             <li class="fieldcontain">
-                <span id="csvDataFile-label" class="property-label"><g:message code="analysis.csvDataFile.label"
-                                                                               default="Csv Data File"/></span>
+                <span id="dataFile-label" class="property-label"><g:message code="analysis.dataFile.label"
+                                                                               default="Data File"/></span>
 
-                <span class="property-value" aria-labelledby="csvDataFile-label"><g:fieldValue
-                        bean="${analysisInstance}" field="csvDataFile"/></span>
-
-            </li>
-        </g:if>
-
-        <g:if test="${analysisInstance?.arffDataFile}">
-            <li class="fieldcontain">
-                <span id="arffDataFile-label" class="property-label"><g:message code="analysis.arffDataFile.label"
-                                                                                default="Arff Data File"/></span>
-
-                <span class="property-value" aria-labelledby="arffDataFile-label"><g:fieldValue
-                        bean="${analysisInstance}" field="arffDataFile"/></span>
+                <span class="property-value" aria-labelledby="dataFile-label"><g:fieldValue
+                        bean="${analysisInstance}" field="dataFile"/></span>
 
             </li>
         </g:if>

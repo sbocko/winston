@@ -2,21 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: analysisInstance, field: 'csvDataFile', 'error')} required">
-	<label for="csvDataFile">
-		<g:message code="analysis.csvDataFile.label" default="Csv Data File" />
+<div class="fieldcontain ${hasErrors(bean: analysisInstance, field: 'dataFile', 'error')} required">
+	<label for="dataFile">
+		<g:message code="analysis.dataFile.label" default="Data File" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="csvDataFile" required="" value="${analysisInstance?.csvDataFile}"/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: analysisInstance, field: 'arffDataFile', 'error')} required">
-	<label for="arffDataFile">
-		<g:message code="analysis.arffDataFile.label" default="Arff Data File" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:textField name="arffDataFile" required="" value="${analysisInstance?.arffDataFile}"/>
+	<g:textField name="dataFile" required="" value="${analysisInstance?.dataFile}"/>
 
 </div>
 

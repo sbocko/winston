@@ -137,7 +137,7 @@ class DatasetController {
         }
 
         try {
-            datasetService.deleteDatasetFile(id)
+            datasetService.deleteDatasetFiles(id)
             datasetInstance.delete(flush: true)
             flash.message = message(code: 'default.deleted.message', args: [
                     message(code: 'dataset.label', default: 'Dataset'),

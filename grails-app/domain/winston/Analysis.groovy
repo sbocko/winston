@@ -6,8 +6,7 @@ class Analysis {
     public static final String DATA_TYPE_CATEGORICAL = "CAT";
     public static final String DATA_TYPE_MULTIVARIATE = "MULT";
 
-    String csvDataFile
-    String arffDataFile
+    String dataFile
     String dataType
     int numberOfAttributes
     boolean analyzedByGridSearch = false
@@ -17,7 +16,7 @@ class Analysis {
     static hasMany = [results: AnalysisResult]
 
     static constraints = {
-        csvDataFile(nullable: false)
+        dataFile(nullable: false)
     }
 
     public static final int NUMBER_OF_RESULTS_TO_SHOW = 5

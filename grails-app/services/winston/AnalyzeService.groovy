@@ -217,7 +217,7 @@ class AnalyzeService {
     private void informUserByEmail(Analysis analysis) {
         sendMail {
             to analysis.getDataset().getUser().getEmail()
-            subject "Winston - analysis finished: " + analysis.getCsvDataFile()
+            subject "Winston - analysis finished: " + analysis.getDataFile()
             body 'Hello,\n\n results are waiting for you at\n\n' + grailsLinkGenerator.link(controller: 'Analysis', action: 'show', id: analysis.getId(), absolute: true) + "\n\nThank you!"
         }
         println "mail sent"
@@ -258,8 +258,8 @@ class AnalyzeService {
 
     private File getArffFileForAnalysis(Analysis analysis) {
         def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(PreprocessingService.PREPARED_ARFF_DATAFILES_DIRECTORY)
-        String filepath = storagePath + "/" + analysis.getArffDataFile()
+        def storagePath = servletContext.getRealPath(PreprocessingService.PREPARED_DATAFILES_DIRECTORY)
+        String filepath = storagePath + "/" + analysis.getDataFile()
         return new File(filepath)
     }
 }

@@ -213,9 +213,10 @@ class AnalysisController {
             }
         }
 
-        Analysis analysis = preprocessingService.createAnalysis(datasetInstance, attributesToSplit, target)
+//        Analysis analysis = preprocessingService.createAnalysis(datasetInstance, attributesToSplit, target)
+        preprocessingService.generateAnalyzes(datasetInstance, attributesToSplit, target)
 
-        redirect(controller: "Analysis", action: "show", id: analysis.getId())
+        redirect(controller: "Dataset", action: "show", id: datasetInstance.getId())
     }
 
     /** HELPER METHODS */

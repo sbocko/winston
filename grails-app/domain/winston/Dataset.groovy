@@ -19,6 +19,7 @@ class Dataset {
 
     String title
     String dataFile
+    String arffDataFile
     String description
     String missingValuePattern
     int numberOfMissingValues

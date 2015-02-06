@@ -4,24 +4,35 @@ import grails.transaction.Transactional
 import org.apache.commons.io.FileUtils
 import org.codehaus.groovy.grails.web.context.ServletContextHolder
 import sk.upjs.winston.groovy.DatasetAttributeParser
-import sk.upjs.winston.groovy.converter.CSV2ArffConverter
 import weka.core.AttributeStats
 import weka.core.Instances
+import weka.core.converters.ArffSaver
 
 @Transactional
 class PreprocessingService {
     def analyzeService
-    public static final String PREPARED_ARFF_DATAFILES_DIRECTORY = "/arff-datasets"
+    def missingValuesHandlingService
     public static final String PREPARED_DATAFILES_DIRECTORY = "/prepared-datasets"
     private static final String CONTAINS_ATTRIBUTE_VALUE = "1"
     private static final String DOES_NOT_CONTAIN_ATTRIBUTE_VALUE = "0"
+
+    public List<Analysis> generateAnalyzes(Dataset dataset, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
+        List<Analysis> analyzes = new ArrayList<>()
+        List<Instances> replaced = replaceMissingValues(dataset)
+
+        for (Instances instances : replaced) {
+            saveInstancesToFiles(instances, dataset.getTitle())
+        }
+
+        return analyzes
+    }
 
     public Analysis createAnalysis(Dataset dataset, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
         String[][] datasetAttributesData = getDatasetAttributesData(dataset)
         List<String[]> dataToSave = splitAttributes(datasetAttributesData, attributesToSplit, target)
 
         String csvFileName = saveDataToFile(dataToSave, dataset.getTitle())
-        File arffFile = createArffFileFromCsv(getCsvFileForFileName(csvFileName))
+        File arffFile = createArffFileFromCsv(getDatasetFileForFileName(csvFileName))
         String arffFileName = arffFile.getName()
 
         String dataType = getDataTypeForData(arffFile)
@@ -36,6 +47,90 @@ class PreprocessingService {
         analyzeService.performGridsearchAnalysisForFile(analysis)
 
         return analysis
+    }
+
+    /** HELPER METHODS */
+
+    private void saveInstancesToFiles(Instances toSave, String datasetTitle) {
+        ArffSaver saver = new ArffSaver();
+        saver.setInstances(toSave);
+        saver.setFile(generateEmptyFileForDatasetAnalysis(datasetTitle));
+        saver.writeBatch();
+    }
+
+    private File generateEmptyFileForDatasetAnalysis(String datasetTitle) {
+        // get storage path
+        def servletContext = ServletContextHolder.servletContext
+        def storagePath = servletContext.getRealPath(PREPARED_DATAFILES_DIRECTORY)
+        //	Create storage path directory if it does not exist
+        def storagePathDirectory = new File(storagePath)
+        if (!storagePathDirectory.exists()) {
+            print "CREATING DIRECTORY ${storagePath}"
+            if (storagePathDirectory.mkdirs()) {
+                println "SUCCESS"
+            } else {
+                println "FAILED"
+            }
+        }
+
+        int analysisNumber = 1
+        boolean stop = false
+        File file
+        while (!stop) {
+            file = new File("${storagePathDirectory}/${datasetTitle}-analysis_${analysisNumber}.csv");
+            if (!file.exists()) {
+                stop = true
+            }
+            analysisNumber++
+        }
+        file.createNewFile();
+        return file
+    }
+
+    private List<Instances> replaceMissingValues(Dataset dataset) {
+        File arff = getDatasetFileForFileName(dataset.getArffDataFile())
+        BufferedReader r = new BufferedReader(
+                new FileReader(arff))
+        Instances instances = new Instances(r)
+        r.close()
+
+        List<Instances> replaced = new ArrayList<Instances>()
+        replaced.add(instances)
+
+        for (Attribute datasetAttribute : dataset.getAttributes()) {
+            if(datasetAttribute.getNumberOfMissingValues() == 0){
+                continue
+            }
+            println "will remove missing values"
+
+            int positionInDataFile = datasetAttribute.getPositionInDataFile()
+            weka.core.Attribute attribute = instances.attribute(positionInDataFile)
+
+            Instances toAdd = null
+
+            for (Instances actual : replaced) {
+                //nahrad chybajuce hodnoty
+                println "iterating instances for attribute class ${attribute.getClass().getSimpleName()}"
+                //TODO instanceof is not working!!
+                if (attribute instanceof NumericAttribute) {
+                    println "replacing missing values in numeric attribute"
+                    missingValuesHandlingService.replaceMissingValuesByMeanInNumericAttribute(actual, datasetAttribute, dataset.getMissingValuePattern())
+                    Instances alternative = actual.clone()
+                    missingValuesHandlingService.replaceMissingValuesByMajorValueInNumericAttribute(alternative, datasetAttribute, dataset.getMissingValuePattern())
+                    toAdd = alternative
+                } else if (attribute instanceof StringAttribute) {
+                    // TODO implement me
+                } else if (attribute instanceof BooleanAttribute) {
+                    // TODO implement me
+                }
+            }
+
+            if (toAdd != null) {
+                replaced.addAll(toAdd)
+            }
+        }
+
+        return replaced
     }
 
     private String getDataTypeForData(File arffFile) {
@@ -82,35 +177,33 @@ class PreprocessingService {
     }
 
     private String saveDataToFile(List<String[]> data, String datasetTitle) {
-        // get storage path
-        def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(PREPARED_DATAFILES_DIRECTORY)
-        //	Create storage path directory if it does not exist
-        def storagePathDirectory = new File(storagePath)
-        if (!storagePathDirectory.exists()) {
-            print "CREATING DIRECTORY ${storagePath}"
-            if (storagePathDirectory.mkdirs()) {
-                println "SUCCESS"
-            } else {
-                println "FAILED"
-            }
-        }
-
-        int analysisNumber = 1
-        boolean stop = false
-        def file
-        while (!stop) {
-            file = new File("${storagePathDirectory}/${datasetTitle}-analysis_${analysisNumber}.csv");
-            if (!file.exists()) {
-                stop = true
-            }
-            analysisNumber++
-        }
-        // delete old file
-//        if (file.exists()) {
-//            file.delete()
+//        // get storage path
+//        def servletContext = ServletContextHolder.servletContext
+//        def storagePath = servletContext.getRealPath(PREPARED_DATAFILES_DIRECTORY)
+//        //	Create storage path directory if it does not exist
+//        def storagePathDirectory = new File(storagePath)
+//        if (!storagePathDirectory.exists()) {
+//            print "CREATING DIRECTORY ${storagePath}"
+//            if (storagePathDirectory.mkdirs()) {
+//                println "SUCCESS"
+//            } else {
+//                println "FAILED"
+//            }
 //        }
-        file.createNewFile();
+//
+//        int analysisNumber = 1
+//        boolean stop = false
+//        def file
+//        while (!stop) {
+//            file = new File("${storagePathDirectory}/${datasetTitle}-analysis_${analysisNumber}.csv");
+//            if (!file.exists()) {
+//                stop = true
+//            }
+//            analysisNumber++
+//        }
+//        file.createNewFile();
+
+        File file = generateEmptyFileForDatasetAnalysis(datasetTitle)
 
         for (int i = 0; i < data.get(0).length; i++) {
             String toWrite = ""
@@ -129,29 +222,13 @@ class PreprocessingService {
         return file.getName()
     }
 
-    private File createArffFileFromCsv(File csvFile) {
+    private File getDatasetFileForFileName(String filename) {
         def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(PREPARED_ARFF_DATAFILES_DIRECTORY)
-        String filepath = storagePath + "/" + csvFile.getName()
-        filepath = filepath.replace(".csv", ".arff")
-        File arffFile = new File(filepath)
-        if (arffFile.exists()) {
-            arffFile.delete()
-        }
-        arffFile.createNewFile()
-
-        CSV2ArffConverter converter = new CSV2ArffConverter()
-        converter.convertCsvToArff(csvFile, arffFile)
-
-        return arffFile
-    }
-
-    private File getCsvFileForFileName(String filename) {
-        def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(PREPARED_DATAFILES_DIRECTORY)
+        def storagePath = servletContext.getRealPath(FileUploadService.DATASET_UPLOAD_DIRECTORY)
         String filepath = storagePath + "/" + filename
         return new File(filepath)
     }
+
 
     private List<String[]> splitAttributes(String[][] datasetAttributesData, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
         List<String[]> result = new ArrayList<String[]>()
