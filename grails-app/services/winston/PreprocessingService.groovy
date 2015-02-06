@@ -91,36 +91,32 @@ class PreprocessingService {
         File arff = getDatasetFileForFileName(dataset.getArffDataFile())
         BufferedReader r = new BufferedReader(
                 new FileReader(arff))
-        Instances instances = new Instances(r)
+        Instances original = new Instances(r)
         r.close()
 
         List<Instances> replaced = new ArrayList<Instances>()
-        replaced.add(instances)
+        replaced.add(makeClone(original))
 
         for (Attribute datasetAttribute : dataset.getAttributes()) {
             if(datasetAttribute.getNumberOfMissingValues() == 0){
                 continue
             }
-            println "will remove missing values"
 
             int positionInDataFile = datasetAttribute.getPositionInDataFile()
-            weka.core.Attribute attribute = instances.attribute(positionInDataFile)
+            weka.core.Attribute attribute = original.attribute(positionInDataFile)
 
             Instances toAdd = null
 
             for (Instances actual : replaced) {
                 //nahrad chybajuce hodnoty
-                println "iterating instances for attribute class ${attribute.getClass().getSimpleName()}"
-                //TODO instanceof is not working!!
-                if (attribute instanceof NumericAttribute) {
-                    println "replacing missing values in numeric attribute"
-                    missingValuesHandlingService.replaceMissingValuesByMeanInNumericAttribute(actual, datasetAttribute, dataset.getMissingValuePattern())
-                    Instances alternative = actual.clone()
-                    missingValuesHandlingService.replaceMissingValuesByMajorValueInNumericAttribute(alternative, datasetAttribute, dataset.getMissingValuePattern())
+                if (datasetAttribute.instanceOf(NumericAttribute)) {
+                    missingValuesHandlingService.replaceMissingValuesByMeanInNumericAttribute(original, actual, datasetAttribute, dataset.getMissingValuePattern())
+                    Instances alternative = makeClone(actual)
+                    alternative = missingValuesHandlingService.replaceMissingValuesByMajorValueInNumericAttribute(original, alternative, datasetAttribute, dataset.getMissingValuePattern())
                     toAdd = alternative
-                } else if (attribute instanceof StringAttribute) {
+                } else if (datasetAttribute.instanceOf(StringAttribute)) {
                     // TODO implement me
-                } else if (attribute instanceof BooleanAttribute) {
+                } else if (datasetAttribute.instanceOf(BooleanAttribute)) {
                     // TODO implement me
                 }
             }
@@ -131,6 +127,11 @@ class PreprocessingService {
         }
 
         return replaced
+    }
+
+    private Instances makeClone(Instances source) {
+        Instances destination = new Instances(source)
+        return destination
     }
 
     private String getDataTypeForData(File arffFile) {

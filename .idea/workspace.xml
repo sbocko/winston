@@ -2,61 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2872d06-f73a-46b0-8b56-b73ba08989bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessingForm_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetService$_deleteDatasetFiles_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService$_getMajorValueForAttribute_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService$_replaceMissingValuesByMajorValueInNumericAttribute_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService$_replaceMissingValuesByMeanInNumericAttribute_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService$_serviceMethod_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_attributesBelongsToDataset_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_attributesBelongsToDataset_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_createAnalysis_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_createAnalysis_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_generateAnalyzes_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_splitAttributes_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_splitAttributes_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/services/winston/MissingValuesHandlingService.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/winston/MissingValuesHandlingServiceSpec.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/datasets/dataset.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/datasets/dataset.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/datasets/iris missing.arff" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/datasets/bezdekIris.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/datasets/test.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/Car-analysis_1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/test.csv" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/Car-analysis_1.arff" afterPath="$PROJECT_DIR$/web-app/datasets/car.arff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/Iris-analysis_1.arff" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Iris missing-analysis_1.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/Iris-analysis_2.arff" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Iris missing-analysis_2.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/arff-datasets/test.arff" afterPath="$PROJECT_DIR$/web-app/datasets/iris.arff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/Iris-analysis_1.csv" afterPath="$PROJECT_DIR$/web-app/datasets/iris missing.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/Iris-analysis_2.csv" afterPath="$PROJECT_DIR$/iris missing.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$__clinit__closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$__clinit__closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$_getBestRmse_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$_getBestRmse_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$_getBestRmse_closure2_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$_getBestRmse_closure2_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$_getTopAnalysisResults_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$_getTopAnalysisResults_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure17.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure8_closure13.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure8_closure13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure15.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure9.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService$_informUserByEmail_closure9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalyzeService.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalyzeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Dataset$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/Dataset$__clinit__closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Dataset.class" afterPath="$PROJECT_DIR$/target/classes/winston/Dataset.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetController.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/DatasetService.class" afterPath="$PROJECT_DIR$/target/classes/winston/DatasetService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/Iris missing-analysis_1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/prepared-datasets/Iris missing-analysis_2.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService$_replaceMissingValuesByMajorValueInNumericAttribute_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService$_replaceMissingValuesByMajorValueInNumericAttribute_closure2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService$_replaceMissingValuesByMeanInNumericAttribute_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService$_replaceMissingValuesByMeanInNumericAttribute_closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService.class" afterPath="$PROJECT_DIR$/target/classes/winston/MissingValuesHandlingService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_attributesBelongsToDataset_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_attributesBelongsToDataset_closure4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_splitAttributes_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService$_splitAttributes_closure3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/PreprocessingService.class" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/MissingValuesHandlingService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/MissingValuesHandlingService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/_form.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -88,8 +43,8 @@
       <file leaf-file-name="PreprocessingService.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6886633" vertical-offset="1288" max-vertical-offset="4845">
-              <caret line="113" column="50" selection-start-line="113" selection-start-column="50" selection-end-line="113" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.6632826" vertical-offset="1288" max-vertical-offset="4860">
+              <caret line="112" column="85" selection-start-line="112" selection-start-column="85" selection-end-line="112" selection-end-column="85" />
               <folding>
                 <element signature="e#17#56#0" expanded="true" />
               </folding>
@@ -100,10 +55,22 @@
       <file leaf-file-name="MissingValuesHandlingService.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/winston/MissingValuesHandlingService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="960">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
               <folding>
                 <element signature="e#17#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalysisController.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.217392" vertical-offset="2844" max-vertical-offset="3435">
+              <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+              <folding>
+                <element signature="e#17#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,8 +133,8 @@
         <option value="$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/winston/MissingValuesHandlingService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/winston/MissingValuesHandlingService.groovy" />
       </list>
     </option>
   </component>
@@ -1093,7 +1060,7 @@
       <workItem from="1422170371577" duration="6881000" />
       <workItem from="1422265831441" duration="761000" />
       <workItem from="1422865691929" duration="77000" />
-      <workItem from="1422865808127" duration="16793000" />
+      <workItem from="1422865808127" duration="21284000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug with Role auto-assignment for newly registered users.">
       <created>1419501828105</created>
@@ -1191,46 +1158,52 @@
       <option name="project" value="LOCAL" />
       <updated>1422964533655</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Replacing missing values for numeric attributes.">
+      <created>1423207296930</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1423207296930</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129289000" />
+    <option name="totallyTimeSpent" value="133780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="992" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27222222" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27222222" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15282215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15282215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3122222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28777778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1269,7 +1242,8 @@
     <MESSAGE value="Generated controllers and views for AnalysisResults." />
     <MESSAGE value="Added table with analyzes for Dataset and table with Results for Analysis." />
     <MESSAGE value="Backup commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Backup commit." />
+    <MESSAGE value="Replacing missing values for numeric attributes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Replacing missing values for numeric attributes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1286,48 +1260,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6666667" vertical-offset="215" max-vertical-offset="1095">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/winston.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/Model.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27027026" vertical-offset="0" max-vertical-offset="555">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/amelia/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gvm/grails/current/dist/grails-async-2.4.4-sources.jar!/org/grails/async/factory/gpars/GparsPromise.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5405405" vertical-offset="480" max-vertical-offset="1035">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/AnalysisResult.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5660377" vertical-offset="0" max-vertical-offset="240">
@@ -1583,7 +1515,7 @@
         <state vertical-scroll-proportion="-7.2" vertical-offset="1725" max-vertical-offset="2445">
           <caret line="139" column="41" selection-start-line="139" selection-start-column="41" selection-end-line="139" selection-end-column="41" />
           <folding>
-            <element signature="e#17#71#0" expanded="true" />
+            <element signature="e#17#71#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1650,16 +1582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.826086" vertical-offset="2867" max-vertical-offset="3435">
-          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-          <folding>
-            <element signature="e#17#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Attribute.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25092936" vertical-offset="0" max-vertical-offset="538">
@@ -1671,10 +1593,31 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.217392" vertical-offset="2844" max-vertical-offset="3435">
+          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/datasets/iris missing.csv">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.171123" vertical-offset="1779" max-vertical-offset="2340">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/winston/MissingValuesHandlingService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
           <folding>
             <element signature="e#17#56#0" expanded="true" />
           </folding>
@@ -1683,8 +1626,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6886633" vertical-offset="1288" max-vertical-offset="4845">
-          <caret line="113" column="50" selection-start-line="113" selection-start-column="50" selection-end-line="113" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.6632826" vertical-offset="1288" max-vertical-offset="4860">
+          <caret line="112" column="85" selection-start-line="112" selection-start-column="85" selection-end-line="112" selection-end-column="85" />
           <folding>
             <element signature="e#17#56#0" expanded="true" />
           </folding>

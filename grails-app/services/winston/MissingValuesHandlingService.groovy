@@ -6,27 +6,30 @@ import weka.core.Instances
 @Transactional
 class MissingValuesHandlingService {
 
-    public Instances replaceMissingValuesByMeanInNumericAttribute(Instances instances, Attribute datasetAttribute, String missingValue) {
-        for (int i = 0; i < instances.numInstances(); i++) {
+    public Instances replaceMissingValuesByMeanInNumericAttribute(Instances original, Instances toReplace, NumericAttribute datasetAttribute, String missingValue) {
+        for (int i = 0; i < toReplace.numInstances(); i++) {
             int positionOfAttribute = datasetAttribute.getPositionInDataFile()
-            def instanceValue = instances.instance(i).value(positionOfAttribute)
-            if (missingValue.equals(instanceValue)) {
-                instances.instance(i).setValue(positionOfAttribute, datasetAttribute.getAverage())
+            def instanceValue = original.instance(i).value(positionOfAttribute)
+            if (instanceValue == Double.NaN) {
+                toReplace.instance(i).setValue(positionOfAttribute, datasetAttribute.getAverage())
             }
         }
-        return instances
+        return toReplace
     }
 
-    def replaceMissingValuesByMajorValueInNumericAttribute(Instances instances, NumericAttribute datasetAttribute, String missingValue) {
-        double newValue = getMajorValueForAttribute(instances, datasetAttribute)
+    public Instances replaceMissingValuesByMajorValueInNumericAttribute(Instances original, Instances toReplace, NumericAttribute datasetAttribute, String missingValue) {
+        double newValue = getMajorValueForAttribute(toReplace, datasetAttribute)
+        println "newValue: $newValue"
 
-        for (int i = 0; i < instances.numInstances(); i++) {
+        for (int i = 0; i < toReplace.numInstances(); i++) {
             int positionOfAttribute = datasetAttribute.getPositionInDataFile()
-            def instanceValue = instances.instance(i).value(positionOfAttribute)
-            if (missingValue.equals(instanceValue)) {
-                instances.instance(i).setValue(positionOfAttribute, newValue)
+            def instanceValue = original.instance(i).value(positionOfAttribute)
+            if (instanceValue == Double.NaN) {
+                println "replacing with mean"
+                toReplace.instance(i).setValue(positionOfAttribute, newValue)
             }
         }
+        return toReplace
     }
 
     /** HELPER METHODS */
