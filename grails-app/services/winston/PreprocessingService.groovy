@@ -110,14 +110,14 @@ class PreprocessingService {
             for (Instances actual : replaced) {
                 //nahrad chybajuce hodnoty
                 if (datasetAttribute.instanceOf(NumericAttribute)) {
-                    missingValuesHandlingService.replaceMissingValuesByMeanInNumericAttribute(original, actual, datasetAttribute, dataset.getMissingValuePattern())
+                    missingValuesHandlingService.replaceMissingValuesByMeanInNumericAttribute(original, actual, (NumericAttribute) datasetAttribute)
                     Instances alternative = makeClone(actual)
-                    alternative = missingValuesHandlingService.replaceMissingValuesByMajorValueInNumericAttribute(original, alternative, datasetAttribute, dataset.getMissingValuePattern())
+                    alternative = missingValuesHandlingService.replaceMissingValuesByMajorValueInNumericAttribute(original, alternative, (NumericAttribute) datasetAttribute)
                     toAdd = alternative
                 } else if (datasetAttribute.instanceOf(StringAttribute)) {
-                    // TODO implement me
+                    missingValuesHandlingService.replaceMissingValuesByMajorValueInStringAttribute(original, actual, (StringAttribute) datasetAttribute)
                 } else if (datasetAttribute.instanceOf(BooleanAttribute)) {
-                    // TODO implement me
+                    missingValuesHandlingService.replaceMissingValuesByMajorInBooleanAttribute(original, actual, (BooleanAttribute) datasetAttribute)
                 }
             }
 
