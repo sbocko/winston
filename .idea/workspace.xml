@@ -1,160 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2872d06-f73a-46b0-8b56-b73ba08989bb" name="Default" comment="Binarizing attributes based on their name. Analyzing preprocessed files. Button for performing GS.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_analyze_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_getTargetAttribute_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_gridSearch_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_gridSearch_closure2_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_gridSearch_closure2_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_gridSearch_closure2_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessing_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_1.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_$tt__informUserByEmail_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getBestMethodForAnalysis_closure4_closure16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_10.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_11.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_12.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_13.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_14.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_15.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_16.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_17.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_18.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_19.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_2.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_20.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_21.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_22.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_23.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_24.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_25.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_26.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_27.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_28.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_29.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_3.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_30.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_31.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_32.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_33.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_34.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_35.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_36.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_37.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_38.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_39.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_4.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_40.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_41.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_42.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_43.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_44.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_45.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_46.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_47.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_48.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_49.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_5.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_50.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_51.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_52.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_53.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_54.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_55.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_56.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_57.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_58.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_59.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_6.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_60.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_61.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_62.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_63.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_64.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_65.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_66.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_67.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_68.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_69.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_7.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_70.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_71.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_72.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_73.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_74.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_75.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_76.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_8.arff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/prepared-datasets/Custom dataset - car-analysis_9.arff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure20.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure21.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure16.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure17.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure18.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$__clinit__closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$__clinit__closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$_getBestRmse_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$_getBestRmse_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$_getBestRmse_closure2_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$_getBestRmse_closure2_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis$_getTopAnalysisResults_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis$_getTopAnalysisResults_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Analysis.class" afterPath="$PROJECT_DIR$/target/classes/winston/Analysis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure10.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure10.class" />
+    <list default="true" id="c2872d06-f73a-46b0-8b56-b73ba08989bb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure11.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure8.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure9.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure10.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure9.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_analyze_closure7.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_analyze_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_getTargetAttribute_closure5.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_getTargetAttribute_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure11.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure12.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure4_closure12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_analyze_closure8.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_analyze_closure8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_getTargetAttribute_closure6.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_getTargetAttribute_closure6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure12.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure12.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure13.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessing_closure6.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessing_closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure17.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure18.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure10_closure18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessing_closure7.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessing_closure7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure18.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure18.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure19.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure20.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure20.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure8_closure13.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure8_closure13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure8_closure14.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure8_closure14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure14.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure15.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure16.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure16.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure17.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure18.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure15.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure16.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure9_closure16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisService$_attributesBelongsToDataset_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisService$_attributesBelongsToDataset_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisService$_createAnalysis_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisService$_createAnalysis_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisService$_splitAttributes_closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisService$_splitAttributes_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisService.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_$tt__performGridsearchAnalysisForFile_closure14.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_$tt__performGridsearchAnalysisForFile_closure14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_defaultKnnResultForAnalysis_closure8.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_defaultKnnResultForAnalysis_closure8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getBestMethodForAnalysis_closure4.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getBestMethodForAnalysis_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getBestMethodForAnalysis_closure4_closure15.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getBestMethodForAnalysis_closure4_closure15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getBestMethodForAnalysis_closure5.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getBestMethodForAnalysis_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getMostSimilarAnalysis_closure6.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getMostSimilarAnalysis_closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getMostSimilarAnalysis_closure7.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_getMostSimilarAnalysis_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_gridSearch_closure10.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_gridSearch_closure10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_gridSearch_closure11.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_gridSearch_closure11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_gridSearch_closure12.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_gridSearch_closure12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_gridSearch_closure13.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_gridSearch_closure13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService$_informUserByEmail_closure9.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService$_informUserByEmail_closure9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/ModellingService.class" afterPath="$PROJECT_DIR$/target/classes/winston/ModellingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/PreprocessingService.class" afterPath="$PROJECT_DIR$/target/classes/winston/PreprocessingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/AnalysisService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/AnalysisService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/ModellingService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/ModellingService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -224,8 +86,8 @@
       <file leaf-file-name="AnalysisService.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/winston/AnalysisService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="5265">
-              <caret line="47" column="69" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
+            <state vertical-scroll-proportion="-7.0740743" vertical-offset="3589" max-vertical-offset="5265">
+              <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="257" selection-end-column="5" />
               <folding>
                 <element signature="e#17#56#0" expanded="true" />
               </folding>
@@ -233,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModellingService.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/winston/ModellingService.groovy">
+      <file leaf-file-name="AnalysisController.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6063123" vertical-offset="1060" max-vertical-offset="4065">
-              <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.54576856" vertical-offset="899" max-vertical-offset="3780">
+              <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -246,67 +108,9 @@
       <file leaf-file-name="show.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/show.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3404255" vertical-offset="1365" max-vertical-offset="2010">
-              <caret line="114" column="116" selection-start-line="114" selection-start-column="116" selection-end-line="114" selection-end-column="116" />
+            <state vertical-scroll-proportion="-1.2038835" vertical-offset="431" max-vertical-offset="2055">
+              <caret line="37" column="95" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="95" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnalysisController.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.173913" vertical-offset="780" max-vertical-offset="3510">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/svmResult/show.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7702702" vertical-offset="304" max-vertical-offset="1290">
-              <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Analysis.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1132076" vertical-offset="0" max-vertical-offset="1185">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KnnResult.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/KnnResult.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.811321" vertical-offset="0" max-vertical-offset="435">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreprocessingService.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="2505">
-              <caret line="53" column="81" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
-              <folding>
-                <element signature="e#17#56#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -367,9 +171,9 @@
         <option value="$PROJECT_DIR$/grails-app/services/winston/AnalysisService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/winston/ModellingService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/winston/ModellingService.groovy" />
       </list>
     </option>
   </component>
@@ -1285,7 +1089,7 @@
       <workItem from="1423469532450" duration="3344000" />
       <workItem from="1423490080982" duration="748000" />
       <workItem from="1423663015607" duration="1308000" />
-      <workItem from="1423728727034" duration="8629000" />
+      <workItem from="1423728727034" duration="9573000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug with Role auto-assignment for newly registered users.">
       <created>1419501828105</created>
@@ -1407,11 +1211,17 @@
       <option name="project" value="LOCAL" />
       <updated>1423392649999</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Binarizing attributes based on their name. Analyzing preprocessed files. Button for performing GS.">
+      <created>1423742132676</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1423742132676</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175267000" />
+    <option name="totallyTimeSpent" value="176211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="992" extended-state="6" />
@@ -1432,7 +1242,7 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23162939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23162939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1441,6 +1251,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1450,7 +1261,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28767124" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1885,16 +1695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="531" max-vertical-offset="2505">
-          <caret line="53" column="81" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
-          <folding>
-            <element signature="e#17#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.1132076" vertical-offset="0" max-vertical-offset="1185">
@@ -1904,24 +1704,6 @@
       </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3404255" vertical-offset="1365" max-vertical-offset="2010">
-          <caret line="114" column="116" selection-start-line="114" selection-start-column="116" selection-end-line="114" selection-end-column="116" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/AnalysisService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="5265">
-          <caret line="47" column="69" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
-          <folding>
-            <element signature="e#17#56#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/e1ba0c28/e6847e0a-68e1-4618-a8df-3dc740382495/nh2096401db..analysis">
@@ -1937,18 +1719,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/ModellingService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.173913" vertical-offset="780" max-vertical-offset="3510">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1060" max-vertical-offset="4065">
+          <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/ModellingService.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6063123" vertical-offset="1060" max-vertical-offset="4065">
-          <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
+        <state vertical-scroll-proportion="-1.2038835" vertical-offset="431" max-vertical-offset="2055">
+          <caret line="37" column="95" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6434783" vertical-offset="105" max-vertical-offset="2505">
+          <caret line="70" column="51" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="51" />
+          <folding>
+            <element signature="e#17#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/winston/AnalysisService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0740743" vertical-offset="3589" max-vertical-offset="5265">
+          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="257" selection-end-column="5" />
+          <folding>
+            <element signature="e#17#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54576856" vertical-offset="899" max-vertical-offset="3780">
+          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
           <folding />
         </state>
       </provider>

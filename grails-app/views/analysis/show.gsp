@@ -33,7 +33,10 @@
                                                                                default="Data File"/></span>
 
                 <span class="property-value" aria-labelledby="dataFile-label"><g:fieldValue
-                        bean="${analysisInstance}" field="dataFile"/></span>
+                        bean="${analysisInstance}" field="dataFile"/>
+                    <g:link action="downloadFile" resource="${analysisInstance}"><g:message
+                            code="default.button.download.label" default="(Download)"/></g:link>
+                </span>
 
             </li>
         </g:if>
@@ -113,7 +116,7 @@
     <g:form url="[resource: analysisInstance, action: 'delete']" method="DELETE">
         <fieldset class="buttons">
             <g:if test="${!analysisInstance.gridSearchAnalysisInProgress && !analysisInstance.analyzedByGridSearch}">
-                <g:link class="list" action="gridSearch" resource="${analysisInstance}"><g:message
+                <g:link action="gridSearch" resource="${analysisInstance}"><g:message
                         code="default.button.gridSearch.label" default="Grid Search"/></g:link>
             </g:if>
             <g:link class="edit" action="edit" resource="${analysisInstance}"><g:message

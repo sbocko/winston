@@ -77,6 +77,17 @@ class AnalysisController {
         respond analysisInstance
     }
 
+    def downloadFile(Analysis analysisInstance) {
+        def file = getAnalysisFile(analysisInstance)
+
+        if (file.exists()) {
+            response.setContentType("application/octet-stream")
+            response.setHeader("Content-disposition", "filename=${file.name}")
+            response.outputStream << file.bytes
+            return
+        }
+    }
+
     @Transactional
     def update(Analysis analysisInstance) {
         if (analysisInstance == null) {
@@ -230,4 +241,11 @@ class AnalysisController {
     }
 
     /** HELPER METHODS */
+
+    private File getAnalysisFile(Analysis analysis) {
+        def servletContext = ServletContextHolder.servletContext
+        def storagePath = servletContext.getRealPath(AnalysisService.PREPARED_DATAFILES_DIRECTORY)
+        String filepath = storagePath + "/" + analysis.getDataFile()
+        return new File(filepath)
+    }
 }
