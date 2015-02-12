@@ -84,6 +84,7 @@ class ModellingService {
     }
 
     def performGridsearchAnalysisForFile(Analysis analysis) {
+        analysis.setGridSearchAnalysisInProgress(true)
         File arffFile = getArffFileForAnalysis(analysis)
 
         BufferedReader reader = new BufferedReader(
@@ -92,11 +93,14 @@ class ModellingService {
         reader.close();
         dataInstances.setClassIndex(dataInstances.numAttributes() - 1);
 
+        String email = analysis.getDataset().getUser().getEmail()
+        String filename = analysis.getDataFile()
+        long analysisId = analysis.getId()
         runAsync {
             //this will be in its own trasaction
             //since each of these service methods are Transactional
             gridSearch(analysis, dataInstances)
-            informUserByEmail(analysis)
+            informUserByEmail(email, filename, analysisId)
         }
     }
 
@@ -214,11 +218,13 @@ class ModellingService {
     // Inject link generator
     LinkGenerator grailsLinkGenerator
 
-    private void informUserByEmail(Analysis analysis) {
+    public void informUserByEmail(String email, String dataFileName, long analysisId) {
+        println "preparing to send email"
         sendMail {
-            to analysis.getDataset().getUser().getEmail()
-            subject "Winston - analysis finished: " + analysis.getDataFile()
-            body 'Hello,\n\n results are waiting for you at\n\n' + grailsLinkGenerator.link(controller: 'Analysis', action: 'show', id: analysis.getId(), absolute: true) + "\n\nThank you!"
+            to email
+            subject "Winston - analysis finished: " + dataFileName
+//            body 'Hello,\n\n results are waiting for you at\n\n' + grailsLinkGenerator.link(controller: 'Analysis', action: 'show', id: analysisId, absolute: true) + "\n\nThank you!"
+            body 'Hello,\n\n results are waiting for you at\n\n' + "\n\nThank you!"
         }
         println "mail sent"
     }
@@ -252,6 +258,7 @@ class ModellingService {
         }
         println "svm done"
         analysis.analyzedByGridSearch = true
+        analysis.gridSearchAnalysisInProgress = false
         analysis.save(flush: true)
         println "gridsearch finished"
     }

@@ -1,0 +1,23 @@
+@relation 'custom dataset-weka.filters.unsupervised.attribute.PartitionedMultiFilter-Fweka.filters.unsupervised.attribute.Discretize -F -B 10 -M -1.0 -R first-last-R1-weka.filters.unsupervised.attribute.PartitionedMultiFilter-Fweka.filters.unsupervised.attribute.Normalize -S 1.0 -T 0.0-R3'
+
+@attribute 'filtered-0-unfiltered-engine volume' numeric
+@attribute 'unfiltered-filtered-0-# of doors' {'\'(-inf-3.5]\'','\'(3.5-4.5]\'','\'(4.5-inf)\''}
+@attribute unfiltered-unfiltered-drive {diesel,gasoline,lpg}
+@attribute unfiltered-unfiltered-drive-diesel {true,false}
+@attribute unfiltered-unfiltered-drive-gasoline {true,false}
+@attribute unfiltered-unfiltered-drive-lpg {true,false}
+@attribute buy {true,false}
+
+@data
+1,'\'(-inf-3.5]\'',diesel,false,false,false,true
+0.4,'\'(4.5-inf)\'',gasoline,false,false,false,false
+0.2,'\'(4.5-inf)\'',lpg,false,false,false,true
+0.8,'\'(-inf-3.5]\'',gasoline,false,false,false,true
+0.4,'\'(4.5-inf)\'',diesel,false,false,false,false
+0,'\'(3.5-4.5]\'',lpg,false,false,false,false
+0.8,'\'(4.5-inf)\'',diesel,false,false,false,true
+0.4,'\'(4.5-inf)\'',gasoline,false,false,false,false
+0.2,'\'(4.5-inf)\'',diesel,false,false,false,false
+0.8,'\'(-inf-3.5]\'',gasoline,false,false,false,true
+0.8,'\'(4.5-inf)\'',diesel,false,false,false,true
+0,'\'(4.5-inf)\'',lpg,false,false,false,true

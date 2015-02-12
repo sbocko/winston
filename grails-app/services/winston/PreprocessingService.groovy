@@ -13,8 +13,6 @@ import weka.filters.unsupervised.attribute.Standardize
 
 @Transactional
 class PreprocessingService {
-
-
     public static final String TRUE = "true"
     public static final String FALSE = "false"
 
@@ -42,22 +40,31 @@ class PreprocessingService {
 
     public Instances binarize(Dataset dataset, Instances toBinarize, Map<Attribute, Boolean> attributesToSplit) {
         int numberOfAttributes = toBinarize.numAttributes()
-        Set<Integer> positionsOfAttributesToSplit = new HashSet<Integer>()
+        Set<String> attributeNames = new HashSet<String>(numberOfAttributes)
         for (Map.Entry<Attribute, Boolean> entry : attributesToSplit.entrySet()) {
             if (entry.value) {
-                positionsOfAttributesToSplit.add(entry.getKey().getPositionInDataFile())
+                attributeNames.add(entry.getKey().getTitle())
             }
         }
 
         for (int attributePosition = numberOfAttributes - 1; attributePosition >= 0; attributePosition--) {
-            // iterujeme atributmi od konca
-            if (!positionsOfAttributesToSplit.contains(attributePosition)) {
+            // iterate attributes from the end
+
+            // split attribute at attributePosition
+            weka.core.Attribute toSplit = toBinarize.attribute(attributePosition)
+
+            boolean split = false
+            for (String name : attributeNames) {
+                if (toSplit.name().contains(name)) {
+                    split = true
+                    break
+                }
+            }
+            if (!split) {
                 // continue if attribute doesnt have to be splitted
                 continue
             }
 
-            // split attribute at attributePosition
-            weka.core.Attribute toSplit = toBinarize.attribute(attributePosition)
             if (toSplit.isNumeric()) {
                 //numeric attribute
 

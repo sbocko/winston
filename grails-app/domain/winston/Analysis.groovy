@@ -10,6 +10,7 @@ class Analysis {
     String dataType
     int numberOfAttributes
     boolean analyzedByGridSearch = false
+    boolean gridSearchAnalysisInProgress = false
     List results
 
     static belongsTo = [dataset: Dataset]
@@ -56,15 +57,17 @@ class Analysis {
         return this.dataset.getMissingValuePattern()
     }
 
+
     @Override
     public String toString() {
         return "Analysis{" +
                 "id=" + id +
-                ", dataset=" + dataset +
-                ", csvDataFile='" + csvDataFile + '\'' +
+                ", dataFile='" + dataFile + '\'' +
                 ", dataType='" + dataType + '\'' +
                 ", numberOfAttributes=" + numberOfAttributes +
                 ", analyzedByGridSearch=" + analyzedByGridSearch +
+                ", version=" + version +
+                ", dataset=" + dataset +
                 '}';
     }
 }

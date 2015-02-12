@@ -112,6 +112,10 @@
 
     <g:form url="[resource: analysisInstance, action: 'delete']" method="DELETE">
         <fieldset class="buttons">
+            <g:if test="${!analysisInstance.gridSearchAnalysisInProgress && !analysisInstance.analyzedByGridSearch}">
+                <g:link class="list" action="gridSearch" resource="${analysisInstance}"><g:message
+                        code="default.button.gridSearch.label" default="Grid Search"/></g:link>
+            </g:if>
             <g:link class="edit" action="edit" resource="${analysisInstance}"><g:message
                     code="default.button.edit.label" default="Edit"/></g:link>
             <g:actionSubmit class="delete" action="delete"

@@ -12,6 +12,7 @@ class AnalysisController {
     private static final double MIN_PERCENT_OF_DISTINCT_VALUES = 0.05
 
     def analysisService
+    def modellingService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -61,6 +62,15 @@ class AnalysisController {
             }
             '*' { respond analysisInstance, [status: CREATED] }
         }
+    }
+
+    @Transactional
+    def gridSearch(Analysis analysisInstance) {
+        modellingService.performGridsearchAnalysisForFile(analysisInstance)
+
+        flash.message = message(code: 'default.gridSearch.message', default: "Grid successfully search started. You will be notified by an email when it finishes."
+                , args: [message(code: 'Analysis.label', default: 'Analysis'), analysisInstance.id])
+        redirect(action: "show", id: analysisInstance.id)
     }
 
     def edit(Analysis analysisInstance) {
@@ -158,7 +168,7 @@ class AnalysisController {
             }
         }
 
-        forward(action: "preprocessing", id: params.id, params:[targetAttributeId: targetAttributeId]);
+        forward(action: "preprocessing", id: params.id, params: [targetAttributeId: targetAttributeId]);
     }
 
     def preprocessing(Long id) {

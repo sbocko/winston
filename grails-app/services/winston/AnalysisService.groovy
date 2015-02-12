@@ -24,19 +24,35 @@ class AnalysisService {
             instances.setClassIndex(target.getPositionInDataFile())
         }
 
-        List<Instances> preprocessed = generatePreprocessedDataInstances(dataset, replaced, attributesToSplit)
+        List<Instances> preprocessed = generatePreprocessedDataInstances(dataset, replaced, attributesToSplit, target)
 
 
         for (Instances instances : preprocessed) {
-            saveInstancesToFiles(instances, dataset.getTitle())
+            String fileName = saveInstancesToFiles(instances, dataset.getTitle())
+            analyzes.add(createAnalysis(dataset, fileName, instances))
         }
 
         return analyzes
     }
 
+    public Analysis createAnalysis(Dataset dataset, String dataFileName, Instances instances) {
+        String dataType = getDataTypeForData(instances)
+
+        Analysis analysis = new Analysis(dataset: dataset, dataFile: dataFileName, dataType: dataType, numberOfAttributes: instances.numAttributes())
+        analysis.save(flush: true)
+        analysis.refresh()
+
+        modellingService.performAnalysisWithDefaultHyperparameters(analysis)
+        modellingService.performRecommendedDataMiningMethodForAnalysis(analysis)
+
+//        modellingService.performGridsearchAnalysisForFile(analysis)
+
+        return analysis
+    }
+
     /** HELPER METHODS */
 
-    private List<Instances> generatePreprocessedDataInstances(Dataset dataset, List<Instances> toProcess, Map<Attribute, Boolean> attributesToSplit) {
+    private List<Instances> generatePreprocessedDataInstances(Dataset dataset, List<Instances> toProcess, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
         for (Attribute datasetAttribute : dataset.getAttributes()) {
             if (attributesToSplit.get(datasetAttribute)) {
                 continue
@@ -46,10 +62,10 @@ class AnalysisService {
 
             for (Instances actual : toProcess) {
                 if (datasetAttribute.instanceOf(NumericAttribute)) {
-//                    Instances zScoreNormalized = preprocessingService.zeroOneNormalize(actual, (NumericAttribute) datasetAttribute)
-//                    generated.add(zScoreNormalized)
-//                    Instances standardized = preprocessingService.standardize(actual, (NumericAttribute) datasetAttribute)
-//                    generated.add(standardized)
+                    Instances zScoreNormalized = preprocessingService.zeroOneNormalize(actual, (NumericAttribute) datasetAttribute)
+                    generated.add(zScoreNormalized)
+                    Instances standardized = preprocessingService.standardize(actual, (NumericAttribute) datasetAttribute)
+                    generated.add(standardized)
                     Instances discretizedByEqualWidth = preprocessingService.discretizeByEqualWidth(actual, (NumericAttribute) datasetAttribute)
                     generated.add(discretizedByEqualWidth)
                     Instances discretizedByEqualFrequency = preprocessingService.discretizeByEqualFrequency(actual, (NumericAttribute) datasetAttribute)
@@ -66,31 +82,19 @@ class AnalysisService {
             }
         }
 
-//        List<Instances> binarized = generateBinarizedDataInstances(dataset, toProcess, attributesToSplit)
-//        return binarized
-        return toProcess
+        addStringAttributesToBinarization(attributesToSplit, target.getPositionInDataFile())
+        List<Instances> binarized = generateBinarizedDataInstances(dataset, toProcess, attributesToSplit)
+        return binarized
+//        return toProcess
     }
 
-    public Analysis createAnalysis(Dataset dataset, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
-        String[][] datasetAttributesData = getDatasetAttributesData(dataset)
-        List<String[]> dataToSave = splitAttributes(datasetAttributesData, attributesToSplit, target)
-
-        String csvFileName = saveDataToFile(dataToSave, dataset.getTitle())
-        File arffFile = createArffFileFromCsv(getDatasetFileForFileName(csvFileName))
-        String arffFileName = arffFile.getName()
-
-        String dataType = getDataTypeForData(arffFile)
-
-        Analysis analysis = new Analysis(dataset: dataset, csvDataFile: csvFileName, arffDataFile: arffFileName, dataType: dataType, numberOfAttributes: dataToSave.size())
-        analysis.save(flush: true)
-        analysis.refresh()
-
-        modellingService.performAnalysisWithDefaultHyperparameters(analysis)
-        modellingService.performRecommendedDataMiningMethodForAnalysis(analysis)
-
-        modellingService.performGridsearchAnalysisForFile(analysis)
-
-        return analysis
+    private void addStringAttributesToBinarization(Map<Attribute, Boolean> attributesToSplit, int targetAttributePosition) {
+        for (Map.Entry<Attribute, Boolean> entry : attributesToSplit.entrySet()) {
+            Attribute actual = entry.key
+            if (actual.getPositionInDataFile() != targetAttributePosition && actual.instanceOf(StringAttribute)) {
+                entry.value = true
+            }
+        }
     }
 
     private List<Instances> generateBinarizedDataInstances(Dataset dataset, List<Instances> toBinarize, Map<Attribute, Boolean> attributesToSplit) {
@@ -101,11 +105,15 @@ class AnalysisService {
         return binarized
     }
 
-    private void saveInstancesToFiles(Instances toSave, String datasetTitle) {
-        ArffSaver saver = new ArffSaver();
-        saver.setInstances(toSave);
-        saver.setFile(generateEmptyFileForDatasetAnalysis(datasetTitle));
-        saver.writeBatch();
+    private String saveInstancesToFiles(Instances toSave, String datasetTitle) {
+        File file = generateEmptyFileForDatasetAnalysis(datasetTitle)
+
+        ArffSaver saver = new ArffSaver()
+        saver.setInstances(toSave)
+        saver.setFile(file)
+        saver.writeBatch()
+
+        return file.getName()
     }
 
     private File generateEmptyFileForDatasetAnalysis(String datasetTitle) {
@@ -127,7 +135,7 @@ class AnalysisService {
         boolean stop = false
         File file
         while (!stop) {
-            file = new File("${storagePathDirectory}/${datasetTitle}-analysis_${analysisNumber}.csv");
+            file = new File("${storagePathDirectory}/${datasetTitle}-analysis_${analysisNumber}.arff");
             if (!file.exists()) {
                 stop = true
             }
@@ -184,12 +192,7 @@ class AnalysisService {
         return destination
     }
 
-    private String getDataTypeForData(File arffFile) {
-        BufferedReader r = new BufferedReader(
-                new FileReader(arffFile))
-        Instances instances = new Instances(r)
-        r.close()
-
+    private String getDataTypeForData(Instances instances) {
         boolean wasInt = false
         boolean wasReal = false
         boolean wasCategorical = false

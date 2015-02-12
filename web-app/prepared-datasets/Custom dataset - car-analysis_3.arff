@@ -1,0 +1,23 @@
+@relation 'custom dataset'
+
+@attribute '# of doors' numeric
+@attribute drive {diesel,gasoline,lpg}
+@attribute drive-diesel {true,false}
+@attribute drive-gasoline {true,false}
+@attribute drive-lpg {true,false}
+@attribute 'engine volume' numeric
+@attribute buy {true,false}
+
+@data
+3,diesel,false,false,false,2.2,true
+5,gasoline,false,false,false,1.6,false
+5,lpg,false,false,false,1.4,true
+3,gasoline,false,false,false,2,true
+5,diesel,false,false,false,1.6,false
+4,lpg,false,false,false,1.2,false
+5,diesel,false,false,false,2,true
+5,gasoline,false,false,false,1.6,false
+5,diesel,false,false,false,1.4,false
+3,gasoline,false,false,false,2,true
+5,diesel,false,false,false,1.654545,true
+5,lpg,false,false,false,1.2,true

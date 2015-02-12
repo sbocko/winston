@@ -122,8 +122,8 @@
                 <thead>
                 <tr>
 
-                    <g:sortableColumn property="csvDataFile"
-                                      title="${message(code: 'analysis.csvDataFile.label', default: 'Data File')}"/>
+                    <g:sortableColumn property="dataFile"
+                                      title="${message(code: 'analysis.dataFile.label', default: 'Data File')}"/>
 
                     <g:sortableColumn property="numberOfAttributes"
                                       title="${message(code: 'analysis.numberOfAttributes.label', default: 'Number Of Attributes')}"/>
@@ -137,7 +137,7 @@
                     <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
                         <td><g:link controller="analysis" action="show"
-                                    id="${analysisInstance.id}">${fieldValue(bean: analysisInstance, field: "csvDataFile")}</g:link></td>
+                                    id="${analysisInstance.id}">${fieldValue(bean: analysisInstance, field: "dataFile")}</g:link></td>
 
                         <td>${fieldValue(bean: analysisInstance, field: "numberOfAttributes")}</td>
 
