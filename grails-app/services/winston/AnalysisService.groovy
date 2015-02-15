@@ -13,12 +13,16 @@ class AnalysisService {
     def modellingService
     def missingValuesHandlingService
     def preprocessingService
+    def backgroundService
     public static final String PREPARED_DATAFILES_DIRECTORY = "/prepared-datasets"
     private static final String CONTAINS_ATTRIBUTE_VALUE = "1"
     private static final String DOES_NOT_CONTAIN_ATTRIBUTE_VALUE = "0"
 
     public List<Analysis> generateAnalyzes(Dataset dataset, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
         List<Analysis> analyzes = new ArrayList<>()
+
+//        backgroundService.preprocessDataOnBackground(dataset, target, attributesToSplit)
+
         List<Instances> replaced = replaceMissingValues(dataset)
         for (Instances instances : replaced) {
             instances.setClassIndex(target.getPositionInDataFile())
@@ -48,6 +52,13 @@ class AnalysisService {
 //        modellingService.performGridsearchAnalysisForFile(analysis)
 
         return analysis
+    }
+
+    public File getDatasetFileForFileName(String filename) {
+        def servletContext = ServletContextHolder.servletContext
+        def storagePath = servletContext.getRealPath(FileUploadService.DATASET_UPLOAD_DIRECTORY)
+        String filepath = storagePath + "/" + filename
+        return new File(filepath)
     }
 
     /** HELPER METHODS */
@@ -249,14 +260,6 @@ class AnalysisService {
 
         return file.getName()
     }
-
-    private File getDatasetFileForFileName(String filename) {
-        def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(FileUploadService.DATASET_UPLOAD_DIRECTORY)
-        String filepath = storagePath + "/" + filename
-        return new File(filepath)
-    }
-
 
     private List<String[]> splitAttributes(String[][] datasetAttributesData, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
         List<String[]> result = new ArrayList<String[]>()

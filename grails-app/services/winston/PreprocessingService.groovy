@@ -15,6 +15,7 @@ import weka.filters.unsupervised.attribute.Standardize
 class PreprocessingService {
     public static final String TRUE = "true"
     public static final String FALSE = "false"
+    public static final String BINARIZATION_DELIMITER = "-"
 
     public Instances zeroOneNormalize(Instances toProcess, NumericAttribute datasetAttribute) {
         Normalize normalization01 = new Normalize()
@@ -83,7 +84,7 @@ class PreprocessingService {
                 insertedAttributeValues.addElement(FALSE)
                 // create new attributes
                 for (Map.Entry<Double, Integer> entry : attributeValuePosition.entrySet()) {
-                    String attributeName = toSplit.name() + "-" + entry.getKey()
+                    String attributeName = toSplit.name() + BINARIZATION_DELIMITER + entry.getKey()
                     weka.core.Attribute toInsert = new weka.core.Attribute(attributeName, insertedAttributeValues)
                     toBinarize.insertAttributeAt(toInsert, entry.getValue())
                 }
@@ -105,7 +106,7 @@ class PreprocessingService {
                 // nominal attribute
 
                 // get number of distinct values and assign them position for new attribute
-                Map<String, Integer> attributeValuePosition = new LinkedHashMap<Double, Integer>()
+                Map<String, Integer> attributeValuePosition = new LinkedHashMap<String, Integer>()
                 for (int j = 0; j < toBinarize.numInstances(); j++) {
                     Instance actual = toBinarize.instance(j)
                     String instanceValue = actual.stringValue(attributePosition)
@@ -119,7 +120,7 @@ class PreprocessingService {
                 insertedAttributeValues.addElement(FALSE)
                 // create new attributes
                 for (Map.Entry<String, Integer> entry : attributeValuePosition.entrySet()) {
-                    String attributeName = toSplit.name() + "-" + entry.getKey()
+                    String attributeName = toSplit.name() + BINARIZATION_DELIMITER + entry.getKey()
                     weka.core.Attribute toInsert = new weka.core.Attribute(attributeName, insertedAttributeValues)
                     toBinarize.insertAttributeAt(toInsert, entry.getValue())
                 }
@@ -127,13 +128,16 @@ class PreprocessingService {
                 for (int i = 0; i < toBinarize.numInstances(); i++) {
                     Instance actual = toBinarize.instance(i)
                     for (Map.Entry<String, Integer> entry : attributeValuePosition.entrySet()) {
-                        if (actual.value(attributePosition).equals(entry.key)) {
+                        if (actual.stringValue(attributePosition).equals(entry.key)) {
                             actual.setValue(entry.value, TRUE)
                         } else {
                             actual.setValue(entry.value, FALSE)
                         }
                     }
                 }
+
+                // remove old attribute
+                toBinarize.deleteAttributeAt(attributePosition)
             }
         }
         return toBinarize
