@@ -141,8 +141,12 @@
 
                         <td>${fieldValue(bean: analysisInstance, field: "numberOfAttributes")}</td>
 
-                        <td>${analysisInstance.getBestRmse()}</td>
-
+                        <g:set var="bestRmse" value="${analysisInstance.getBestRmse()}" />
+                        <g:if test="${bestRmse == null}">
+                            <td>N/A</td>
+                        </g:if> <g:else>
+                            <td>${analysisInstance.getBestRmse()}</td>
+                        </g:else>
                     </tr>
                 </g:each>
                 </tbody>

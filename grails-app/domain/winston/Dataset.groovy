@@ -24,8 +24,6 @@ class Dataset {
     String missingValuePattern
     int numberOfMissingValues
     int numberOfInstances
-    List analyzes
-    List attributes
     static hasMany = [attributes: Attribute, analyzes: Analysis]
     static belongsTo = [user: User]
 

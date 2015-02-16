@@ -11,7 +11,7 @@ class Analysis {
     int numberOfAttributes
     boolean analyzedByGridSearch = false
     boolean gridSearchAnalysisInProgress = false
-    List results
+    Set results
 
     static belongsTo = [dataset: Dataset]
     static hasMany = [results: AnalysisResult]
@@ -32,14 +32,14 @@ class Analysis {
         return results
     }
 
-    public double getBestRmse() {
-        double minRmse = AnalysisResult.createCriteria().get {
+    public Double getBestRmse() {
+        Double minRmse = AnalysisResult.createCriteria().get {
             eq("analysis.id", getId())
             projections {
                 min "rmse"
             }
             maxResults(1)
-        } as double
+        } as Double
 
         return minRmse
     }

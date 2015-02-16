@@ -21,20 +21,20 @@ class AnalysisService {
     public List<Analysis> generateAnalyzes(Dataset dataset, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
         List<Analysis> analyzes = new ArrayList<>()
 
-//        backgroundService.preprocessDataOnBackground(dataset, target, attributesToSplit)
+        backgroundService.preprocessDataOnBackground(dataset, target, attributesToSplit)
 
-        List<Instances> replaced = replaceMissingValues(dataset)
-        for (Instances instances : replaced) {
-            instances.setClassIndex(target.getPositionInDataFile())
-        }
-
-        List<Instances> preprocessed = generatePreprocessedDataInstances(dataset, replaced, attributesToSplit, target)
-
-
-        for (Instances instances : preprocessed) {
-            String fileName = saveInstancesToFiles(instances, dataset.getTitle())
-            analyzes.add(createAnalysis(dataset, fileName, instances))
-        }
+//        List<Instances> replaced = replaceMissingValues(dataset)
+//        for (Instances instances : replaced) {
+//            instances.setClassIndex(target.getPositionInDataFile())
+//        }
+//
+//        List<Instances> preprocessed = generatePreprocessedDataInstances(dataset, replaced, attributesToSplit, target)
+//
+//
+//        for (Instances instances : preprocessed) {
+//            String fileName = saveInstancesToFiles(instances, dataset.getTitle())
+//            analyzes.add(createAnalysis(dataset, fileName, instances))
+//        }
 
         return analyzes
     }
@@ -235,10 +235,9 @@ class AnalysisService {
             return Analysis.DATA_TYPE_CATEGORICAL
         } else if (wasReal) {
             return Analysis.DATA_TYPE_REAL
-        } else if (wasInt) {
+        } else {
             return Analysis.DATA_TYPE_INTEGER
         }
-
     }
 
     private String saveDataToFile(List<String[]> data, String datasetTitle) {
