@@ -36,7 +36,59 @@ class Dataset {
         numberOfInstances()
     }
 
+    public static final int NUMBER_OF_RESULTS_TO_SHOW = 5
+
+    public List getTopAnalyzes(int maxNumberOfResults) {
+        def results = AnalysisResult.findAll("from AnalysisResult ar where ar.analysis.dataset.id = " + getId() + " group by ar.analysis.id order by rmse asc", [max: 5, offset: 0])
+//        def criteria = Analysis.createCriteria()
+//        List<AnalysisResult> results = criteria.listDistinct() {
+//            dataset {
+//                eq("id", getId())
+//            }
+//
+//            order("rmse", "asc")
+//            maxResults(maxNumberOfResults)
+//            groupProperty("analysis.id")
+//            projections {
+//                distinct("analysis")
+//            }
+//        }
+
+//        return results
+
+        List<Analysis> top = new ArrayList<Analysis>()
+        results.each { it ->
+            top.add(it.getAnalysis())
+        }
+        return top
+
+//        def criteria = AnalysisResult.createCriteria()
+//        List<AnalysisResult> results = criteria.listDistinct() {
+//            analysis {
+//                dataset {
+//                    eq("id", getId())
+//                }
+//            }
+//            order("rmse", "asc")
+//            maxResults(maxNumberOfResults)
+////            groupProperty("analysis.id")
+//            projections {
+//                distinct("analysis")
+//            }
+//        }
+//
+//        return results;
+
+//        List<Analysis> top = new ArrayList<Analysis>()
+//        results.each {it ->
+//            println "${it.getAnalysis().getDataFile()} -  ${it.getAnalysis().getId()}"
+//            top.add(it.getAnalysis())
+//        }
+//        return top
+    }
+
     String toString() {
         return "${title}"
     }
+
 }

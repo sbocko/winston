@@ -133,7 +133,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <g:each in="${datasetInstance?.analyzes}" status="i" var="analysisInstance">
+                <g:each in="${analysisInstances}" status="i" var="analysisInstance">
                     <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
                         <td><g:link controller="analysis" action="show"

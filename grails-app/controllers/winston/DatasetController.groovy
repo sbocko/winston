@@ -73,7 +73,7 @@ class DatasetController {
             return
         }
 
-        [datasetInstance: datasetInstance]
+        [datasetInstance: datasetInstance, analysisInstances: datasetInstance.getTopAnalyzes(Dataset.NUMBER_OF_RESULTS_TO_SHOW)]
     }
 
     def edit(Long id) {

@@ -46,7 +46,7 @@ public class SvmModel extends Model {
         svm.setCost(complexityConstant);
         svm.setGamma(gamma);
 
-        if (kernel == SvmResult.KERNEL_LINEAR_KERNEL) {
+        if (kernel.equals(SvmResult.KERNEL_LINEAR_KERNEL)) {
             svm.setKernelType(new SelectedTag(LibSVM.KERNELTYPE_LINEAR, LibSVM.TAGS_KERNELTYPE))
         }
 

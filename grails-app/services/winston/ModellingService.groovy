@@ -11,8 +11,6 @@ import weka.core.Instances
 
 @Transactional
 class ModellingService {
-    def backgroundService
-
     def performRecommendedDataMiningMethodForAnalysis(Analysis analysis) {
         AnalysisResult recommendedMethod = getRecommendedMethod(analysis)
         if(!recommendedMethod) {

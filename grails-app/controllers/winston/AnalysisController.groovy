@@ -13,6 +13,7 @@ class AnalysisController {
 
     def analysisService
     def modellingService
+    def backgroundService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -66,7 +67,10 @@ class AnalysisController {
 
     @Transactional
     def gridSearch(Analysis analysisInstance) {
+        analysisInstance.setGridSearchAnalysisInProgress(true)
+        analysisInstance.save(flush: true)
         modellingService.performGridsearchAnalysisForFile(analysisInstance)
+        backgroundService.performGridSearchForAnalysis(analysisInstance)
 
         flash.message = message(code: 'default.gridSearch.message', default: "Grid successfully search started. You will be notified by an email when it finishes."
                 , args: [message(code: 'Analysis.label', default: 'Analysis'), analysisInstance.id])
@@ -136,10 +140,7 @@ class AnalysisController {
         def servletContext = ServletContextHolder.servletContext
         def storagePath = servletContext.getRealPath(AnalyzeService.PREPARED_DATAFILES_DIRECTORY)
         def storagePathDirectory = new File(storagePath)
-        deleteFileForFilePath("${storagePathDirectory}/${analysisInstance.getCsvDataFile()}")
-        storagePath = servletContext.getRealPath(AnalyzeService.PREPARED_ARFF_DATAFILES_DIRECTORY)
-        storagePathDirectory = new File(storagePath)
-        deleteFileForFilePath("${storagePathDirectory}/${analysisInstance.getArffDataFile()}")
+        deleteFileForFilePath("${storagePathDirectory}/${analysisInstance.getDataFile()}")
     }
 
     private void deleteFileForFilePath(String filepath) {
@@ -243,9 +244,10 @@ class AnalysisController {
     /** HELPER METHODS */
 
     private File getAnalysisFile(Analysis analysis) {
-        def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(AnalysisService.PREPARED_DATAFILES_DIRECTORY)
-        String filepath = storagePath + "/" + analysis.getDataFile()
-        return new File(filepath)
+//        def servletContext = ServletContextHolder.servletContext
+//        def storagePath = servletContext.getRealPath(AnalysisService.PREPARED_DATAFILES_DIRECTORY)
+//        String filepath = storagePath + "/" + analysis.getDataFile()
+//        return new File(filepath)
+        backgroundService.getAnalysisFile(analysis)
     }
 }

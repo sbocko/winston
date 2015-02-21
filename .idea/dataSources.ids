@@ -54,6 +54,7 @@
       <column name="average" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="maximum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="minimum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="attributes_idx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="FK_sglujhfqtyua2v14davaxd3bw" columns="dataset_id" ref-table="dataset" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <index name="FK_sglujhfqtyua2v14davaxd3bw" unique="false" columns="dataset_id"/>
@@ -85,7 +86,19 @@
       <exported-key name="FK_29xik3ctd30y4codaupu0odrb" table="analysis" schema="" catalog="nh2096401db" columns="dataset_id"/>
       <exported-key name="FK_sglujhfqtyua2v14davaxd3bw" table="attribute" schema="" catalog="nh2096401db" columns="dataset_id"/>
       <exported-key name="FK_ppfbffkcit1dckthdqthhhyf4" table="data_file" schema="" catalog="nh2096401db" columns="dataset_id"/>
+      <exported-key name="FKD9C292AA588B1088" table="dmmethod" schema="" catalog="nh2096401db" columns="dataset_id"/>
       <index name="FK_pr13brky1iuocfkacedxqayat" unique="false" columns="user_id"/>
+    </table>
+    <table name="dmmethod" schema="" catalog="nh2096401db" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="dataset_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="class" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="k" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKD9C292AA588B1088" columns="dataset_id" ref-table="dataset" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FKD9C292AA588B1088" unique="false" columns="dataset_id"/>
     </table>
     <table name="registration_code" schema="" catalog="nh2096401db" type="TABLE">
       <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
