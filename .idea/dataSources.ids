@@ -55,6 +55,7 @@
       <column name="maximum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="minimum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="attributes_idx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="is_target" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="FK_sglujhfqtyua2v14davaxd3bw" columns="dataset_id" ref-table="dataset" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <index name="FK_sglujhfqtyua2v14davaxd3bw" unique="false" columns="dataset_id"/>

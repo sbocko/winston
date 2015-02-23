@@ -3,29 +3,9 @@
 <head>
 	<meta name='layout' content='register'/>
 	<title><g:message code='spring.security.ui.register.title'/></title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet"
-		  href="${request.contextPath}/amelia/theme/bootstrap.css" media="screen">
-	<link rel="stylesheet"
-		  href="${request.contextPath}/amelia/theme/usebootstrap.css">
 </head>
 
 <body>
-
-<!-- Navigation bar -->
-<div class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<g:link uri="/" class="navbar-brand">Winston</g:link>
-		</div>
-		<div class="navbar-collapse collapse" id="navbar-main">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="http://data-mining.sk/web/" target="_blank">About</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
 
 <div class="container bs-docs-section">
 	<div class="well col-lg-6 centered">
@@ -67,8 +47,8 @@
 
 				<p><input type='password' class='form-control' name='password2' placeholder="Password (again)" bean="${command}" value="${command.password2}"/></p>
 
-				<s2ui:submitButton class="btn btn-primary" elementId='create' form='registerForm' messageCode='spring.security.ui.register.submit'/>
-
+				%{--<s2ui:submitButton class="btn btn-primary" elementId='create' form='registerForm' messageCode='spring.security.ui.register.submit'/>--}%
+                <input type='submit' class="btn btn-primary" id="submit" value='${message(code: "spring.security.ui.register.submit")}'/>
 			</g:else>
 
 		</g:form>
@@ -80,10 +60,6 @@ $(document).ready(function() {
 	$('#username').focus();
 });
 </script>
-
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="${request.contextPath}/amelia/bootstrap/bootstrap.min.js"></script>
-<script src="${request.contextPath}/amelia/bootstrap/usebootstrap.js"></script>
 
 </body>
 </html>
