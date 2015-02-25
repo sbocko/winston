@@ -28,7 +28,7 @@ class Dataset {
     static belongsTo = [user: User]
 
     static constraints = {
-        title()
+        title(nullable: false)
         dataFile(nullable: false)
         description(maxSize: 5000, nullable: true)
         missingValuePattern(nullable: true)

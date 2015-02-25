@@ -17,9 +17,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
-          href="${request.contextPath}/amelia/theme/bootstrap.css" media="screen">
+          href="${request.contextPath}/bootstrap/css/bootstrap.css" media="screen">
     <link rel="stylesheet"
-          href="${request.contextPath}/amelia/theme/usebootstrap.css">
+          href="${request.contextPath}/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet"
+          href="${request.contextPath}/bootstrap/css/usebootstrap.css">
+    <asset:stylesheet src="override.css"/>
 
     <g:layoutHead/>
 </head>
@@ -54,8 +57,8 @@
 %{--<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>--}%
 
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="${request.contextPath}/amelia/bootstrap/bootstrap.min.js"></script>
-<script src="${request.contextPath}/amelia/bootstrap/usebootstrap.js"></script>
+<script src="${request.contextPath}/bootstrap/js/bootstrap.min.js"></script>
+<script src="${request.contextPath}/bootstrap/js/bootstrap.js"></script>
 
 </body>
 </html>

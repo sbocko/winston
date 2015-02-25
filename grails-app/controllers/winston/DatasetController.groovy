@@ -21,8 +21,18 @@ class DatasetController {
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         User user = springSecurityService.getCurrentUser()
-        List<User> datasetList = Dataset.findAllByUser(user)
-        [datasetInstanceList: datasetList, datasetInstanceTotal: datasetList.size()]
+//        List<Dataset> datasetList = Dataset.findAllByUser(user)
+
+        List<Dataset> datasetList = Dataset.createCriteria().list(
+                sort:params.sort,
+                order:params.order,
+//                max:params.max,
+//                offset:params.offset
+        ) {
+            eq ("user.id", user.getId())
+        }
+
+        [datasetInstanceList: datasetList, datasetInstanceTotal: datasetList.size(), params: params]
 //        [datasetInstanceList: Dataset.list(params), datasetInstanceTotal: Dataset.count()]
     }
 
@@ -39,15 +49,27 @@ class DatasetController {
         //get dataset attribute values
         def file = request.getFile(Dataset.DATA_FILE_VAR)
         File myFile = new File(file.getOriginalFilename())
-        file.transferTo(myFile)
+        try {
+            file.transferTo(myFile)
+        } catch (IOException e){
+            flash.message = "Field Data File can not be empty!"
+            redirect(action: "create", params: params)
+            return
+        }
+
         def missingValuePattern = params.get(Dataset.MISSING_VALUE_PATTERN_VAR)
         def title = params.get(Dataset.TITLE_VAR)
         def description = params.get(Dataset.DESCRIPTION_VAR)
         User user = springSecurityService.getCurrentUser()
 
-        def datasetInstance = datasetService.saveDataset(user, title, description, myFile, missingValuePattern)
-
-        //println "dataset ${datasetInstance}"
+        def datasetInstance;
+        try {
+            datasetInstance = datasetService.saveDataset(user, title, description, myFile, missingValuePattern)
+        } catch (Exception e){
+            flash.message = "Unable to process file. Check if data are in the correct form."
+            redirect(action: "create", params: params)
+            return
+        }
 
         //if some error occures
         if (!datasetInstance) {
@@ -57,7 +79,7 @@ class DatasetController {
 
         flash.message = message(code: 'default.created.message', args: [
                 message(code: 'dataset.label', default: 'Dataset'),
-                datasetInstance.id
+                datasetInstance.getTitle()
         ])
         redirect(action: "show", id: datasetInstance.id)
     }
@@ -136,19 +158,20 @@ class DatasetController {
             return
         }
 
+        def title = datasetInstance.getTitle();
         try {
             datasetService.deleteDatasetFiles(id)
             datasetInstance.delete(flush: true)
             flash.message = message(code: 'default.deleted.message', args: [
                     message(code: 'dataset.label', default: 'Dataset'),
-                    id
+                    title
             ])
             redirect(action: "list")
         }
         catch (DataIntegrityViolationException e) {
             flash.message = message(code: 'default.not.deleted.message', args: [
                     message(code: 'dataset.label', default: 'Dataset'),
-                    id
+                    title
             ])
             redirect(action: "show", id: id)
         }

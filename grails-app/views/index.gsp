@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="layout" content="amelia"/>
+		<meta name="layout" content="bootstrap"/>
 		<title>Welcome to Grails</title>
 	</head>
 	<body>
-        <div class="container bs-docs-section">
+        <div class="centered container bs-docs-section">
             <div class="page-header" id="banner">
                 <div class="row text-center">
+                    <div class="voffset2">
                     <h1>Winston</h1>
+                    </div>
                     <p class="lead">Exploring data mining easier, together</p>
                     <a href="/winston/dataset/list">
                         <button class="btn btn-success btn-lg">Get Started Now!</button>
                     </a>
                 </div>
             </div>
-            <div class="row bs-docs-section body-bottom-padding">
+            <div class="row bs-docs-section body-bottom-padding bottom-align-text">
                 <div class="col-lg-4">
                     <div class="jumbotron-custom">
                         <h2 class="text-center">High efficiency</h2>

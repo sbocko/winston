@@ -22,4 +22,6 @@ select count(*) from analysis_result;
 select * from analysis_result;
 select distinct(class) from analysis_result;
 
-select a.id analysisId, min(rmse) from analysis a left join analysis_result ar on a.id = ar.analysis_id where a.dataset_id = 8 group by a.id order by ar.rmse;
+select min(rmse) from analysis a left join analysis_result ar on a.id = ar.analysis_id where a.dataset_id = 8 group by a.id order by ar.rmse;
+
+ALTER TABLE attribute DROP COLUMN is_target;
