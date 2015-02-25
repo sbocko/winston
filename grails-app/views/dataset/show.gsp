@@ -3,25 +3,14 @@
 <html>
 <head>
     <meta name="layout" content="bootstrap">
+
     <g:set var="entityName" value="${message(code: 'dataset.label', default: 'Dataset')}"/>
     <title><g:message code="default.show.label" args="[entityName]"/></title>
 </head>
 
 <body>
-%{--<a href="#show-dataset" class="skip" tabindex="-1"><g:message code="default.link.skip.label"--}%
-%{--default="Skip to content&hellip;"/></a>--}%
-%{--<div class="nav" role="navigation">--}%
-%{--<ul>--}%
-%{--<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>--}%
-%{--<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]"/></g:link></li>--}%
-%{--<li><g:link class="create" action="create"><g:message code="default.new.label"--}%
-%{--args="[entityName]"/></g:link></li>--}%
-%{--</ul>--}%
-%{--</div>--}%
-
-<div id="show-dataset" class="content scaffold-show" role="main">
-
-    <div class="container">
+<div class="body-container">
+    <div id="show-dataset" class="content scaffold-show" role="main">
 
         <g:if test='${flash.message}'>
             <div class="alert alert-dismissable alert-info">
@@ -33,7 +22,38 @@
         </g:if>
 
 
-        <h1><g:message code="default.show.label" args="[entityName]"/></h1>
+        <div class="page-header">
+            <h1 class="lead"><g:message code="default.show.label" args="[entityName]"/></h1>
+        </div>
+
+        <div class="lead">
+            <g:link class="index" action="index" params="${params}" style="text-decoration: none;">
+                <button class="btn btn-info btn-sm">
+                    <span class="glyphicon glyphicon-list"></span> Home
+                </button>
+            </g:link>
+
+            <g:link controller="Analysis" action="create" params="${params}" style="text-decoration: none;">
+                <button class="btn btn-success btn-sm">
+                    <span class="glyphicon glyphicon-zoom-in"></span> Analyze
+                </button>
+            </g:link>
+
+            <g:link class="edit" action="edit" params="${params}" style="text-decoration: none;">
+                <button class="btn btn-warning btn-sm">
+                    <span class="glyphicon glyphicon-edit"></span> Edit
+                </button>
+            </g:link>
+
+            <g:link class="delete" action="delete" params="${params}" style="text-decoration: none;"
+                    onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');">
+                <button class="btn btn-danger btn-sm">
+                    <span class="glyphicon glyphicon-remove"></span> Delete
+                </button>
+            </g:link>
+        </div>
+
+
         <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
         </g:if>
@@ -132,15 +152,14 @@
 
             <g:if test="${datasetInstance?.analyzes}">
                 <div>Analyzes:</div>
-                <table>
+                <table class="well table table-striped table-hover">
                     <thead>
                     <tr>
+                        <th>#</th>
 
-                        <g:sortableColumn property="dataFile"
-                                          title="${message(code: 'analysis.dataFile.label', default: 'Data File')}"/>
+                        <th><g:message code="analysis.dataFile.label" default="Data File" /></th>
 
-                        <g:sortableColumn property="numberOfAttributes"
-                                          title="${message(code: 'analysis.numberOfAttributes.label', default: 'Number Of Attributes')}"/>
+                        <th><g:message code="analysis.numberOfAttributes.label" default="Number Of Attributes" /></th>
 
                         <th>Best rmse</th>
 
@@ -149,6 +168,8 @@
                     <tbody>
                     <g:each in="${analysisInstances}" status="i" var="analysisInstance">
                         <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+
+                            <td>${i + 1}</td>
 
                             <td><g:link controller="analysis" action="show"
                                         id="${analysisInstance.id}">${fieldValue(bean: analysisInstance, field: "dataFile")}</g:link></td>

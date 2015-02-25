@@ -10,7 +10,7 @@ class DatasetController {
     def datasetService
     private static final double MIN_PERCENT_OF_DISTINCT_VALUES = 0.05
 
-    static allowedMethods = [save: "POST", delete: "POST"]
+//    static allowedMethods = [save: "POST", delete: "POST"]
 
     def springSecurityService
 
@@ -148,6 +148,7 @@ class DatasetController {
     }
 
     def delete(Long id) {
+        println "ID: $id"
         def datasetInstance = Dataset.get(id)
         if (!datasetInstance) {
             flash.message = message(code: 'default.not.found.message', args: [
