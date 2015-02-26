@@ -12,18 +12,23 @@
 <div class="body-container">
     <div id="show-dataset" class="content scaffold-show" role="main">
 
-        <g:if test='${flash.message}'>
-            <div class="alert alert-dismissable alert-info">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                <h4>Check out</h4>
-
-                <p>${flash.message}</p>
-            </div>
-        </g:if>
-
-
         <div class="page-header">
-            <h1 class="lead"><g:message code="default.show.label" args="[entityName]"/></h1>
+            <g:if test='${flash.message}'>
+                <div class="alert alert-dismissable alert-info">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <h4>Check out</h4>
+
+                    <p>${flash.message}</p>
+                </div>
+            </g:if>
+
+            <g:if test="${datasetInstance != null && datasetInstance.getTitle() != null}">
+                <h1 class="lead">${datasetInstance.getTitle()}</h1>
+            </g:if>
+            <g:else>
+                <h1 class="lead"><g:message code="default.show.label" args="[entityName]"/></h1>
+            </g:else>
+
         </div>
 
         <div class="lead">
@@ -53,88 +58,78 @@
             </g:link>
         </div>
 
-
         <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
         </g:if>
+
+        <div class="row">
+            <dl class="dl-horizontal">
+                <g:if test="${datasetInstance?.title}">
+                    <dt>
+                        <g:message code="dataset.title.label" default="Title"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${datasetInstance}" field="title"/>
+                    </dd>
+                </g:if>
+
+                <g:if test="${datasetInstance?.dataFile}">
+                    <dt>
+                        <g:message code="dataset.dataFile.label" default="Data File"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${datasetInstance}" field="dataFile"/>
+                    </dd>
+                </g:if>
+
+                <g:if test="${datasetInstance?.numberOfInstances}">
+                    <dt>
+                        <g:message code="dataset.numberOfInstances.label" default="Number Of Instances"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${datasetInstance}" field="numberOfInstances"/>
+                    </dd>
+                </g:if>
+
+                <g:if test="${datasetInstance?.missingValuePattern}">
+                    <dt>
+                        <g:message code="dataset.missingValuePattern.label" default="Missing Value Pattern"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${datasetInstance}" field="missingValuePattern"/>
+                    </dd>
+                </g:if>
+
+                <g:if test="${datasetInstance?.numberOfMissingValues}">
+                    <dt>
+                        <g:message code="dataset.numberOfMissingValues.label" default="Number Of Missing Values"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${datasetInstance}" field="numberOfMissingValues"/>
+                    </dd>
+                </g:if>
+
+                <g:if test="${datasetInstance?.description}">
+                    <dt>
+                        <g:message code="dataset.description.label" default="Description"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${datasetInstance}" field="description"/>
+                    </dd>
+                </g:if>
+
+
+
+            </dl>
+        </div>
+
         <ol class="property-list dataset">
-
-            <g:if test="${datasetInstance?.title}">
-                <li class="fieldcontain">
-                    <span id="title-label" class="property-label"><g:message code="dataset.title.label"
-                                                                             default="Title"/></span>
-
-                    <span class="property-value" aria-labelledby="title-label"><g:fieldValue bean="${datasetInstance}"
-                                                                                             field="title"/></span>
-
-                </li>
-            </g:if>
-
-            <g:if test="${datasetInstance?.dataFile}">
-                <li class="fieldcontain">
-                    <span id="dataFile-label" class="property-label"><g:message code="dataset.dataFile.label"
-                                                                                default="Data File"/></span>
-
-                    <span class="property-value" aria-labelledby="dataFile-label"><g:fieldValue
-                            bean="${datasetInstance}"
-                            field="dataFile"/></span>
-
-                </li>
-            </g:if>
-
-            <g:if test="${datasetInstance?.description}">
-                <li class="fieldcontain">
-                    <span id="description-label" class="property-label"><g:message code="dataset.description.label"
-                                                                                   default="Description"/></span>
-
-                    <span class="property-value" aria-labelledby="description-label"><g:fieldValue
-                            bean="${datasetInstance}"
-                            field="description"/></span>
-
-                </li>
-            </g:if>
-
-        <%-- <g:if test="${datasetInstance?.descriptionFile}">
-        <li class="fieldcontain">
-            <span id="descriptionFile-label" class="property-label"><g:message code="dataset.descriptionFile.label" default="Description File" /></span>
-
-                <span class="property-value" aria-labelledby="descriptionFile-label"><g:fieldValue bean="${datasetInstance}" field="descriptionFile"/></span>
-
-        </li>
-        </g:if> --%>
-
-            <g:if test="${datasetInstance?.missingValuePattern}">
-                <li class="fieldcontain">
-                    <span id="missingValuePattern-label" class="property-label"><g:message
-                            code="dataset.missingValuePattern.label" default="Missing Value Pattern"/></span>
-
-                    <span class="property-value" aria-labelledby="missingValuePattern-label"><g:fieldValue
-                            bean="${datasetInstance}" field="missingValuePattern"/></span>
-
-                </li>
-            </g:if>
-
-            <g:if test="${datasetInstance?.numberOfMissingValues}">
-                <li class="fieldcontain">
-                    <span id="numberOfMissingValues-label" class="property-label"><g:message
-                            code="dataset.numberOfMissingValues.label" default="Number Of Missing Values"/></span>
-
-                    <span class="property-value" aria-labelledby="numberOfMissingValues-label"><g:fieldValue
-                            bean="${datasetInstance}" field="numberOfMissingValues"/></span>
-
-                </li>
-            </g:if>
-
-            <g:if test="${datasetInstance?.numberOfInstances}">
-                <li class="fieldcontain">
-                    <span id="numberOfInstances-label" class="property-label"><g:message
-                            code="dataset.numberOfInstances.label" default="Number Of Instances"/></span>
-
-                    <span class="property-value" aria-labelledby="numberOfInstances-label"><g:fieldValue
-                            bean="${datasetInstance}" field="numberOfInstances"/></span>
-
-                </li>
-            </g:if>
 
             <g:if test="${datasetInstance?.attributes}">
                 <li class="fieldcontain">
@@ -151,15 +146,18 @@
             </g:if>
 
             <g:if test="${datasetInstance?.analyzes}">
-                <div>Analyzes:</div>
+                <div class="row">
+                    <h2 class="container lead">Top analyzes</h2>
+                </div>
+
                 <table class="well table table-striped table-hover">
                     <thead>
                     <tr>
                         <th>#</th>
 
-                        <th><g:message code="analysis.dataFile.label" default="Data File" /></th>
+                        <th><g:message code="analysis.dataFile.label" default="Data File"/></th>
 
-                        <th><g:message code="analysis.numberOfAttributes.label" default="Number Of Attributes" /></th>
+                        <th><g:message code="analysis.numberOfAttributes.label" default="Number Of Attributes"/></th>
 
                         <th>Best rmse</th>
 
@@ -187,21 +185,8 @@
                     </tbody>
                 </table>
             </g:if>
-
         </ol>
-        <g:form>
-            <fieldset class="buttons">
-                <g:hiddenField name="id" value="${datasetInstance?.id}"/>
-                <g:link class="edit" action="edit" id="${datasetInstance?.id}"><g:message
-                        code="default.button.edit.label"
-                        default="Edit"/></g:link>
-                <g:link class="analyze" controller="Analysis" action="create" id="${datasetInstance?.id}"><g:message
-                        code="default.button.analyze.label" default="Analyze"/></g:link>
-                <g:actionSubmit class="delete" action="delete"
-                                value="${message(code: 'default.button.delete.label', default: 'Delete')}"
-                                onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');"/>
-            </fieldset>
-        </g:form>
+
     </div>
 </div>
 </body>

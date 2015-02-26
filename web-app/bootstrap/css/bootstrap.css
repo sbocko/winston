@@ -1815,7 +1815,8 @@ dd {
 }
 
 dt {
-    font-weight: bold;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 dd {
@@ -1825,16 +1826,23 @@ dd {
 @media (min-width: 768px) {
     .dl-horizontal dt {
         float: left;
-        width: 160px;
+        /*width: 160px;*/
+        width: 300px;
         overflow: hidden;
         clear: left;
         text-align: right;
         text-overflow: ellipsis;
         white-space: nowrap;
+        margin-bottom: 20px;
     }
 
     .dl-horizontal dd {
-        margin-left: 180px;
+        /*margin-left: 180px;*/
+        margin-left: 320px;
+    }
+
+    dt {
+        font-size: 21px;
     }
 }
 
@@ -7996,6 +8004,16 @@ body {
 
 .to-right {
     float: right;
+}
+
+.vertical-aligner {
+    font-size:16px;
+}
+
+@media (min-width: 768px) {
+    .vertical-aligner {
+        font-size:21px;
+    }
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
