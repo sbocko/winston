@@ -1,4 +1,4 @@
-<%@ page import="winston.Dataset" %>
+<%@ page import="winston.NumericAttribute; winston.Dataset" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +28,6 @@
             <g:else>
                 <h1 class="lead"><g:message code="default.show.label" args="[entityName]"/></h1>
             </g:else>
-
         </div>
 
         <div class="lead">
@@ -124,68 +123,112 @@
                     </dd>
                 </g:if>
 
-
-
             </dl>
         </div>
 
-        <ol class="property-list dataset">
+        <g:if test="${datasetInstance?.attributes}">
+            <div class="row">
+                <h2 class="container lead">
+                    <g:message code="dataset.attributes.label" default="Attributes"/>
+                </h2>
+            </div>
 
-            <g:if test="${datasetInstance?.attributes}">
-                <li class="fieldcontain">
-                    <span id="attributes-label" class="property-label"><g:message code="dataset.attributes.label"
-                                                                                  default="Attributes"/></span>
+            <table class="well table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>#</th>
 
-                    <g:each in="${datasetInstance.attributes}" var="a">
-                        <span class="property-value" aria-labelledby="attributes-label"><g:link controller="attribute"
-                                                                                                action="show"
-                                                                                                id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
-                    </g:each>
+                    <th><g:message code="attribute.title.label" default="Title"/></th>
 
-                </li>
-            </g:if>
+                    <th>Type</th>
 
-            <g:if test="${datasetInstance?.analyzes}">
-                <div class="row">
-                    <h2 class="container lead">Top analyzes</h2>
-                </div>
+                </tr>
+                </thead>
+                <tbody>
+                <g:each in="${datasetInstance.attributes.sort() { it.positionInDataFile }}" status="i"
+                        var="attributeInstance">
+                    <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-                <table class="well table table-striped table-hover">
-                    <thead>
-                    <tr>
-                        <th>#</th>
+                        <td>${i + 1}</td>
 
-                        <th><g:message code="analysis.dataFile.label" default="Data File"/></th>
+                        <td><g:link action="show"
+                                    id="${attributeInstance.id}">${fieldValue(bean: attributeInstance, field: "title")}</g:link></td>
 
-                        <th><g:message code="analysis.numberOfAttributes.label" default="Number Of Attributes"/></th>
-
-                        <th>Best rmse</th>
-
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <g:each in="${analysisInstances}" status="i" var="analysisInstance">
-                        <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-
-                            <td>${i + 1}</td>
-
-                            <td><g:link controller="analysis" action="show"
-                                        id="${analysisInstance.id}">${fieldValue(bean: analysisInstance, field: "dataFile")}</g:link></td>
-
-                            <td>${fieldValue(bean: analysisInstance, field: "numberOfAttributes")}</td>
-
-                            <g:set var="bestRmse" value="${analysisInstance.getBestRmse()}"/>
-                            <g:if test="${bestRmse == null}">
-                                <td>N/A</td>
-                            </g:if> <g:else>
-                            <td>${analysisInstance.getBestRmse()}</td>
+                        <g:if test="${attributeInstance.instanceOf(winston.NumericAttribute)}">
+                            <td>numeric</td>
+                        </g:if>
+                        <g:elseif test="${attributeInstance.instanceOf(winston.StringAttribute)}">
+                            <td>categorical</td>
+                        </g:elseif>
+                        <g:elseif test="${attributeInstance.instanceOf(winston.BooleanAttribute)}">
+                            <td>boolean</td>
+                        </g:elseif>
+                        <g:else>
+                            <td>unknown</td>
                         </g:else>
-                        </tr>
-                    </g:each>
-                    </tbody>
-                </table>
-            </g:if>
-        </ol>
+                    </tr>
+                </g:each>
+                </tbody>
+            </table>
+
+        </g:if>
+
+        <g:if test="${datasetInstance?.analyzes}">
+            <div class="row">
+                <h2 class="container lead">Top analyzes</h2>
+            </div>
+
+            <table class="well table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>#</th>
+
+                    <th><g:message code="analysis.dataFile.label" default="Data File"/></th>
+
+                    <th><g:message code="analysis.numberOfAttributes.label" default="Number Of Attributes"/></th>
+
+                    <th>Best rmse</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <g:each in="${analysisInstances.sort() { it.bestRmse }}" status="i" var="analysisInstance">
+                    <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+
+                        <td>${i + 1}</td>
+
+                        <td><g:link controller="analysis" action="show"
+                                    id="${analysisInstance.id}">${fieldValue(bean: analysisInstance, field: "dataFile")}</g:link></td>
+
+                        <td>${fieldValue(bean: analysisInstance, field: "numberOfAttributes")}</td>
+
+                        <g:set var="bestRmse" value="${analysisInstance.getBestRmse()}"/>
+                        <g:if test="${bestRmse == null}">
+                            <td>N/A</td>
+                        </g:if> <g:else>
+                        <td>${analysisInstance.getBestRmse()}</td>
+                    </g:else>
+                    </tr>
+                </g:each>
+                </tbody>
+            </table>
+        </g:if>
+        <g:else>
+            <div class="bs-docs-section  col-lg-6 centered">
+                <div class="row text-center">
+                    <p class="lead">This dataset has not yet been analyzed. Start new analysis by clicking the button below.
+                    The results will be shown here. You can run the analysis more times to obtain more accurate results.
+                    </p>
+
+                    <g:link controller="Analysis" action="create" params="${params}">
+                        <button class="btn btn-success btn-lg">
+                            <span class="glyphicon glyphicon-zoom-in"></span>
+                            Analyze
+                        </button>
+                    </g:link>
+                </div>
+            </div>
+        </g:else>
 
     </div>
 </div>

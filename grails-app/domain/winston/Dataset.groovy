@@ -2,6 +2,8 @@ package winston
 
 import sk.upjs.winston.User
 
+import javax.naming.directory.AttributeInUseException
+
 /**
  *
  * @author Stefan Bocko

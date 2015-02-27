@@ -18,6 +18,10 @@
           <script src="bootstrap/html5shiv.js"></script>
           <script src="bootstrap/respond.min.js"></script>
         <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="${request.contextPath}/bootstrap/js/bootstrap.min.js"></script>
+    <script src="${request.contextPath}/bootstrap/js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -52,10 +56,7 @@
 
 <div class="container">
     <g:layoutBody/>
+    <div class="page-header"/> %{--for some extra white space at the bottom--}%
 </div>
-
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="${request.contextPath}/bootstrap/js/bootstrap.min.js"></script>
-<script src="${request.contextPath}/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
