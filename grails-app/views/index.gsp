@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="bootstrap"/>
-		<title>Welcome to Grails</title>
+		<title>Welcome to Winston</title>
 	</head>
 	<body>
         <div class="centered container bs-docs-section">

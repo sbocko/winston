@@ -5,7 +5,6 @@
     <meta name="layout" content="bootstrap">
 
     <g:set var="entityName" value="${message(code: 'dataset.label', default: 'Dataset')}"/>
-    <title>Winston</title>
 </head>
 
 <body>

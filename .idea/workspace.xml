@@ -2,32 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2872d06-f73a-46b0-8b56-b73ba08989bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure11.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__delete_closure11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure9.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__save_closure9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure10.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_$tt__update_closure10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_analyze_closure8.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_analyze_closure8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_getTargetAttribute_closure6.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_getTargetAttribute_closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure12.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure13.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_notFound_closure5_closure13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessing_closure7.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_preprocessing_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure18.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure19.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__delete_closure11_closure19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure14.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure15.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__save_closure9_closure15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure16.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure17.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController$_tt__update_closure10_closure17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" afterPath="$PROJECT_DIR$/target/classes/winston/AnalysisController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Dataset$__clinit__closure3.class" afterPath="$PROJECT_DIR$/target/classes/winston/Dataset$__clinit__closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Dataset$_getAttributes_closure1.class" afterPath="$PROJECT_DIR$/target/classes/winston/Dataset$_getAttributes_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Dataset$_getTopAnalyzes_closure2.class" afterPath="$PROJECT_DIR$/target/classes/winston/Dataset$_getTopAnalyzes_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/winston/Dataset.class" afterPath="$PROJECT_DIR$/target/classes/winston/Dataset.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/bootstrap.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/bootstrap.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/create.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/dataset/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/dataset/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/dataset/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/dataset/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/error.gsp" afterPath="$PROJECT_DIR$/grails-app/views/error.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/dataset/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/dataset/list.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/booleanAttribute/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/booleanAttribute/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/knnResult/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/knnResult/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/numericAttribute/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/numericAttribute/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/stringAttribute/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/stringAttribute/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/svmResult/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/svmResult/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="winston.iws" />
@@ -74,66 +65,18 @@
     <favorites_list name="winston" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56935686">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="show.gsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/show.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.1489363" vertical-offset="2124" max-vertical-offset="2715">
-                  <caret line="164" column="38" selection-start-line="164" selection-start-column="38" selection-end-line="164" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="preprocessing.gsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.4680853" vertical-offset="879" max-vertical-offset="1500">
-                  <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AnalysisController.groovy" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.025641026" vertical-offset="3135" max-vertical-offset="3975">
-                  <caret line="213" column="52" selection-start-line="213" selection-start-column="52" selection-end-line="213" selection-end-column="52" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="show.gsp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/show.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5187166" vertical-offset="2889" max-vertical-offset="3570">
-                  <caret line="212" column="12" selection-start-line="212" selection-start-column="12" selection-end-line="212" selection-end-column="60" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="create.gsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/create.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="2.4255319" vertical-offset="909" max-vertical-offset="1470">
-                  <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="AnalysisController.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.17948718" vertical-offset="3015" max-vertical-offset="3975">
+              <caret line="213" column="52" selection-start-line="213" selection-start-column="52" selection-end-line="213" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/services/winston/PreprocessingService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/AnalysisService.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/sk/upjs/winston/groovy/algorithms/SvmModel.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/BackgroundService.groovy" />
@@ -161,37 +103,38 @@
         <option value="$PROJECT_DIR$/web-app/bootstrap/css/bootstrap-theme.css.map" />
         <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main-new-backup.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/register/forgotPassword.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/register/resetPassword.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/login/auth.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/attribute/list.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/bootstrap.gsp" />
-        <option value="$PROJECT_DIR$/web-app/bootstrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/grails-app/views/dataset/_form.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/dataset/list.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/dataset/_edit-form.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/dataset/edit.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/DatasetService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/winston/DatasetController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/ModellingService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/numericAttribute/show.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/booleanAttribute/show.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/stringAttribute/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/svmResult/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/error.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/dataset/list.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/dataset/edit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/dataset/create.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/analysis/create.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/booleanAttribute/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/knnResult/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/dataset/show.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/dataset/create.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/analysis/create.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/numericAttribute/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/stringAttribute/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/svmResult/show.gsp" />
+        <option value="$PROJECT_DIR$/web-app/bootstrap/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/bootstrap.gsp" />
       </list>
     </option>
   </component>
@@ -450,7 +393,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dataset" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -472,7 +415,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="analysis" />
+              <option name="myItemId" value="decisionTreeResult" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1005,7 +948,7 @@
       <workItem from="1424691954155" duration="3898000" />
       <workItem from="1424714601558" duration="11000" />
       <workItem from="1424876609115" duration="40914000" />
-      <workItem from="1425114656730" duration="13344000" />
+      <workItem from="1425114656730" duration="14725000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug with Role auto-assignment for newly registered users.">
       <created>1419501828105</created>
@@ -1223,11 +1166,17 @@
       <option name="project" value="LOCAL" />
       <updated>1425118446056</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Implemented views for analyzes.">
+      <created>1425137441403</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1425137441403</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302417000" />
+    <option name="totallyTimeSpent" value="303798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="992" extended-state="6" />
@@ -1285,8 +1234,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Background GS implemented. Mail is sent to user when the analysis finish." />
-    <MESSAGE value="Similarity Search implemented." />
     <MESSAGE value="Generated controllers and views for AnalysisResults." />
     <MESSAGE value="Added table with analyzes for Dataset and table with Results for Analysis." />
     <MESSAGE value="Backup commit." />
@@ -1310,7 +1257,9 @@
     <MESSAGE value="Implemented show view for Logistic regression model." />
     <MESSAGE value="Implemented show view for SVM model. Fixed bugs with zero values." />
     <MESSAGE value="Implemented show view for Analysis." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented show view for Analysis." />
+    <MESSAGE value="Implemented analyzes." />
+    <MESSAGE value="Implemented views for analyzes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented views for analyzes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1327,13 +1276,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1902" max-vertical-offset="2370">
-          <caret line="147" column="18" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/register.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.25" vertical-offset="801" max-vertical-offset="1245">
@@ -1406,14 +1348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="825">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main-new-backup.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.576" vertical-offset="0" max-vertical-offset="1050">
@@ -1442,13 +1376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/login/auth.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29900333" vertical-offset="0" max-vertical-offset="1290">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/attribute/list.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.744681" vertical-offset="268" max-vertical-offset="900">
@@ -1466,22 +1393,6 @@
       </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/bootstrap.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.432" vertical-offset="15" max-vertical-offset="1020">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9075501" vertical-offset="120041" max-vertical-offset="120765">
-          <caret line="8042" column="1" selection-start-line="8042" selection-start-column="1" selection-end-line="8042" selection-end-column="1" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/_edit-form.gsp">
@@ -1562,29 +1473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.42780748" vertical-offset="495" max-vertical-offset="1905">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/stringAttribute/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72192514" vertical-offset="0" max-vertical-offset="1575">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/numericAttribute/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.7021275" vertical-offset="150" max-vertical-offset="2025">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08108108" vertical-offset="0" max-vertical-offset="555">
@@ -1594,38 +1482,6 @@
       </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.6595745" vertical-offset="444" max-vertical-offset="1515">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/svmResult/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.106383" vertical-offset="579" max-vertical-offset="1515">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5531917" vertical-offset="714" max-vertical-offset="1500">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/knnResult/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.936171" vertical-offset="384" max-vertical-offset="1260">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/lang/Long.java">
@@ -1655,14 +1511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/booleanAttribute/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45454547" vertical-offset="210" max-vertical-offset="1710">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="36" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/Dataset.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.245283" vertical-offset="390" max-vertical-offset="1515">
@@ -1682,38 +1530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4117647" vertical-offset="519" max-vertical-offset="1080">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="61" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61497325" vertical-offset="90" max-vertical-offset="1125">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4255319" vertical-offset="909" max-vertical-offset="1470">
-          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4680853" vertical-offset="879" max-vertical-offset="1500">
-          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/winston/AnalysisService.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33223686" vertical-offset="8" max-vertical-offset="5205">
@@ -1722,25 +1538,161 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/login/auth.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5240642" vertical-offset="474" max-vertical-offset="1290">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/error.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10273973" vertical-offset="0" max-vertical-offset="584">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5187166" vertical-offset="2889" max-vertical-offset="3570">
-          <caret line="212" column="12" selection-start-line="212" selection-start-column="12" selection-end-line="212" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.18716578" vertical-offset="0" max-vertical-offset="3555">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18716578" vertical-offset="0" max-vertical-offset="1890">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="1065">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/dataset/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18716578" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1489363" vertical-offset="2124" max-vertical-offset="2715">
-          <caret line="164" column="38" selection-start-line="164" selection-start-column="38" selection-end-line="164" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="2700">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/preprocessing.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18716578" vertical-offset="0" max-vertical-offset="1485">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/analysis/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18716578" vertical-offset="0" max-vertical-offset="1455">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/booleanAttribute/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="1695">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/knnResult/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="1245">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18716578" vertical-offset="0" max-vertical-offset="1485">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/numericAttribute/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18716578" vertical-offset="0" max-vertical-offset="2010">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/stringAttribute/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18716578" vertical-offset="0" max-vertical-offset="1560">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/svmResult/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="1500">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="1500">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.148148" vertical-offset="71402" max-vertical-offset="120765">
+          <caret line="4773" column="4" selection-start-line="4773" selection-start-column="1" selection-end-line="4773" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66780823" vertical-offset="0" max-vertical-offset="825">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/bootstrap.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48801368" vertical-offset="240" max-vertical-offset="1020">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/winston/AnalysisController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.025641026" vertical-offset="3135" max-vertical-offset="3975">
+        <state vertical-scroll-proportion="0.17948718" vertical-offset="3015" max-vertical-offset="3975">
           <caret line="213" column="52" selection-start-line="213" selection-start-column="52" selection-end-line="213" selection-end-column="52" />
           <folding />
         </state>

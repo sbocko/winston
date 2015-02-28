@@ -5,7 +5,6 @@
     <meta name="layout" content="bootstrap">
 
     <g:set var="entityName" value="${message(code: 'numericAttribute.label', default: 'NumericAttribute')}"/>
-    <title><g:message code="default.show.label" args="[entityName]"/></title>
 </head>
 
 <body>

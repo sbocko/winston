@@ -5,7 +5,6 @@
     <meta name="layout" content="bootstrap">
     <g:set var="entityName"
            value="${message(code: 'logisticRegressionResult.label', default: 'LogisticRegressionResult')}"/>
-    <title><g:message code="default.show.label" args="[entityName]"/></title>
 </head>
 
 <body>

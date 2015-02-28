@@ -33,7 +33,7 @@
             %{--<a href="#" class="navbar-brand">Winston</a>--}%
         </div>
 
-        <div class="navbar-collapse collapse" id="navbar-main">
+        <div class=" navbar-default" id="navbar-main">
             <ul class="nav navbar-nav">
                 <sec:ifLoggedIn>
                     <li>

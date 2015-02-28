@@ -4,7 +4,7 @@
 <head>
     <meta name="layout" content="bootstrap">
     <g:set var="entityName" value="${message(code: 'dataset.label', default: 'Dataset')}"/>
-    <title><g:message code="default.create.label" args="[entityName]"/></title>
+    %{--<title><g:message code="default.create.label" args="[entityName]"/></title>--}%
 </head>
 
 <body>
