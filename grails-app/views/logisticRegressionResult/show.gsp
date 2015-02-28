@@ -56,41 +56,35 @@
                     <a href="http://en.wikipedia.org/wiki/Logistic_regression" target="_blank">Logistic regression</a>
                 </dd>
 
-                <g:if test="${logisticRegressionResultInstance?.rmse}">
-                    <dt>
-                        <g:message code="logisticRegressionResult.rmse.label" default="Rmse"/>
-                    </dt>
-                    <dd>
-                        <span class="vertical-aligner"></span>
-                        <g:fieldValue bean="${logisticRegressionResultInstance}" field="rmse"/>
-                    </dd>
-                </g:if>
+                <dt>
+                    <g:message code="logisticRegressionResult.rmse.label" default="Rmse"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${logisticRegressionResultInstance}" field="rmse"/>
+                </dd>
 
-                <g:if test="${logisticRegressionResultInstance?.maximumNumberOfIterations}">
-                    <dt>
-                        <g:message code="logisticRegressionResult.maximumNumberOfIterations.label"
-                                   default="Maximum Number Of Iterations"/>
-                    </dt>
-                    <dd>
-                        <span class="vertical-aligner"></span>
-                        <g:if test="${logisticRegressionResultInstance.maximumNumberOfIterations == winston.LogisticRegressionResult.ITERATE_UNTIL_CONVERGENCE}">
-                            Not limited
-                        </g:if>
-                        <g:else>
-                            <g:fieldValue bean="${logisticRegressionResultInstance}" field="maximumNumberOfIterations"/>
-                        </g:else>
-                    </dd>
-                </g:if>
+                <dt>
+                    <g:message code="logisticRegressionResult.maximumNumberOfIterations.label"
+                               default="Maximum Number Of Iterations"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:if test="${logisticRegressionResultInstance.maximumNumberOfIterations == winston.LogisticRegressionResult.ITERATE_UNTIL_CONVERGENCE}">
+                        Not limited
+                    </g:if>
+                    <g:else>
+                        <g:fieldValue bean="${logisticRegressionResultInstance}" field="maximumNumberOfIterations"/>
+                    </g:else>
+                </dd>
 
-                <g:if test="${logisticRegressionResultInstance?.ridge}">
-                    <dt>
-                        <g:message code="logisticRegressionResult.ridge.label" default="Ridge"/>
-                    </dt>
-                    <dd>
-                        <span class="vertical-aligner"></span>
-                        <g:fieldValue bean="${logisticRegressionResultInstance}" field="ridge"/>
-                    </dd>
-                </g:if>
+                <dt>
+                    <g:message code="logisticRegressionResult.ridge.label" default="Ridge"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${logisticRegressionResultInstance}" field="ridge"/>
+                </dd>
             </dl>
         </div>
 

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2872d06-f73a-46b0-8b56-b73ba08989bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/knnResult/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/knnResult/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winston-grailsPlugins.iml" afterPath="$PROJECT_DIR$/winston-grailsPlugins.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/svmResult/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/svmResult/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="winston.iws" />
@@ -58,8 +58,18 @@
           <file leaf-file-name="show.gsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8128342" vertical-offset="1029" max-vertical-offset="1590">
-                  <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.46524063" vertical-offset="714" max-vertical-offset="1500">
+                  <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.gsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/grails-app/views/svmResult/show.gsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-8.106383" vertical-offset="579" max-vertical-offset="1515">
+                  <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -70,10 +80,20 @@
       <split-second>
         <leaf>
           <file leaf-file-name="show.gsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/grails-app/views/knnResult/show.gsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="1.0" vertical-offset="384" max-vertical-offset="1260">
+                  <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.gsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7593583" vertical-offset="1044" max-vertical-offset="1605">
-                  <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+                <state vertical-scroll-proportion="-10.6595745" vertical-offset="444" max-vertical-offset="1515">
+                  <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -89,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/views/analysis/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/MissingValuesHandlingService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/winston/AnalyzeService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/analysis/show.gsp" />
@@ -137,6 +156,7 @@
         <option value="$PROJECT_DIR$/grails-app/views/booleanAttribute/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/stringAttribute/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/winston/Analysis.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/svmResult/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/knnResult/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp" />
@@ -931,7 +951,7 @@
       <workItem from="1424691954155" duration="3898000" />
       <workItem from="1424714601558" duration="11000" />
       <workItem from="1424876609115" duration="40914000" />
-      <workItem from="1425114656730" duration="556000" />
+      <workItem from="1425114656730" duration="1144000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug with Role auto-assignment for newly registered users.">
       <created>1419501828105</created>
@@ -1131,11 +1151,17 @@
       <option name="project" value="LOCAL" />
       <updated>1425114552602</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Implemented show view for Logistic regression model.">
+      <created>1425115234502</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1425115234502</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289629000" />
+    <option name="totallyTimeSpent" value="290217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="992" extended-state="6" />
@@ -1166,6 +1192,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1174,7 +1201,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37555555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1193,7 +1219,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Analysis domain+controller+views created." />
     <MESSAGE value="Created AnalysisResults for Knn, DecTree, LogReg and SVM." />
     <MESSAGE value="Created field for number of attributes for Analysis." />
     <MESSAGE value="Background GS implemented. Mail is sent to user when the analysis finish." />
@@ -1218,7 +1243,8 @@
     <MESSAGE value="Implemented show view for NumericAttribute." />
     <MESSAGE value="Implemented show view for String, Boolean Attribute and Decision tree model." />
     <MESSAGE value="Implemented show view for KNN model." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented show view for KNN model." />
+    <MESSAGE value="Implemented show view for Logistic regression model." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented show view for Logistic regression model." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1235,13 +1261,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/unit/winston/AttributeSpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="592">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/winston/NumericAttributeSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="592">
@@ -1481,7 +1500,7 @@
         <state vertical-scroll-proportion="0.52884614" vertical-offset="0" max-vertical-offset="1545">
           <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding>
-            <element signature="e#17#44#0" expanded="true" />
+            <element signature="e#17#44#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1598,14 +1617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/knnResult/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48242423" vertical-offset="487" max-vertical-offset="1335">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/winston/LogisticRegressionResult.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08108108" vertical-offset="0" max-vertical-offset="555">
@@ -1617,18 +1628,34 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8128342" vertical-offset="1029" max-vertical-offset="1590">
-          <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
+        <state vertical-scroll-proportion="-10.6595745" vertical-offset="444" max-vertical-offset="1515">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/decisionTreeResult/show.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/knnResult/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7593583" vertical-offset="1044" max-vertical-offset="1605">
-          <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+        <state vertical-scroll-proportion="1.0" vertical-offset="384" max-vertical-offset="1260">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/svmResult/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.106383" vertical-offset="579" max-vertical-offset="1515">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/logisticRegressionResult/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46524063" vertical-offset="714" max-vertical-offset="1500">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>

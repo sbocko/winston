@@ -54,36 +54,30 @@
                     <a href="http://en.wikipedia.org/wiki/Decision_tree" target="_blank">Decision Tree</a>
                 </dd>
 
-                <g:if test="${decisionTreeResultInstance?.rmse}">
-                    <dt>
-                        <g:message code="decisionTreeResult.rmse.label" default="Rmse"/>
-                    </dt>
-                    <dd>
-                        <span class="vertical-aligner"></span>
-                        <g:fieldValue bean="${decisionTreeResultInstance}" field="rmse"/>
-                    </dd>
-                </g:if>
+                <dt>
+                    <g:message code="decisionTreeResult.rmse.label" default="Rmse"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${decisionTreeResultInstance}" field="rmse"/>
+                </dd>
 
-                <g:if test="${decisionTreeResultInstance?.confidenceFactor}">
-                    <dt>
-                        <g:message code="decisionTreeResult.confidenceFactor.label" default="Confidence Factor"/>
-                    </dt>
-                    <dd>
-                        <span class="vertical-aligner"></span>
-                        <g:fieldValue bean="${decisionTreeResultInstance}" field="confidenceFactor"/>
-                    </dd>
-                </g:if>
+                <dt>
+                    <g:message code="decisionTreeResult.confidenceFactor.label" default="Confidence Factor"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${decisionTreeResultInstance}" field="confidenceFactor"/>
+                </dd>
 
-                <g:if test="${decisionTreeResultInstance?.minimumNumberOfInstancesPerLeaf}">
-                    <dt>
-                        <g:message code="decisionTreeResult.minimumNumberOfInstancesPerLeaf.label"
-                                   default="Minimum # of instances per leaf"/>
-                    </dt>
-                    <dd>
-                        <span class="vertical-aligner"></span>
-                        <g:fieldValue bean="${decisionTreeResultInstance}" field="minimumNumberOfInstancesPerLeaf"/>
-                    </dd>
-                </g:if>
+                <dt>
+                    <g:message code="decisionTreeResult.minimumNumberOfInstancesPerLeaf.label"
+                               default="Minimum # of instances per leaf"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${decisionTreeResultInstance}" field="minimumNumberOfInstancesPerLeaf"/>
+                </dd>
 
                 <dt>
                     Pruned

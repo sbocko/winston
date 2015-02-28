@@ -54,26 +54,21 @@
                     <a href="http://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" target="_blank">k-NN</a>
                 </dd>
 
-                <g:if test="${knnResultInstance?.rmse}">
-                    <dt>
-                        <g:message code="knnResult.rmse.label" default="Rmse"/>
-                    </dt>
-                    <dd>
-                        <span class="vertical-aligner"></span>
-                        <g:fieldValue bean="${knnResultInstance}" field="rmse"/>
-                    </dd>
-                </g:if>
+                <dt>
+                    <g:message code="knnResult.rmse.label" default="Rmse"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${knnResultInstance}" field="rmse"/>
+                </dd>
 
-
-                <g:if test="${knnResultInstance?.k}">
-                    <dt>
-                        <g:message code="knnResult.k.label" default="K"/>
-                    </dt>
-                    <dd>
-                        <span class="vertical-aligner"></span>
-                        <g:fieldValue bean="${knnResultInstance}" field="k"/>
-                    </dd>
-                </g:if>
+                <dt>
+                    <g:message code="knnResult.k.label" default="K"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${knnResultInstance}" field="k"/>
+                </dd>
             </dl>
         </div>
 
