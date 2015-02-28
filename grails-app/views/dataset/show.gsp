@@ -160,7 +160,7 @@
                             <td>boolean</td>
                         </g:elseif>
                         <g:else>
-                            <td>unknown</td>
+                            <td>Unknown</td>
                         </g:else>
                     </tr>
                 </g:each>
