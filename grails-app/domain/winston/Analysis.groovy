@@ -60,14 +60,6 @@ class Analysis {
 
     @Override
     public String toString() {
-        return "Analysis{" +
-                "id=" + id +
-                ", dataFile='" + dataFile + '\'' +
-                ", dataType='" + dataType + '\'' +
-                ", numberOfAttributes=" + numberOfAttributes +
-                ", analyzedByGridSearch=" + analyzedByGridSearch +
-                ", version=" + version +
-                ", dataset=" + dataset +
-                '}';
+        return  "${dataset.getTitle()} analysis"
     }
 }
