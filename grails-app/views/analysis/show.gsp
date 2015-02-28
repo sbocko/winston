@@ -148,6 +148,27 @@
                 </tbody>
             </table>
         </g:if>
+
+        <g:if test="${!analysisInstance.gridSearchAnalysisInProgress && !analysisInstance.analyzedByGridSearch}">
+            <div class="bs-docs-section  col-lg-6 centered">
+                <div class="row text-center">
+                    <p class="lead">Do you consider this analysis good? Run <a
+                            href="http://en.wikipedia.org/wiki/Hyperparameter_optimization#Grid_search"
+                            target="_blank">grid search</a>
+                        algorithm to obtain even better results. This algorithm simply tries all possible
+                        methods to describe your data and chooses the best one. Keep in mind that it can take a lot of time.
+                    </p>
+
+                    <g:link controller="analysis" action="gridSearch" params="${params}">
+                        <button class="btn btn-primary btn-lg">
+                            <span class="glyphicon glyphicon-th"></span>
+                            Run Grid Search
+                        </button>
+                    </g:link>
+                </div>
+            </div>
+
+        </g:if>
     </div>
 </div>
 </body>

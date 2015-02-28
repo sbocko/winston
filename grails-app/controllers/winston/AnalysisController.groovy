@@ -19,7 +19,8 @@ class AnalysisController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Analysis.list(params), model: [analysisInstanceCount: Analysis.count()]
+        redirect(controller: "dataset", action: "list")
+//        respond Analysis.list(params), model: [analysisInstanceCount: Analysis.count()]
     }
 
     def show(Analysis analysisInstance) {
@@ -31,11 +32,8 @@ class AnalysisController {
 
         def datasetInstance = Dataset.get(id)
         if (!datasetInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [
-                    message(code: 'dataset.label', default: 'Dataset'),
-                    id
-            ])
-            redirect(controller: "Dataset", action: "list")
+            flash.message = "Dataset not found!"
+            redirect(controller: "dataset", action: "list")
             return
         }
 
@@ -138,7 +136,7 @@ class AnalysisController {
 
     private void deleteAnalysisDataFiles(Analysis analysisInstance) {
         def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(AnalyzeService.PREPARED_DATAFILES_DIRECTORY)
+        def storagePath = servletContext.getRealPath(analysisService.PREPARED_DATAFILES_DIRECTORY)
         def storagePathDirectory = new File(storagePath)
         deleteFileForFilePath("${storagePathDirectory}/${analysisInstance.getDataFile()}")
     }
@@ -167,11 +165,17 @@ class AnalysisController {
                     message(code: 'dataset.label', default: 'Dataset'),
                     id
             ])
-            redirect(controller: "dataset", action: "list")
+            redirect(controller: "analysis", action: "create")
             return
         }
 
         def answer = params.targetAttributeRadioGroup
+
+        if(!answer) {
+            flash.error = "Target attribute has to be chosen."
+            redirect(controller: "analysis", action: "create", id: datasetInstance.getId())
+            return
+        }
 
         def targetAttributeId
         datasetInstance.attributes.each { attr ->
@@ -206,6 +210,10 @@ class AnalysisController {
             }
         }
 
+        if(!attrIdList || attrIdList.size() == 0) {
+            forward(action: "analyze", id: params.id, params: [targetAttributeId: targetAttributeId]);
+        }
+
         render(view: "preprocessing", model: [datasetInstance: datasetInstance, attrIdList: attrIdList, targetAttributeId: targetAttributeId])
     }
 
@@ -217,7 +225,7 @@ class AnalysisController {
                     message(code: 'dataset.label', default: 'Dataset'),
                     id
             ])
-            redirect(action: "list")
+            redirect(controller: "dataset", action: "list")
             return
         }
         Long targetAttributeId = Long.parseLong(params.targetAttributeId)
@@ -238,7 +246,10 @@ class AnalysisController {
 //        Analysis analysis = preprocessingService.createAnalysis(datasetInstance, attributesToSplit, target)
         analysisService.generateAnalyzes(datasetInstance, attributesToSplit, target)
 
-        redirect(controller: "Dataset", action: "show", id: datasetInstance.getId())
+        flash.message = "We have started several analyzes, we think can perform well on your data. " +
+                "The first one is already done. You can view it in the table at the end of this page. " +
+                "More analyzes will be there over time. We will notify you by an email."
+        redirect(controller: "dataset", action: "show", id: datasetInstance.getId())
     }
 
     /** HELPER METHODS */
