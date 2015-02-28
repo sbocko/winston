@@ -12,16 +12,19 @@
 <div class="body-container">
     <div id="list-dataset" class="content scaffold-list" role="main">
 
-        <g:if test='${flash.message}'>
-            <div class="alert alert-dismissable alert-info">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                <h4>Check out</h4>
-
-                <p>${flash.message}</p>
-            </div>
-        </g:if>
-
         <g:if test="${datasetInstanceList.size() == 0}">
+
+            <div class="page-header">
+                <g:if test='${flash.message}'>
+                    <div class="alert alert-dismissable alert-info">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Check out</h4>
+
+                        <p>${flash.message}</p>
+                    </div>
+                </g:if>
+            </div>
+
             <div class="container bs-docs-section well col-lg-6 centered">
                 <div class="row text-center">
                     <h1>Welcome</h1>
@@ -43,6 +46,15 @@
         <g:else>
         %{--show user's datasets--}%
             <div class="page-header">
+                <g:if test='${flash.message}'>
+                    <div class="alert alert-dismissable alert-info">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Check out</h4>
+
+                        <p>${flash.message}</p>
+                    </div>
+                </g:if>
+
                 <h1 class="lead"><g:message code="default.list.label" args="[entityName]"/></h1>
             </div>
 

@@ -11,6 +11,8 @@ import weka.core.Instances
 
 @Transactional
 class ModellingService {
+    def analysisService
+
     def performRecommendedDataMiningMethodForAnalysis(Analysis analysis) {
         AnalysisResult recommendedMethod = getRecommendedMethod(analysis)
         if(!recommendedMethod) {
@@ -264,7 +266,7 @@ class ModellingService {
 
     private File getArffFileForAnalysis(Analysis analysis) {
         def servletContext = ServletContextHolder.servletContext
-        def storagePath = servletContext.getRealPath(AnalyzeService.PREPARED_DATAFILES_DIRECTORY)
+        def storagePath = servletContext.getRealPath(analysisService.PREPARED_DATAFILES_DIRECTORY)
         String filepath = storagePath + "/" + analysis.getDataFile()
         return new File(filepath)
     }

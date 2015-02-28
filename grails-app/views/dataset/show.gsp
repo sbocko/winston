@@ -57,10 +57,6 @@
             </g:link>
         </div>
 
-        <g:if test="${flash.message}">
-            <div class="message" role="status">${flash.message}</div>
-        </g:if>
-
         <div class="row">
             <dl class="dl-horizontal">
                 <g:if test="${datasetInstance?.title}">
@@ -73,13 +69,13 @@
                     </dd>
                 </g:if>
 
-                <g:if test="${datasetInstance?.dataFile}">
+                <g:if test="${datasetInstance?.originalFilename}">
                     <dt>
                         <g:message code="dataset.dataFile.label" default="Data File"/>
                     </dt>
                     <dd>
                         <span class="vertical-aligner"></span>
-                        <g:fieldValue bean="${datasetInstance}" field="dataFile"/>
+                        <g:fieldValue bean="${datasetInstance}" field="originalFilename"/>
                     </dd>
                 </g:if>
 
@@ -151,7 +147,7 @@
 
                         <td>${i + 1}</td>
 
-                        <td><g:link action="show"
+                        <td><g:link controller="attribute" action="show"
                                     id="${attributeInstance.id}">${fieldValue(bean: attributeInstance, field: "title")}</g:link></td>
 
                         <g:if test="${attributeInstance.instanceOf(winston.NumericAttribute)}">

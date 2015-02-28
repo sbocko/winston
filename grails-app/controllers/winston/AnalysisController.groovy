@@ -69,7 +69,7 @@ class AnalysisController {
     def gridSearch(Analysis analysisInstance) {
         analysisInstance.setGridSearchAnalysisInProgress(true)
         analysisInstance.save(flush: true)
-        modellingService.performGridsearchAnalysisForFile(analysisInstance)
+//        modellingService.performGridsearchAnalysisForFile(analysisInstance)
         backgroundService.performGridSearchForAnalysis(analysisInstance)
 
         flash.message = message(code: 'default.gridSearch.message', default: "Grid successfully search started. You will be notified by an email when it finishes."

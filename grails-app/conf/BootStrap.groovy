@@ -39,7 +39,7 @@ class BootStrap {
 //        if (resourceDir.exists()) {
 //            println "processing datasets from resource dir"
 //            resourceDir.eachFile { file ->
-//                processDataset(file, datasetNameList);
+//                saveDataset(file, datasetNameList);
 //            }
 //        }
 

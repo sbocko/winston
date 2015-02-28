@@ -9,6 +9,7 @@ import sk.upjs.winston.groovy.converter.CSV2ArffConverter
 
 @Transactional
 class DatasetService {
+    public static final int SALT_LENGTH = 9
     def fileUploadService
 
     public static final String DEFAULT_DELIMITER = ","
@@ -16,11 +17,21 @@ class DatasetService {
 
     public def saveDataset(User user, def title, def description, def file, def missingValuePattern) {
         println "Dataset file: ${file}"
-        String filename = null
+        String originalFilename = null
         if (file != null && file.size() != 0) {
-            filename = file.getName()
-            println "Dataset filename: ${filename}"
+            originalFilename = file.getName()
+            println "Dataset filename: ${originalFilename}"
         }
+
+        String filename = originalFilename
+        int extensionIndex = originalFilename.lastIndexOf(".")
+        if (extensionIndex >= 0) {
+            filename = originalFilename.substring(0,extensionIndex) + generateRandomSalt() + originalFilename.substring(extensionIndex, originalFilename.length())
+        } else {
+
+        }
+
+        println "SALT: ${generateRandomSalt()}"
 
         //get storage path
         def servletContext = ServletContextHolder.servletContext
@@ -36,6 +47,7 @@ class DatasetService {
         Dataset datasetInstance = new Dataset()
         datasetInstance.setUser(user)
         datasetInstance.setTitle(title)
+        datasetInstance.setOriginalFilename(originalFilename)
         datasetInstance.setDataFile(filename)
         datasetInstance.setArffDataFile(arff.getName())
         datasetInstance.setDescription(description)
@@ -98,6 +110,15 @@ class DatasetService {
         if (file.exists()) {
             file.delete()
         }
+    }
+
+    private String generateRandomSalt() {
+        def generator = { String alphabet, int n ->
+            new Random().with {
+                (1..n).collect { alphabet[nextInt(alphabet.length())] }.join()
+            }
+        }
+        return "(${generator((('A'..'Z') + ('0'..'9') + ('a'..'z')).join(), SALT_LENGTH)})"
     }
 
 }

@@ -20,6 +20,7 @@ class Dataset {
     public static final String NUMBER_OF_INSTANCES_VAR = "numberOfInstances"
 
     String title
+    String originalFilename
     String dataFile
     String arffDataFile
     String description
@@ -30,7 +31,7 @@ class Dataset {
     static belongsTo = [user: User]
 
     static constraints = {
-        title(nullable: false)
+        title(nullable: false, blank: false)
         dataFile(nullable: false)
         description(maxSize: 5000, nullable: true)
         missingValuePattern(nullable: true)

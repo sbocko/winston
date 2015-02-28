@@ -46,21 +46,27 @@ class DatasetController {
      *
      */
     def save() {
+        def missingValuePattern = params.get(Dataset.MISSING_VALUE_PATTERN_VAR)
+        String title = params.get(Dataset.TITLE_VAR)
+        def description = params.get(Dataset.DESCRIPTION_VAR)
+        User user = springSecurityService.getCurrentUser()
+
+        if(title == null || title.trim().length() == 0){
+            flash.error = "Field title cannot be empty!"
+            redirect(action: "create", params: params)
+            return
+        }
+
         //get dataset attribute values
         def file = request.getFile(Dataset.DATA_FILE_VAR)
         File myFile = new File(file.getOriginalFilename())
         try {
             file.transferTo(myFile)
         } catch (IOException e){
-            flash.message = "Field Data File can not be empty!"
+            flash.error = "Field Data File can not be empty!"
             redirect(action: "create", params: params)
             return
         }
-
-        def missingValuePattern = params.get(Dataset.MISSING_VALUE_PATTERN_VAR)
-        def title = params.get(Dataset.TITLE_VAR)
-        def description = params.get(Dataset.DESCRIPTION_VAR)
-        User user = springSecurityService.getCurrentUser()
 
         def datasetInstance;
         try {
@@ -71,9 +77,10 @@ class DatasetController {
             return
         }
 
+
         //if some error occures
         if (!datasetInstance) {
-            render(view: "create", model: [datasetInstance: datasetInstance])
+            render(view: "create", params:params,  model: [datasetInstance: datasetInstance])
             return
         }
 
@@ -108,7 +115,6 @@ class DatasetController {
             redirect(action: "list")
             return
         }
-
         [datasetInstance: datasetInstance]
     }
 
@@ -117,7 +123,7 @@ class DatasetController {
         if (!datasetInstance) {
             flash.message = message(code: 'default.not.found.message', args: [
                     message(code: 'dataset.label', default: 'Dataset'),
-                    id
+                    datasetInstance.getTitle()
             ])
             redirect(action: "list")
             return
@@ -142,13 +148,12 @@ class DatasetController {
 
         flash.message = message(code: 'default.updated.message', args: [
                 message(code: 'dataset.label', default: 'Dataset'),
-                datasetInstance.id
+                datasetInstance.getTitle()
         ])
         redirect(action: "show", id: datasetInstance.id)
     }
 
     def delete(Long id) {
-        println "ID: $id"
         def datasetInstance = Dataset.get(id)
         if (!datasetInstance) {
             flash.message = message(code: 'default.not.found.message', args: [
@@ -161,7 +166,7 @@ class DatasetController {
 
         def title = datasetInstance.getTitle();
         try {
-            datasetService.deleteDatasetFiles(id)
+//            datasetService.deleteDatasetFiles(id)
             datasetInstance.delete(flush: true)
             flash.message = message(code: 'default.deleted.message', args: [
                     message(code: 'dataset.label', default: 'Dataset'),
