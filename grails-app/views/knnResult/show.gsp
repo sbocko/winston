@@ -54,6 +54,14 @@
                 </dd>
 
                 <dt>
+                    <g:message code="knnResult.k.label" default="K"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${knnResultInstance}" field="k"/>
+                </dd>
+
+                <dt>
                     <g:message code="knnResult.rmse.label" default="Rmse"/>
                 </dt>
                 <dd>
@@ -62,11 +70,35 @@
                 </dd>
 
                 <dt>
-                    <g:message code="knnResult.k.label" default="K"/>
+                    <g:message code="knnResult.meanAbsoluteError.label" default="Mean Absolute Error"/>
                 </dt>
                 <dd>
                     <span class="vertical-aligner"></span>
-                    <g:fieldValue bean="${knnResultInstance}" field="k"/>
+                    <g:fieldValue bean="${knnResultInstance}" field="meanAbsoluteError"/>
+                </dd>
+
+                <dt>
+                    <g:message code="knnResult.correctlyClassified.label" default="Correctly classified instances"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${knnResultInstance}" field="correctlyClassified"/>
+                </dd>
+
+                <dt>
+                    <g:message code="knnResult.incorrectlyClassified.label" default="Incorrectly classified instances"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${knnResultInstance}" field="incorrectlyClassified"/>
+                </dd>
+
+                <dt>
+                    <g:message code="knnResult.summary.label" default="Summary"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <pre><g:fieldValue bean="${knnResultInstance}" field="summary"/></pre>
                 </dd>
             </dl>
         </div>

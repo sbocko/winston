@@ -7,6 +7,7 @@ import sk.upjs.winston.groovy.algorithms.DecisionTreeModel
 import sk.upjs.winston.groovy.algorithms.KnnModel
 import sk.upjs.winston.groovy.algorithms.LogisticRegressionModel
 import sk.upjs.winston.groovy.algorithms.SvmModel
+import weka.classifiers.Evaluation
 import weka.core.Instances
 
 @Transactional
@@ -15,7 +16,7 @@ class ModellingService {
 
     def performRecommendedDataMiningMethodForAnalysis(Analysis analysis) {
         AnalysisResult recommendedMethod = getRecommendedMethod(analysis)
-        if(!recommendedMethod) {
+        if (!recommendedMethod) {
             println "no method to recommend"
             return
         }
@@ -23,34 +24,62 @@ class ModellingService {
         BufferedReader r = new BufferedReader(
                 new FileReader(getArffFileForAnalysis(analysis)))
         Instances instances = new Instances(r)
-        instances.setClassIndex(instances.numAttributes()-1)
+        instances.setClassIndex(instances.numAttributes() - 1)
         r.close()
 
         if (recommendedMethod instanceof KnnResult) {
             int k = recommendedMethod.getK()
-            double rmse = (new KnnModel()).knn(instances, k)
-            KnnResult knn = new KnnResult(analysis, rmse, k)
-            analysis.addToResults(knn)
+            Evaluation trained = (new KnnModel()).knn(instances, k)
+            if (trained != null) {
+                double rmse = trained.rootMeanSquaredError()
+                double meanAbsoluteError = trained.meanAbsoluteError()
+                int correct = trained.correct()
+                int incorrect = trained.incorrect()
+                String sumamry = trained.toSummaryString()
+                KnnResult knn = new KnnResult(analysis, rmse, meanAbsoluteError, correct, incorrect, sumamry, k)
+                analysis.addToResults(knn)
+            }
         } else if (recommendedMethod instanceof LogisticRegressionResult) {
             double ridge = recommendedMethod.getRidge()
             int maximumNumberOfIterations = recommendedMethod.getMaximumNumberOfIterations()
-            double rmse = (new LogisticRegressionModel()).logisticRegression(instances, ridge, maximumNumberOfIterations)
-            LogisticRegressionResult logisticRegression = new LogisticRegressionResult(analysis, rmse, ridge, maximumNumberOfIterations)
-            analysis.addToResults(logisticRegression)
+            Evaluation trained = (new LogisticRegressionModel()).logisticRegression(instances, ridge, maximumNumberOfIterations)
+            if (trained != null) {
+                double rmse = trained.rootMeanSquaredError()
+                double meanAbsoluteError = trained.meanAbsoluteError()
+                int correct = trained.correct()
+                int incorrect = trained.incorrect()
+                String sumamry = trained.toSummaryString()
+                LogisticRegressionResult logisticRegression = new LogisticRegressionResult(analysis, rmse, meanAbsoluteError, correct, incorrect, sumamry, ridge, maximumNumberOfIterations)
+                analysis.addToResults(logisticRegression)
+            }
         } else if (recommendedMethod instanceof DecisionTreeResult) {
             int m = recommendedMethod.getMinimumNumberOfInstancesPerLeaf()
             float c = recommendedMethod.getConfidenceFactor()
             boolean unpruned = recommendedMethod.getUnpruned()
-            double rmse = (new DecisionTreeModel()).j48DecisionTreeAnalysis(instances,m,c,unpruned)
-            DecisionTreeResult decisionTree = new DecisionTreeResult(analysis, rmse, c, m, unpruned)
-            analysis.addToResults(decisionTree)
+            Evaluation trained = (new DecisionTreeModel()).j48DecisionTreeAnalysis(instances, m, c, unpruned)
+            if (trained != null) {
+                double rmse = trained.rootMeanSquaredError()
+                double meanAbsoluteError = trained.meanAbsoluteError()
+                int correct = trained.correct()
+                int incorrect = trained.incorrect()
+                String sumamry = trained.toSummaryString()
+                DecisionTreeResult decisionTree = new DecisionTreeResult(analysis, rmse, meanAbsoluteError, correct, incorrect, sumamry, c, m, unpruned)
+                analysis.addToResults(decisionTree)
+            }
         } else if (recommendedMethod instanceof SvmResult) {
             String kernel = recommendedMethod.getKernel()
             double complexityConstant = recommendedMethod.getComplexityConstant()
             double gamma = recommendedMethod.getGamma()
-            double rmse = (new SvmModel()).svm(instances, kernel, complexityConstant, gamma)
-            SvmResult svm = new SvmResult(analysis, rmse, kernel, complexityConstant, gamma)
-            analysis.addToResults(svm)
+            Evaluation trained = (new SvmModel()).svm(instances, kernel, complexityConstant, gamma)
+            if (trained != null) {
+                double rmse = trained.rootMeanSquaredError()
+                double meanAbsoluteError = trained.meanAbsoluteError()
+                int correct = trained.correct()
+                int incorrect = trained.incorrect()
+                String sumamry = trained.toSummaryString()
+                SvmResult svm = new SvmResult(analysis, rmse, meanAbsoluteError, correct, incorrect, sumamry, kernel, complexityConstant, gamma)
+                analysis.addToResults(svm)
+            }
         }
         analysis.save(flush: true)
     }
@@ -65,23 +94,51 @@ class ModellingService {
         reader.close();
         dataInstances.setClassIndex(dataInstances.numAttributes() - 1);
 
-        double rmse = (new KnnModel()).knn(dataInstances, KnnModel.DEFAULT_KNN_PARAMETER_K)
-        AnalysisResult res = new KnnResult(analysis, rmse, KnnModel.DEFAULT_KNN_PARAMETER_K)
-        analysis.addToResults(res)
+        Evaluation trained = (new KnnModel()).knn(dataInstances, KnnModel.DEFAULT_KNN_PARAMETER_K)
+        if (trained != null) {
+            double rmse = trained.rootMeanSquaredError()
+            double meanAbsoluteError = trained.meanAbsoluteError()
+            int correct = trained.correct()
+            int incorrect = trained.incorrect()
+            String sumamry = trained.toSummaryString()
+            AnalysisResult res = new KnnResult(analysis, rmse, meanAbsoluteError, correct, incorrect, sumamry, KnnModel.DEFAULT_KNN_PARAMETER_K)
+            analysis.addToResults(res)
+        }
 
-        rmse = (new DecisionTreeModel()).j48DecisionTreeAnalysis(dataInstances, DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_MIN_NUMBER_OF_INSTANCES,
+        trained = (new DecisionTreeModel()).j48DecisionTreeAnalysis(dataInstances, DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_MIN_NUMBER_OF_INSTANCES,
                 DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_PRUNING, DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_UNPRUNED)
-        res = new DecisionTreeResult(analysis, rmse, DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_PRUNING,
-                DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_MIN_NUMBER_OF_INSTANCES, DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_UNPRUNED)
-        analysis.addToResults(res)
+        if (trained != null) {
+            double rmse = trained.rootMeanSquaredError()
+            double meanAbsoluteError = trained.meanAbsoluteError()
+            int correct = trained.correct()
+            int incorrect = trained.incorrect()
+            String sumamry = trained.toSummaryString()
+            AnalysisResult res = new DecisionTreeResult(analysis, rmse, meanAbsoluteError, correct, incorrect, sumamry, DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_PRUNING,
+                    DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_MIN_NUMBER_OF_INSTANCES, DecisionTreeModel.DEFAULT_DECISION_TREE_PARAMETER_UNPRUNED)
+            analysis.addToResults(res)
+        }
 
-        rmse = (new LogisticRegressionModel()).logisticRegression(dataInstances, LogisticRegressionModel.DEFAULT_LOGISTIC_REGRESSION_PARAMETER_RIDGE, LogisticRegressionModel.DEFAULT_LOGISTIC_REGRESSION_PARAMETER_MAXIMUM_NUMBER_OF_ITERATIONS)
-        res = new LogisticRegressionResult(analysis, rmse, LogisticRegressionModel.DEFAULT_LOGISTIC_REGRESSION_PARAMETER_RIDGE, LogisticRegressionModel.DEFAULT_LOGISTIC_REGRESSION_PARAMETER_MAXIMUM_NUMBER_OF_ITERATIONS)
-        analysis.addToResults(res)
+        trained = (new LogisticRegressionModel()).logisticRegression(dataInstances, LogisticRegressionModel.DEFAULT_LOGISTIC_REGRESSION_PARAMETER_RIDGE, LogisticRegressionModel.DEFAULT_LOGISTIC_REGRESSION_PARAMETER_MAXIMUM_NUMBER_OF_ITERATIONS)
+        if (trained != null) {
+            double rmse = trained.rootMeanSquaredError()
+            double meanAbsoluteError = trained.meanAbsoluteError()
+            int correct = trained.correct()
+            int incorrect = trained.incorrect()
+            String sumamry = trained.toSummaryString()
+            AnalysisResult res = new LogisticRegressionResult(analysis, rmse, meanAbsoluteError, correct, incorrect, sumamry, LogisticRegressionModel.DEFAULT_LOGISTIC_REGRESSION_PARAMETER_RIDGE, LogisticRegressionModel.DEFAULT_LOGISTIC_REGRESSION_PARAMETER_MAXIMUM_NUMBER_OF_ITERATIONS)
+            analysis.addToResults(res)
+        }
 
-        rmse = (new SvmModel()).svm(dataInstances, SvmModel.DEFAULT_SVM_PARAMETER_KERNEL, SvmModel.DEFAULT_SVM_PARAMETER_C_COMPLEXITY_CONSTANT, SvmModel.DEFAULT_SVM_PARAMETER_GAMMA)
-        res = new SvmResult(analysis, rmse, SvmModel.DEFAULT_SVM_PARAMETER_KERNEL, SvmModel.DEFAULT_SVM_PARAMETER_C_COMPLEXITY_CONSTANT, SvmModel.DEFAULT_SVM_PARAMETER_GAMMA)
-        analysis.addToResults(res)
+        trained = (new SvmModel()).svm(dataInstances, SvmModel.DEFAULT_SVM_PARAMETER_KERNEL, SvmModel.DEFAULT_SVM_PARAMETER_C_COMPLEXITY_CONSTANT, SvmModel.DEFAULT_SVM_PARAMETER_GAMMA)
+        if (trained != null) {
+            double rmse = trained.rootMeanSquaredError()
+            double meanAbsoluteError = trained.meanAbsoluteError()
+            int correct = trained.correct()
+            int incorrect = trained.incorrect()
+            String sumamry = trained.toSummaryString()
+            AnalysisResult res = new SvmResult(analysis, rmse, meanAbsoluteError, correct, incorrect, sumamry, SvmModel.DEFAULT_SVM_PARAMETER_KERNEL, SvmModel.DEFAULT_SVM_PARAMETER_C_COMPLEXITY_CONSTANT, SvmModel.DEFAULT_SVM_PARAMETER_GAMMA)
+            analysis.addToResults(res)
+        }
     }
 
     def performGridsearchAnalysisForFile(Analysis analysis) {
@@ -109,7 +166,7 @@ class ModellingService {
 
     private AnalysisResult getRecommendedMethod(Analysis analysis) {
         Analysis mostSimilar = getMostSimilarAnalysis(analysis)
-        if(!mostSimilar){
+        if (!mostSimilar) {
             return null
         }
         return getBestMethodForAnalysis(mostSimilar)
@@ -193,8 +250,8 @@ class ModellingService {
     private AnalysisResult defaultKnnResultForAnalysis(Analysis analysis) {
         def criteria = KnnResult.createCriteria()
         AnalysisResult result = criteria.get {
-            eq("analysis.id",analysis.id)
-            eq("k",KnnModel.DEFAULT_KNN_PARAMETER_K)
+            eq("analysis.id", analysis.id)
+            eq("k", KnnModel.DEFAULT_KNN_PARAMETER_K)
             maxResults(1)
         }
 //        println "DEFAULT KNN: ${result}"

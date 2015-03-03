@@ -5,12 +5,12 @@ class LogisticRegressionResult extends AnalysisResult{
     double ridge;
     int maximumNumberOfIterations;
 
-    public LogisticRegressionResult(Analysis analysis, double rmse, double ridge, int maximumNumberOfIterations) {
-        this.analysis = analysis
-        this.rmse = rmse
+    public LogisticRegressionResult(analysis, Double rmse, Double meanAbsoluteError, Integer correctlyClassified, Integer incorrectlyClassified, String summary, double ridge, int maximumNumberOfIterations) {
+        super(analysis, rmse, meanAbsoluteError, correctlyClassified, incorrectlyClassified, summary)
         this.ridge = ridge
         this.maximumNumberOfIterations = maximumNumberOfIterations
     }
+
     static constraints = {
     }
 

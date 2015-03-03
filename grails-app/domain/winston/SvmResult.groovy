@@ -8,9 +8,8 @@ class SvmResult extends AnalysisResult{
     double complexityConstant;
     double gamma;
 
-    public SvmResult(Analysis analysis, double rmse, String kernel, double complexityConstant, double gamma) {
-        this.analysis = analysis
-        this.rmse = rmse
+    public SvmResult(analysis, Double rmse, Double meanAbsoluteError, Integer correctlyClassified, Integer incorrectlyClassified, String summary, String kernel, double complexityConstant, double gamma) {
+        super(analysis, rmse, meanAbsoluteError, correctlyClassified, incorrectlyClassified, summary)
         this.kernel = kernel
         this.complexityConstant = complexityConstant
         this.gamma = gamma
@@ -18,7 +17,6 @@ class SvmResult extends AnalysisResult{
 
     static constraints = {
     }
-
 
     @Override
     public String toString() {

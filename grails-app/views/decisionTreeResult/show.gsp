@@ -54,14 +54,6 @@
                 </dd>
 
                 <dt>
-                    <g:message code="decisionTreeResult.rmse.label" default="Rmse"/>
-                </dt>
-                <dd>
-                    <span class="vertical-aligner"></span>
-                    <g:fieldValue bean="${decisionTreeResultInstance}" field="rmse"/>
-                </dd>
-
-                <dt>
                     <g:message code="decisionTreeResult.confidenceFactor.label" default="Confidence Factor"/>
                 </dt>
                 <dd>
@@ -84,6 +76,46 @@
                 <dd>
                     <span class="vertical-aligner"></span>
                     <g:formatBoolean boolean="${decisionTreeResultInstance?.unpruned}" true="No" false="Yes"/>
+                </dd>
+
+                <dt>
+                    <g:message code="decisionTreeResult.rmse.label" default="Rmse"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${decisionTreeResultInstance}" field="rmse"/>
+                </dd>
+
+                <dt>
+                    <g:message code="decisionTreeResult.meanAbsoluteError.label" default="Mean Absolute Error"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${decisionTreeResultInstance}" field="meanAbsoluteError"/>
+                </dd>
+
+                <dt>
+                    <g:message code="decisionTreeResult.correctlyClassified.label" default="Correctly classified instances"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${decisionTreeResultInstance}" field="correctlyClassified"/>
+                </dd>
+
+                <dt>
+                    <g:message code="decisionTreeResult.incorrectlyClassified.label" default="Incorrectly classified instances"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${decisionTreeResultInstance}" field="incorrectlyClassified"/>
+                </dd>
+
+                <dt>
+                    <g:message code="decisionTreeResult.summary.label" default="Summary"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <pre><g:fieldValue bean="${decisionTreeResultInstance}" field="summary"/></pre>
                 </dd>
             </dl>
         </div>

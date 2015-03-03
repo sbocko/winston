@@ -56,8 +56,8 @@
     </p>
 
     <p class="lead">
-        Before we analyze your data, you have to <b>choose an attribute</b> which you want to classify on.
-    Classification attributes are discrete and do not imply order. Continuous, floating-point values
+        Before we analyze your data, you have to <b>choose an attribute</b> which represents an <b>outcome</b> for you.
+    This target attribute has to be discrete and do not imply order. Continuous, floating-point values
     would indicate a numerical, rather than a categorical, target. A predictive model with a numerical
     target uses a regression method, not a classification method.
     </p>

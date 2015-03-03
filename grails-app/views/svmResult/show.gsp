@@ -55,14 +55,6 @@
                 </dd>
 
                 <dt>
-                    <g:message code="svmResult.rmse.label" default="Rmse"/>
-                </dt>
-                <dd>
-                    <span class="vertical-aligner"></span>
-                    <g:fieldValue bean="${svmResultInstance}" field="rmse"/>
-                </dd>
-
-                <dt>
                     <g:message code="svmResult.kernel.label" default="Kernel"/>
                 </dt>
                 <dd>
@@ -84,6 +76,46 @@
                 <dd>
                     <span class="vertical-aligner"></span>
                     <g:fieldValue bean="${svmResultInstance}" field="gamma"/>
+                </dd>
+
+                <dt>
+                    <g:message code="svmResult.rmse.label" default="Rmse"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${svmResultInstance}" field="rmse"/>
+                </dd>
+
+                <dt>
+                    <g:message code="svmResult.meanAbsoluteError.label" default="Mean Absolute Error"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${svmResultInstance}" field="meanAbsoluteError"/>
+                </dd>
+
+                <dt>
+                    <g:message code="svmResult.correctlyClassified.label" default="Correctly classified instances"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${svmResultInstance}" field="correctlyClassified"/>
+                </dd>
+
+                <dt>
+                    <g:message code="svmResult.incorrectlyClassified.label" default="Incorrectly classified instances"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${svmResultInstance}" field="incorrectlyClassified"/>
+                </dd>
+
+                <dt>
+                    <g:message code="svmResult.summary.label" default="Summary"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <pre><g:fieldValue bean="${svmResultInstance}" field="summary"/></pre>
                 </dd>
             </dl>
         </div>

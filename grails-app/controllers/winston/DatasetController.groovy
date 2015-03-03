@@ -29,6 +29,7 @@ class DatasetController {
 //                max:params.max,
 //                offset:params.offset
         ) {
+            eq ("deleted", false)
             eq ("user.id", user.getId())
         }
 
@@ -167,7 +168,10 @@ class DatasetController {
         def title = datasetInstance.getTitle();
         try {
 //            datasetService.deleteDatasetFiles(id)
-            datasetInstance.delete(flush: true)
+//            datasetInstance.delete(flush: true)
+            datasetInstance.setDeleted(true)
+            datasetInstance.save(flush: true)
+
             flash.message = message(code: 'default.deleted.message', args: [
                     message(code: 'dataset.label', default: 'Dataset'),
                     title

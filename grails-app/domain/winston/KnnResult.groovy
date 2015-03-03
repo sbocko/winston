@@ -3,11 +3,11 @@ package winston
 class KnnResult extends AnalysisResult {
     int k
 
-    public KnnResult(Analysis analysis, double rmse, int k) {
-        this.analysis = analysis
-        this.rmse = rmse
+    public KnnResult(Analysis analysis, Double rmse, Double meanAbsoluteError, Integer correctlyClassified, Integer incorrectlyClassified, String summary, int k) {
+        super(analysis, rmse, meanAbsoluteError, correctlyClassified, incorrectlyClassified, summary)
         this.k = k
     }
+
     static constraints = {
     }
 

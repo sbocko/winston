@@ -5,13 +5,13 @@ class DecisionTreeResult extends AnalysisResult{
     int minimumNumberOfInstancesPerLeaf;
     boolean unpruned;
 
-    public DecisionTreeResult(Analysis analysis, double rmse, double confidenceFactor, int minimumNumberOfInstancesPerLeaf, boolean unpruned) {
-        this.analysis = analysis
-        this.rmse = rmse
+    DecisionTreeResult(Analysis analysis, Double rmse, Double meanAbsoluteError, Integer correctlyClassified, Integer incorrectlyClassified, String summary, double confidenceFactor, int minimumNumberOfInstancesPerLeaf, boolean unpruned) {
+        super(analysis, rmse, meanAbsoluteError, correctlyClassified, incorrectlyClassified, summary)
         this.confidenceFactor = confidenceFactor
         this.minimumNumberOfInstancesPerLeaf = minimumNumberOfInstancesPerLeaf
         this.unpruned = unpruned
     }
+
     static constraints = {
     }
 

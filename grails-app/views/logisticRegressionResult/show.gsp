@@ -56,14 +56,6 @@
                 </dd>
 
                 <dt>
-                    <g:message code="logisticRegressionResult.rmse.label" default="Rmse"/>
-                </dt>
-                <dd>
-                    <span class="vertical-aligner"></span>
-                    <g:fieldValue bean="${logisticRegressionResultInstance}" field="rmse"/>
-                </dd>
-
-                <dt>
                     <g:message code="logisticRegressionResult.maximumNumberOfIterations.label"
                                default="Maximum Number Of Iterations"/>
                 </dt>
@@ -83,6 +75,46 @@
                 <dd>
                     <span class="vertical-aligner"></span>
                     <g:fieldValue bean="${logisticRegressionResultInstance}" field="ridge"/>
+                </dd>
+
+                <dt>
+                    <g:message code="logisticRegressionResult.rmse.label" default="Rmse"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${logisticRegressionResultInstance}" field="rmse"/>
+                </dd>
+
+                <dt>
+                    <g:message code="logisticRegressionResult.meanAbsoluteError.label" default="Mean Absolute Error"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${logisticRegressionResultInstance}" field="meanAbsoluteError"/>
+                </dd>
+
+                <dt>
+                    <g:message code="logisticRegressionResult.correctlyClassified.label" default="Correctly classified instances"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${logisticRegressionResultInstance}" field="correctlyClassified"/>
+                </dd>
+
+                <dt>
+                    <g:message code="logisticRegressionResult.incorrectlyClassified.label" default="Incorrectly classified instances"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <g:fieldValue bean="${logisticRegressionResultInstance}" field="incorrectlyClassified"/>
+                </dd>
+
+                <dt>
+                    <g:message code="logisticRegressionResult.summary.label" default="Summary"/>
+                </dt>
+                <dd>
+                    <span class="vertical-aligner"></span>
+                    <pre><g:fieldValue bean="${logisticRegressionResultInstance}" field="summary"/></pre>
                 </dd>
             </dl>
         </div>
