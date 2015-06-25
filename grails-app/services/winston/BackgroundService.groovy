@@ -5,7 +5,8 @@ import org.codehaus.groovy.grails.web.context.ServletContextHolder
 
 @Transactional
 class BackgroundService {
-    private static final String BACKEND_SERVER_IP = "localhost"
+//    private static final String BACKEND_SERVER_IP = "localhost"
+    private static final String BACKEND_SERVER_IP = "master.exp.upjs.sk"
     private static final int BACKEND_SERVER_PORT = 4322
 
     private static final String RETURN_CODE_OK = "200: OK"

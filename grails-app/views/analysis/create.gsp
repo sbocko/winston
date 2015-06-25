@@ -47,45 +47,50 @@
     </div>
 
     <p class="lead">
-        A method, which will analyze your data is called
-        <a href="http://en.wikipedia.org/wiki/Statistical_classification" target="_blank">classification</a>.
-    It solves the problem of <b>assigning</b> a new object to a <b>certain class</b> based on its similarity
-    to previous examples of other objects. For example, a classification model could be used to identify
-    loan applicants as low, medium, or high credit risks based on observed data for many loan applicants
-    over a period of time.
+        Data-mining deals with several tasks which differ in the kind of knowledge to be mined from your data.
+        Basically, there are two major groups:
     </p>
 
-    <p class="lead">
-        Before we analyze your data, you have to <b>choose an attribute</b> which represents an <b>outcome</b> for you.
-    This target attribute has to be discrete and do not imply order. Continuous, floating-point values
-    would indicate a numerical, rather than a categorical, target. A predictive model with a numerical
-    target uses a regression method, not a classification method.
-    </p>
+    <ol class="lead" type="1">
+        <li>
+            <p class="bottom-padding"><b>Predictive</b> - this group solves the problem of assigning a new object to a certain class based on its similarity
+                                to previous examples of other objects. For example, a predictive model could be used to predict
+                                loan applicants as low, medium, or high credit risks based on observed data for many loan applicants
+                                over a period of time. Choose regression task if you want to predict value of numeric attribute or
+                                classification otherwise.</p>
 
-    <p class="lead">
-        Choose a target attribute:
-    </p>
-    <g:form>
-        <g:radioGroup name="targetAttributeRadioGroup"
-                      labels="${datasetInstance.getAttributes().sort() { it.positionInDataFile }.title}"
-                      values="${datasetInstance.getAttributes().sort() { it.positionInDataFile }.id}"
-                      value="${params.currentTargetAttribute}">
-            <p class="lead radio-button">
-                ${it.radio}
-                ${it.label}
-            </p>
-        </g:radioGroup>
+            <div class="text-center lead">
+                <g:link class="index" action="regression"
+                        params="[id: datasetInstance.getId()]" style="text-decoration: none;">
+                    <button type="button" class="btn btn-lg btn-default">Use regression</button>
+                </g:link>
 
-        <fieldset class="buttons">
-            <g:hiddenField name="id" value="${datasetInstance?.id}"/>
-            <fieldset class="buttons">
-                <button type="submit" name="_action_getTargetAttribute" value="Next"
-                        class="btn btn-success btn-md save">
-                    Continue <span class="glyphicon glyphicon-chevron-right"></span>
-                </button>
-            </fieldset>
-        </fieldset>
-    </g:form>
+                <g:link class="index" action="classification"
+                        params="[id: datasetInstance.getId()]" style="text-decoration: none;">
+                    <button type="button" class="btn btn-lg btn-default">Use classification</button>
+                </g:link>
+            </div>
+
+        </li>
+        <li>
+            <p class="bottom-padding"><b>Descriptive</b> -  models deal with the general properties of your data.
+                                It can find associations and correlations between attributes. Also you can find frequent
+                                patterns in your data or discover hidden clusters. Choose pattern mining if you want to
+                                learn more about your data.</p>
+
+            <div class="text-center lead">
+                <g:link class="index" action="pattern-mining"
+                        params="[id: datasetInstance.getId()]" style="text-decoration: none;">
+                    <button type="button" class="btn btn-lg btn-default">Use pattern mining</button>
+                </g:link>
+            </div>
+
+        </li>
+    </ol>
+
+
+
+
 </div>
 </body>
 </html>

@@ -60,14 +60,24 @@ class DatasetController {
 
         //get dataset attribute values
         def file = request.getFile(Dataset.DATA_FILE_VAR)
-        File myFile = new File(file.getOriginalFilename())
+        File myFile = new File("/tmp/"+file.getOriginalFilename())
         try {
             file.transferTo(myFile)
         } catch (IOException e){
+            println "DIRECTORY: ${myFile.getAbsolutePath()}"
+            e.printStackTrace()
             flash.error = "Field Data File can not be empty!"
             redirect(action: "create", params: params)
             return
         }
+//        def myFile = file
+//        if(myFile.empty){
+//            println "DIRECTORY: ${myFile.getAbsolutePath()}"
+//            e.printStackTrace()
+//            flash.error = "Field Data File can not be empty!"
+//            redirect(action: "create", params: params)
+//            return
+//        }
 
         def datasetInstance;
         try {

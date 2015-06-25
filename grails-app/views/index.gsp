@@ -12,9 +12,9 @@
                     <h1>Winston</h1>
                     </div>
                     <p class="lead">Exploring data mining easier, together</p>
-                    <a href="/winston/dataset/list">
+                    <g:link controller="dataset" action="list">
                         <button class="btn btn-success btn-lg">Get Started Now!</button>
-                    </a>
+                    </g:link>
                 </div>
             </div>
             <div class="row bs-docs-section body-bottom-padding bottom-align-text">
