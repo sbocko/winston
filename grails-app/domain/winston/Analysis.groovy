@@ -6,8 +6,14 @@ class Analysis {
     public static final String DATA_TYPE_CATEGORICAL = "CAT";
     public static final String DATA_TYPE_MULTIVARIATE = "MULT";
 
+    public static final String TASK_CLASSIFICATION = "CLASSIFICATION";
+    public static final String TASK_REGRESSION = "REGRESSION";
+    public static final String TASK_PATTERN = "PATTERN";
+
+
     String dataFile
     String dataType
+    String task
     int numberOfAttributes
     boolean analyzedByGridSearch = false
     boolean gridSearchAnalysisInProgress = false
@@ -18,6 +24,7 @@ class Analysis {
 
     static constraints = {
         dataFile(nullable: false)
+        task(nullable: false)
     }
 
     public static final int NUMBER_OF_RESULTS_TO_SHOW = 5

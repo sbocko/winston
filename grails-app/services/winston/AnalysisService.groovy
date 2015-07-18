@@ -18,10 +18,10 @@ class AnalysisService {
     private static final String CONTAINS_ATTRIBUTE_VALUE = "1"
     private static final String DOES_NOT_CONTAIN_ATTRIBUTE_VALUE = "0"
 
-    public List<Analysis> generateAnalyzes(Dataset dataset, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
+    public List<Analysis> generateAnalyzes(Dataset dataset, String task, Map<Attribute, Boolean> attributesToSplit, Attribute target) {
         List<Analysis> analyzes = new ArrayList<>()
 
-        backgroundService.preprocessDataOnBackground(dataset, target, attributesToSplit)
+        backgroundService.preprocessDataOnBackground(dataset, task, target, attributesToSplit)
 
 //        List<Instances> replaced = replaceMissingValues(dataset)
 //        for (Instances instances : replaced) {

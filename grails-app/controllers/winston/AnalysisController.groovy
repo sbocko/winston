@@ -10,6 +10,8 @@ import static org.springframework.http.HttpStatus.*
 @Secured([Role.ROLE_USER])
 class AnalysisController {
     private static final double MIN_PERCENT_OF_DISTINCT_VALUES = 0.05
+    public static final String TASK_CLASSIFICATION = "CLASSIFICATION"
+    public static final String TASK_REGRESSION = "REGRESSION"
 
     def analysisService
     def modellingService
@@ -158,6 +160,48 @@ class AnalysisController {
         }
     }
 
+    def classification(Long id) {
+        def datasetInstance = Dataset.get(id)
+        if (!datasetInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [
+                    message(code: 'dataset.label', default: 'Dataset'),
+                    id
+            ])
+            redirect(controller: "dataset", action: "list")
+            return
+        }
+
+        render(view: "classification_details_selection", model: [datasetInstance: datasetInstance, task: TASK_CLASSIFICATION])
+    }
+
+    def regression(Long id) {
+        def datasetInstance = Dataset.get(id)
+        if (!datasetInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [
+                    message(code: 'dataset.label', default: 'Dataset'),
+                    id
+            ])
+            redirect(controller: "dataset", action: "list")
+            return
+        }
+
+        render(view: "regression_details_selection", model: [datasetInstance: datasetInstance, task: TASK_REGRESSION])
+    }
+
+    def patternMining(Long id) {
+        def datasetInstance = Dataset.get(id)
+        if (!datasetInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [
+                    message(code: 'dataset.label', default: 'Dataset'),
+                    id
+            ])
+            redirect(controller: "dataset", action: "list")
+            return
+        }
+
+        // TODO implement me
+    }
+
     def getTargetAttribute(Long id) {
         def datasetInstance = Dataset.get(id)
         if (!datasetInstance) {
@@ -165,15 +209,24 @@ class AnalysisController {
                     message(code: 'dataset.label', default: 'Dataset'),
                     id
             ])
-            redirect(controller: "analysis", action: "create")
+            redirect(controller: "dataset", action: "list")
             return
         }
 
         def answer = params.targetAttributeRadioGroup
+        def task = params.task
 
         if(!answer) {
             flash.error = "Target attribute has to be chosen."
-            redirect(controller: "analysis", action: "create", id: datasetInstance.getId())
+            println("PARAMS: " + params)
+            if(task.toString().equals(TASK_CLASSIFICATION)){
+                redirect(controller: "analysis", action: "classification", id: datasetInstance.getId())
+            } else if(task.toString().equals(TASK_REGRESSION)) {
+                redirect(controller: "analysis", action: "regression", id: datasetInstance.getId())
+            } else {
+                println("UNKNOWN TASK")
+                redirect(controller: "analysis", action: "create", id: datasetInstance.getId())
+            }
             return
         }
 
@@ -211,7 +264,7 @@ class AnalysisController {
         }
 
         if(!attrIdList || attrIdList.size() == 0) {
-            forward(action: "analyze", id: params.id, params: [targetAttributeId: targetAttributeId]);
+            forward(action: "analyze", id: params.id, params: [targetAttributeId: targetAttributeId, task: params.task]);
         }
 
         render(view: "preprocessing", model: [datasetInstance: datasetInstance, attrIdList: attrIdList, targetAttributeId: targetAttributeId])
@@ -243,8 +296,10 @@ class AnalysisController {
             }
         }
 
+        String task = params.task
+
 //        Analysis analysis = preprocessingService.createAnalysis(datasetInstance, attributesToSplit, target)
-        analysisService.generateAnalyzes(datasetInstance, attributesToSplit, target)
+        analysisService.generateAnalyzes(datasetInstance, task, attributesToSplit, target)
 
         flash.message = "We have started several analyzes, we think can perform well on your data. " +
                 "The first one is already done. You can view it in the table at the end of this page. " +

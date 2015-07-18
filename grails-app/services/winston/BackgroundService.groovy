@@ -5,8 +5,8 @@ import org.codehaus.groovy.grails.web.context.ServletContextHolder
 
 @Transactional
 class BackgroundService {
-//    private static final String BACKEND_SERVER_IP = "localhost"
-    private static final String BACKEND_SERVER_IP = "master.exp.upjs.sk"
+    private static final String BACKEND_SERVER_IP = "localhost"
+//    private static final String BACKEND_SERVER_IP = "master.exp.upjs.sk"
     private static final int BACKEND_SERVER_PORT = 4322
 
     private static final String RETURN_CODE_OK = "200: OK"
@@ -18,14 +18,14 @@ class BackgroundService {
 
     def analysisService
 
-    def preprocessDataOnBackground(Dataset dataset, Attribute target, Map<Attribute, Boolean> attributesToSplit) {
+    def preprocessDataOnBackground(Dataset dataset, String task, Attribute target, Map<Attribute, Boolean> attributesToSplit) {
         println "sending data for background preprocessing"
         Socket backend = connectToBackendServer()
 
         OutputStream out = backend.getOutputStream()
         DataOutputStream dataOutput = new DataOutputStream(out)
 
-        writePreprocessingParameters(dataOutput, dataset, target, attributesToSplit)
+        writePreprocessingParameters(dataOutput, dataset, task, target, attributesToSplit)
         backend.shutdownOutput()
 
         InputStream input = backend.getInputStream()
@@ -127,10 +127,12 @@ class BackgroundService {
         dataOutput.flush()
     }
 
-    private void writePreprocessingParameters(DataOutputStream dataOutput, Dataset dataset, Attribute target, Map<Attribute, Boolean> attributesToSplit) {
+    private void writePreprocessingParameters(DataOutputStream dataOutput, Dataset dataset, String task, Attribute target, Map<Attribute, Boolean> attributesToSplit) {
         dataOutput.writeUTF(COMMAND_PREPROCESS)
         //write dataset ID
         dataOutput.writeLong(dataset.getId())
+        //write modeling task
+        dataOutput.writeUTF(task)
         //write target attribute ID
         dataOutput.writeLong(target.getId())
 

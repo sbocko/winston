@@ -37,7 +37,7 @@
             <g:link class="index" action="downloadFile"
                     resource="${analysisInstance}" style="text-decoration: none;">
                 <button class="btn btn-success btn-sm">
-                    <span class="glyphicon glyphicon-cloud-download"></span> Download analysis file
+                    <span class="glyphicon glyphicon-cloud-download"></span> Download preprocessed file
                 </button>
 
             </g:link>
@@ -105,7 +105,7 @@
         <g:if test="${analysisResults}">
             <div class="row">
                 <h2 class="container lead">
-                    Top results for this analysis by <a href="http://en.wikipedia.org/wiki/Root-mean-square_deviation"
+                    Top results for this preprocessed file by <a href="http://en.wikipedia.org/wiki/Root-mean-square_deviation"
                                                         target="_blank">rmse</a>:
                 </h2>
             </div>
@@ -151,7 +151,7 @@
         <g:if test="${!analysisInstance.gridSearchAnalysisInProgress && !analysisInstance.analyzedByGridSearch}">
             <div class="bs-docs-section  col-lg-6 centered">
                 <div class="row text-center">
-                    <p class="lead">Do you consider this analysis good? Run <a
+                    <p class="lead">Do you consider this preprocessing good? Run <a
                             href="http://en.wikipedia.org/wiki/Hyperparameter_optimization#Grid_search"
                             target="_blank">grid search</a>
                         algorithm to obtain even better results. This algorithm simply tries all possible

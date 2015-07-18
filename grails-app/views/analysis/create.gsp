@@ -79,7 +79,7 @@
                                 learn more about your data.</p>
 
             <div class="text-center lead">
-                <g:link class="index" action="pattern-mining"
+                <g:link class="index" action="pattern"
                         params="[id: datasetInstance.getId()]" style="text-decoration: none;">
                     <button type="button" class="btn btn-lg btn-default">Use pattern mining</button>
                 </g:link>
