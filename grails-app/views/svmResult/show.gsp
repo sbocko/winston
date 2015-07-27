@@ -94,21 +94,26 @@
                     <g:fieldValue bean="${svmResultInstance}" field="meanAbsoluteError"/>
                 </dd>
 
-                <dt>
-                    <g:message code="svmResult.correctlyClassified.label" default="Correctly classified instances"/>
-                </dt>
-                <dd>
-                    <span class="vertical-aligner"></span>
-                    <g:fieldValue bean="${svmResultInstance}" field="correctlyClassified"/>
-                </dd>
+                <g:if test="${winston.Analysis.TASK_CLASSIFICATION.equals(svmResultInstance.analysis.task)}">
+                    <dt>
+                        <g:message code="svmResult.correctlyClassified.label" default="Correctly classified instances"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${svmResultInstance}" field="correctlyClassified"/>
+                    </dd>
+                </g:if>
 
-                <dt>
-                    <g:message code="svmResult.incorrectlyClassified.label" default="Incorrectly classified instances"/>
-                </dt>
-                <dd>
-                    <span class="vertical-aligner"></span>
-                    <g:fieldValue bean="${svmResultInstance}" field="incorrectlyClassified"/>
-                </dd>
+                <g:if test="${winston.Analysis.TASK_CLASSIFICATION.equals(svmResultInstance.analysis.task)}">
+                    <dt>
+                        <g:message code="svmResult.incorrectlyClassified.label"
+                                   default="Incorrectly classified instances"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${svmResultInstance}" field="incorrectlyClassified"/>
+                    </dd>
+                </g:if>
 
                 <dt>
                     <g:message code="svmResult.summary.label" default="Summary"/>

@@ -12,6 +12,7 @@ class AnalysisController {
     private static final double MIN_PERCENT_OF_DISTINCT_VALUES = 0.05
     public static final String TASK_CLASSIFICATION = "CLASSIFICATION"
     public static final String TASK_REGRESSION = "REGRESSION"
+    public static final String TASK_PATTERN_MINING = "PATTERN_MINING"
 
     def analysisService
     def modellingService
@@ -267,7 +268,7 @@ class AnalysisController {
             forward(action: "analyze", id: params.id, params: [targetAttributeId: targetAttributeId, task: params.task]);
         }
 
-        render(view: "preprocessing", model: [datasetInstance: datasetInstance, attrIdList: attrIdList, targetAttributeId: targetAttributeId])
+        render(view: "preprocessing", model: [datasetInstance: datasetInstance, attrIdList: attrIdList, targetAttributeId: targetAttributeId, task: params.task])
     }
 
     def analyze(Long id) {

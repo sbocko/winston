@@ -2,10 +2,10 @@ package winston
 
 class RegressionTreeResult extends AnalysisResult{
     int minimumNumberOfInstancesPerLeaf;
-    int minimumVarianceForSplit;
+    double minimumVarianceForSplit;
     int numberOfFolds;
 
-    public RegressionTreeResult(analysis, Double rmse, Double meanAbsoluteError, Integer correctlyClassified, Integer incorrectlyClassified, String summary, analysis1, int minimumNumberOfInstancesPerLeaf, int minimumVarianceForSplit, int numberOfFolds) {
+    public RegressionTreeResult(analysis, Double rmse, Double meanAbsoluteError, Integer correctlyClassified, Integer incorrectlyClassified, String summary, analysis1, int minimumNumberOfInstancesPerLeaf, double minimumVarianceForSplit, int numberOfFolds) {
         super(analysis, rmse, meanAbsoluteError, correctlyClassified, incorrectlyClassified, summary)
         this.minimumNumberOfInstancesPerLeaf = minimumNumberOfInstancesPerLeaf
         this.minimumVarianceForSplit = minimumVarianceForSplit

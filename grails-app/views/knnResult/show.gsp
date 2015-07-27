@@ -1,4 +1,4 @@
-<%@ page import="winston.KnnResult" %>
+<%@ page import="winston.Analysis; winston.KnnResult" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,21 +77,26 @@
                     <g:fieldValue bean="${knnResultInstance}" field="meanAbsoluteError"/>
                 </dd>
 
-                <dt>
-                    <g:message code="knnResult.correctlyClassified.label" default="Correctly classified instances"/>
-                </dt>
-                <dd>
-                    <span class="vertical-aligner"></span>
-                    <g:fieldValue bean="${knnResultInstance}" field="correctlyClassified"/>
-                </dd>
+                <g:if test="${winston.Analysis.TASK_CLASSIFICATION.equals(knnResultInstance.analysis.task)}">
+                    <dt>
+                        <g:message code="knnResult.correctlyClassified.label" default="Correctly classified instances"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${knnResultInstance}" field="correctlyClassified"/>
+                    </dd>
+                </g:if>
 
-                <dt>
-                    <g:message code="knnResult.incorrectlyClassified.label" default="Incorrectly classified instances"/>
-                </dt>
-                <dd>
-                    <span class="vertical-aligner"></span>
-                    <g:fieldValue bean="${knnResultInstance}" field="incorrectlyClassified"/>
-                </dd>
+                <g:if test="${winston.Analysis.TASK_CLASSIFICATION.equals(knnResultInstance.analysis.task)}">
+                    <dt>
+                        <g:message code="knnResult.incorrectlyClassified.label"
+                                   default="Incorrectly classified instances"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:fieldValue bean="${knnResultInstance}" field="incorrectlyClassified"/>
+                    </dd>
+                </g:if>
 
                 <dt>
                     <g:message code="knnResult.summary.label" default="Summary"/>

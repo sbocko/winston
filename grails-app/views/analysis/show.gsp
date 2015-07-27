@@ -56,6 +56,27 @@
                     </dd>
                 </g:if>
 
+                <g:if test="${analysisInstance?.task}">
+                    <dt>
+                        <g:message code="analysis.dataset.label" default="Task"/>
+                    </dt>
+                    <dd>
+                        <span class="vertical-aligner"></span>
+                        <g:if test="${Analysis.TASK_CLASSIFICATION.equals(analysisInstance.task)}">
+                            Classification
+                        </g:if>
+                        <g:elseif test="${Analysis.TASK_REGRESSION.equals(analysisInstance.task)}">
+                            Regression
+                        </g:elseif>
+                        <g:elseif test="${Analysis.TASK_PATTERN.equals(analysisInstance.task)}">
+                            Pattern mining
+                        </g:elseif>
+                        <g:else>
+                            Unknown
+                        </g:else>
+                    </dd>
+                </g:if>
+
                 <g:if test="${analysisInstance?.dataFile}">
                     <dt>
                         <g:message code="analysis.dataFile.label" default="Data File"/>
@@ -135,6 +156,18 @@
                                 </g:elseif>
                                 <g:elseif test="${analysisResult.instanceOf(winston.SvmResult)}">
                                     Support vector machines
+                                </g:elseif>
+                                <g:elseif test="${analysisResult.instanceOf(winston.LinearRegressionResult)}">
+                                    Linear regression
+                                </g:elseif>
+                                <g:elseif test="${analysisResult.instanceOf(winston.RegressionTreeResult)}">
+                                    Regression tree
+                                </g:elseif>
+                                <g:elseif test="${analysisResult.instanceOf(winston.AprioriResult)}">
+                                    Apriori
+                                </g:elseif>
+                                <g:elseif test="${analysisResult.instanceOf(winston.RegressionTreeResult)}">
+                                    Simple k-Means
                                 </g:elseif>
                                 <g:else>
                                     Unknown

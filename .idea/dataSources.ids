@@ -41,7 +41,7 @@
       <column name="complexity_constant" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="gamma" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="kernel" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="minimum_variance_for_split" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="minimum_variance_for_split" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="number_of_folds" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="number_of_rules" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="initialization_method" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
@@ -64,7 +64,6 @@
       <column name="maximum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="minimum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
       <column name="number_of_distinct_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="is_target" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
       <column name="attributes_idx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="FK_sglujhfqtyua2v14davaxd3bw" columns="dataset_id" ref-table="dataset" ref-schema="" ref-catalog="nh2096401db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>

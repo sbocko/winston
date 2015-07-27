@@ -1,10 +1,10 @@
 package winston
 
 class SimpleKMeansResult extends AnalysisResult{
-    public static final int INITIALIZATION_METHOD_RANDOM;
-    public static final int INITIALIZATION_METHOD_K_MEANS_PLUS_PLUS;
-    public static final int INITIALIZATION_METHOD_CANOPY;
-    public static final int INITIALIZATION_METHOD_FARTHEST_FIRST;
+    public static final int INITIALIZATION_METHOD_RANDOM = 0;
+    public static final int INITIALIZATION_METHOD_K_MEANS_PLUS_PLUS = 1;
+    public static final int INITIALIZATION_METHOD_CANOPY = 2;
+    public static final int INITIALIZATION_METHOD_FARTHEST_FIRST = 3;
 
     int numberOfClusters;
     int initializationMethod;

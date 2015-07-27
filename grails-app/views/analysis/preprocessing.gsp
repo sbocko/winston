@@ -79,6 +79,7 @@
             <fieldset class="buttons">
                 <g:hiddenField name="id" value="${datasetInstance?.id}"/>
                 <g:hiddenField name="targetAttributeId" value="${targetAttributeId}"/>
+                <g:hiddenField name="task" value="${task}"/>
                 <fieldset class="buttons">
                     <button type="submit" name="_action_analyze" value="Next"
                             class="btn btn-success btn-md save">
