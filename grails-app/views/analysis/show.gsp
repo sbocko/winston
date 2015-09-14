@@ -126,8 +126,9 @@
         <g:if test="${analysisResults}">
             <div class="row">
                 <h2 class="container lead">
-                    Top results for this preprocessed file by <a href="http://en.wikipedia.org/wiki/Root-mean-square_deviation"
-                                                        target="_blank">rmse</a>:
+                    Top results for this preprocessed file by <a
+                        href="http://en.wikipedia.org/wiki/Root-mean-square_deviation"
+                        target="_blank">rmse</a>:
                 </h2>
             </div>
             <table class="well table table-striped table-hover">
@@ -166,7 +167,7 @@
                                 <g:elseif test="${analysisResult.instanceOf(winston.AprioriResult)}">
                                     Apriori
                                 </g:elseif>
-                                <g:elseif test="${analysisResult.instanceOf(winston.RegressionTreeResult)}">
+                                <g:elseif test="${analysisResult.instanceOf(winston.SimpleKMeansResult)}">
                                     Simple k-Means
                                 </g:elseif>
                                 <g:else>
@@ -174,7 +175,14 @@
                                 </g:else>
                             </g:link>
                         </td>
-                        <td>${fieldValue(bean: analysisResult, field: "rmse")}</td>
+                        <td>
+                            <g:if test="${analysisResult.instanceOf(winston.AprioriResult) || analysisResult.instanceOf(winston.SimpleKMeansResult)}">
+                                N/A
+                            </g:if>
+                            <g:else>
+                                ${fieldValue(bean: analysisResult, field: "rmse")}
+                            </g:else>
+                        </td>
                     </tr>
                 </g:each>
                 </tbody>

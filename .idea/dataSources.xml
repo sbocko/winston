@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2596661280">
-    <data-source source="LOCAL" name="winston dev" uuid="e6847e0a-68e1-4618-a8df-3dc740382495">
+  <component name="DataSourceManagerImpl" format="xml" hash="3224996353">
+    <data-source source="LOCAL" name="winston - dev" uuid="f4b6493e-6a42-425e-ac7b-545d199e6dda">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://stefanbocko.sk/nh2096401db?useUnicode=yes&amp;characterEncoding=UTF-8</jdbc-url>
+      <jdbc-url>jdbc:mysql://db4free.org:3306/winstondb</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -13,11 +13,7 @@
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
       </driver-properties>
-      <libraries>
-        <library>
-          <url>file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.29/mysql-connector-java-5.1.29.jar</url>
-        </library>
-      </libraries>
+      <libraries />
     </data-source>
   </component>
 </project>

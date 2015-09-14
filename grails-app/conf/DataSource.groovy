@@ -21,9 +21,15 @@ environments {
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop','update'
-            url = "jdbc:mysql://stefanbocko.sk/nh2096401db?useUnicode=yes&characterEncoding=UTF-8"
-            username = "nh2096401"
-            password = "taraystol"
+
+            url = "jdbc:mysql://db4free.org/winstondb?useUnicode=yes&characterEncoding=UTF-8"
+            username = "winston"
+            password = "PRe-U9T-kKm-hPK"
+
+//            url = "jdbc:mysql://stefanbocko.sk/nh2096401db?useUnicode=yes&characterEncoding=UTF-8"
+//            username = "nh2096401"
+//            password = "taraystol"
+
 //            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
 //            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
 

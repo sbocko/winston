@@ -189,7 +189,7 @@ class AnalysisController {
         render(view: "regression_details_selection", model: [datasetInstance: datasetInstance, task: TASK_REGRESSION])
     }
 
-    def patternMining(Long id) {
+    def pattern(Long id) {
         def datasetInstance = Dataset.get(id)
         if (!datasetInstance) {
             flash.message = message(code: 'default.not.found.message', args: [
@@ -199,8 +199,8 @@ class AnalysisController {
             redirect(controller: "dataset", action: "list")
             return
         }
-
-        // TODO implement me
+        analysisService.generateAnalyzes(datasetInstance, Analysis.TASK_PATTERN, null, null)
+        showAnalysisStartedMessage(id)
     }
 
     def getTargetAttribute(Long id) {
@@ -302,13 +302,18 @@ class AnalysisController {
 //        Analysis analysis = preprocessingService.createAnalysis(datasetInstance, attributesToSplit, target)
         analysisService.generateAnalyzes(datasetInstance, task, attributesToSplit, target)
 
+        showAnalysisStartedMessage(id)
+    }
+
+    /** HELPER METHODS */
+
+    private void showAnalysisStartedMessage(Long datasetId) {
+        def datasetInstance = Dataset.get(datasetId)
         flash.message = "We have started several analyzes, we think can perform well on your data. " +
                 "The first one is already done. You can view it in the table at the end of this page. " +
                 "More analyzes will be there over time. We will notify you by an email."
         redirect(controller: "dataset", action: "show", id: datasetInstance.getId())
     }
-
-    /** HELPER METHODS */
 
     private File getAnalysisFile(Analysis analysis) {
 //        def servletContext = ServletContextHolder.servletContext

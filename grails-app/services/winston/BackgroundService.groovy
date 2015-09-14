@@ -133,17 +133,20 @@ class BackgroundService {
         dataOutput.writeLong(dataset.getId())
         //write modeling task
         dataOutput.writeUTF(task)
-        //write target attribute ID
-        dataOutput.writeLong(target.getId())
 
-        int numberOfAttributesToSplit = calculateNumberOfAttributesToSplit(attributesToSplit)
-        //write number of attribute IDs to split
-        dataOutput.writeInt(numberOfAttributesToSplit)
+        if (!Analysis.TASK_PATTERN.equals(task)) {
+            //write target attribute ID
+            dataOutput.writeLong(target.getId())
 
-        //write IDs of attributes to split
-        for (Map.Entry<Attribute, Boolean> entry : attributesToSplit.entrySet()) {
-            if (entry.value) {
-                dataOutput.writeLong(entry.key.getId())
+            int numberOfAttributesToSplit = calculateNumberOfAttributesToSplit(attributesToSplit)
+            //write number of attribute IDs to split
+            dataOutput.writeInt(numberOfAttributesToSplit)
+
+            //write IDs of attributes to split
+            for (Map.Entry<Attribute, Boolean> entry : attributesToSplit.entrySet()) {
+                if (entry.value) {
+                    dataOutput.writeLong(entry.key.getId())
+                }
             }
         }
 

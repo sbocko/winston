@@ -1,4 +1,4 @@
-<%@ page import="winston.NumericAttribute; winston.Dataset" %>
+<%@ page import="winston.AnalysisResult; winston.NumericAttribute; winston.Dataset" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -198,7 +198,7 @@
                         <td>${fieldValue(bean: analysisInstance, field: "numberOfAttributes")}</td>
 
                         <g:set var="bestRmse" value="${analysisInstance.getBestRmse()}"/>
-                        <g:if test="${bestRmse == null}">
+                        <g:if test="${bestRmse == null || bestRmse == winston.AnalysisResult.RMSE_UNDEFINED}">
                             <td>N/A</td>
                         </g:if> <g:else>
                         <td>${analysisInstance.getBestRmse()}</td>

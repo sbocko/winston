@@ -1,6 +1,7 @@
 package winston
 
 class AnalysisResult {
+    public static final double RMSE_UNDEFINED = 1234567890d;
     Double rmse
     Double meanAbsoluteError
     Integer correctlyClassified
