@@ -1,0 +1,23 @@
+Winston Backend Server:
+
+- set PRODUCTION_ENVIRONMENT variable in DatabaseConnectionFactory.java to true
+- in Intellij Idea: Build -> Build Artifacts... -> choose correct artifact (or create one) -> Build
+- go to project folder -> out -> artifacts -> (your artifact name) -> copy (your artifact name).jar on deployment server
+	server address for ssh: ssh 158.197.29.129
+		- scp ~/IdeaProjects/WinstonBackend/out/artifacts/WinstonBackend_jar/WinstonBackend.jar bocko@158.197.29.129:
+		- java -jar WinstonBackendServer.jar -> to run in terminal
+		- add java -jar /home/bocko/WinstonBackend.jar & to /etc/rc.local to run server on startup
+
+Winston Webserver:
+- change BACKEND_SERVER_IP in BackgroundService.groovy to your backend server ip address
+- generate war file from terminal: go to project directory -> grails war -> rename war in ./target directory to winston.war -> upload war to webserver
+- copy war to /var/lib/tomcat7/webapps
+	- log file to look for errors: cat /var/log/tomcat7/catalina.out
+
+Winston DB:
+- ssh to 158.197.29.129
+- mysql --user=bocko --password=<PASSWORD> winston
+- drop all tables: 
+	SET FOREIGN_KEY_CHECKS = 0;
+	DROP TABLE if exists analysis, analysis_result, attribute, dataset;
+	SET FOREIGN_KEY_CHECKS = 1;

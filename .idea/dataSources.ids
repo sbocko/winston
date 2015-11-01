@@ -126,4 +126,133 @@
       <index name="FK_apcc8lxk2xnug8377fatvbn04" unique="false" columns="user_id"/>
     </table>
   </data-source>
+  <data-source name="winston dev" uuid="dbea2529-30a8-43ec-b6b1-e8168c81ca2b">
+    <database-info product="MySQL" version="5.6.27" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.29 ( Revision: alexander.soklakov@oracle.com-20140120140810-s44574olh90i6i4l )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="winstondb"/>
+    <table name="analysis" schema="" catalog="winstondb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="analyzed_by_grid_search" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="data_file" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="data_type" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="dataset_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="grid_search_analysis_in_progress" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="number_of_attributes" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="task" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_29xik3ctd30y4codaupu0odrb" columns="dataset_id" ref-table="dataset" ref-schema="" ref-catalog="winstondb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_8trxptlnhvm56iaduy49g73pv" table="analysis_result" schema="" catalog="winstondb" columns="analysis_id"/>
+      <index name="FK_29xik3ctd30y4codaupu0odrb" unique="false" columns="dataset_id"/>
+    </table>
+    <table name="analysis_result" schema="" catalog="winstondb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="analysis_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="correctly_classified" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="incorrectly_classified" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="mean_absolute_error" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="rmse" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="summary" sqlType="VARCHAR" precision="1000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="class" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="maximum_number_of_iterations" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="ridge" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="minimum_number_of_instances_per_leaf" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="minimum_variance_for_split" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="number_of_folds" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="k" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="number_of_rules" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="initialization_method" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="number_of_clusters" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="complexity_constant" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="gamma" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="kernel" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="confidence_factor" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="unpruned" sqlType="BIT" precision="1" scale="0" nullable="true" jdbcType="-7"/>
+      <column name="cluster_centroids" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="cluster_sizes" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="association_rules" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_8trxptlnhvm56iaduy49g73pv" columns="analysis_id" ref-table="analysis" ref-schema="" ref-catalog="winstondb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_8trxptlnhvm56iaduy49g73pv" unique="false" columns="analysis_id"/>
+    </table>
+    <table name="attribute" schema="" catalog="winstondb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="dataset_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="number_of_missing_values" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="position_in_data_file" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="class" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="number_of_distinct_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="number_of_false_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="number_of_true_values" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="average" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="maximum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="minimum" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_sglujhfqtyua2v14davaxd3bw" columns="dataset_id" ref-table="dataset" ref-schema="" ref-catalog="winstondb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_sglujhfqtyua2v14davaxd3bw" unique="false" columns="dataset_id"/>
+    </table>
+    <table name="dataset" schema="" catalog="winstondb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="arff_data_file" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="data_file" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="deleted" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="description" sqlType="VARCHAR" precision="5000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="missing_value_pattern" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="number_of_instances" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="number_of_missing_values" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="original_filename" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_pr13brky1iuocfkacedxqayat" columns="user_id" ref-table="user" ref-schema="" ref-catalog="winstondb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_29xik3ctd30y4codaupu0odrb" table="analysis" schema="" catalog="winstondb" columns="dataset_id"/>
+      <exported-key name="FK_sglujhfqtyua2v14davaxd3bw" table="attribute" schema="" catalog="winstondb" columns="dataset_id"/>
+      <index name="FK_pr13brky1iuocfkacedxqayat" unique="false" columns="user_id"/>
+    </table>
+    <table name="registration_code" schema="" catalog="winstondb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="date_created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="token" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="role" schema="" catalog="winstondb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="authority" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_it77eq964jhfqtu54081ebtio" table="user_role" schema="" catalog="winstondb" columns="role_id"/>
+      <index name="UK_irsamgnera6angm0prq1kemt2" unique="true" columns="authority"/>
+    </table>
+    <table name="user" schema="" catalog="winstondb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="account_expired" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="account_locked" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="email" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="enabled" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="password" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password_expired" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_pr13brky1iuocfkacedxqayat" table="dataset" schema="" catalog="winstondb" columns="user_id"/>
+      <exported-key name="FK_apcc8lxk2xnug8377fatvbn04" table="user_role" schema="" catalog="winstondb" columns="user_id"/>
+      <index name="UK_sb8bbouer5wak8vyiiy4pf2bx" unique="true" columns="username"/>
+    </table>
+    <table name="user_role" schema="" catalog="winstondb" type="TABLE">
+      <column name="role_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="role_id,user_id"/>
+      <foreign-key name="FK_apcc8lxk2xnug8377fatvbn04" columns="user_id" ref-table="user" ref-schema="" ref-catalog="winstondb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_it77eq964jhfqtu54081ebtio" columns="role_id" ref-table="role" ref-schema="" ref-catalog="winstondb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_apcc8lxk2xnug8377fatvbn04" unique="false" columns="user_id"/>
+    </table>
+  </data-source>
 </component>

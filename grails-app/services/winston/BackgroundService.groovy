@@ -134,7 +134,9 @@ class BackgroundService {
         //write modeling task
         dataOutput.writeUTF(task)
 
+        println("${Analysis.TASK_PATTERN} comparing to ${task}");
         if (!Analysis.TASK_PATTERN.equals(task)) {
+            println("sending target attribute: ${target.getPositionInDataFile()}")
             //write target attribute ID
             dataOutput.writeLong(target.getId())
 
